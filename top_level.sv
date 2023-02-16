@@ -2,95 +2,138 @@
 module top_level(
   input        clk, reset, req, 
   output logic done);
-  parameter D = 12,             // program counter width
-    A = 3;             		  // ALU command bit width
-  wire[D-1:0] target, 			  // jump 
-              prog_ctr;
-  wire        RegWrite;
-  wire[7:0]   datA,datB,		  // from RegFile
-              muxB, 
-			  rslt,               // alu output
-              immed;
-  logic sc_in,   				  // shift/carry out from/to ALU
-   		pariQ,              	  // registered parity flag from ALU
-		zeroQ;                    // registered zero flag from ALU 
-  wire  relj;                     // from control to PC; relative jump enable
-  wire  pari,
-        zero,
-		sc_clr,
-		sc_en,
-        MemWrite,
-        ALUSrc;		              // immediate switch
-  wire[A-1:0] alu_cmd;
-  wire[8:0]   mach_code;          // machine code
-  wire[2:0] rd_addrA, rd_adrB;    // address pointers to reg_file
-// fetch subassembly
-  PC #(.D(D)) 					  // D sets program counter width
-     pc1 (.reset            ,
-         .clk              ,
-		 .reljump_en (relj),
-		 .absjump_en (absj),
-		 .target           ,
-		 .prog_ctr          );
 
-// lookup table to facilitate jumps/branches
-  PC_LUT #(.D(D))
-    pl1 (.addr  (how_high),
-         .target          );   
+// Bit width specification variables - Program Counter (Instruction Memory size), ALU Commands (ALU Operation Set size)
+parameter	D = 12,							// Program Counter width
+				A = 3;							// ALU Command bit width
 
-// contains machine code
-  instr_ROM ir1(.prog_ctr,
-               .mach_code);
+// Program Counter input wires
+wire[D-1:0]	prog_ctr,						// Program Counter
+				target;							// Target Instruction to jump/branch to
+wire  		relj,								// Relative Jump enable
+				absj;								// Absolute Jump enable
 
-// control decoder
-  Control ctl1(.instr(),
-  .RegDst  (), 
-  .Branch  (relj)  , 
-  .MemWrite , 
-  .ALUSrc   , 
-  .RegWrite   ,     
-  .MemtoReg(),
-  .ALUOp());
+// Register File input wires
+wire[8:0]   mach_code;          			// Instruction to execute (9-bit)
+wire[2:0] 	rd_addrA, rd_adrB;   		// Read address 1, Read address 2
 
-  assign rd_addrA = mach_code[2:0];
-  assign rd_addrB = mach_code[5:3];
-  assign alu_cmd  = mach_code[8:6];
+//	ALU input and output wires
+wire[7:0]   datA, datB,						// Read data 1, Read data 2
+				immed,							// Immediate (in MIPS but not ours)
+				muxB,								// Mux - Between Read data 2 and Immediate
+				rslt;								// ALU result
+wire[A-1:0] alu_cmd;							// ALU Operation
 
-  reg_file #(.pw(3)) rf1(.dat_in(regfile_dat),	   // loads, most ops
-              .clk         ,
-              .wr_en   (RegWrite),
-              .rd_addrA(rd_addrA),
-              .rd_addrB(rd_addrB),
-              .wr_addr (rd_addrB),      // in place operation
-              .datA_out(datA),
-              .datB_out(datB)); 
+// ALU bit flags
+logic 		sc_in,							// Shift/Carry In/Out flag
+				pariQ,              	  		// Registered Parity flag
+				zeroQ;                    	// Registered Zero flag 
 
-  assign muxB = ALUSrc? immed : datB;
+// ALU bit flags enable signals?
+wire  		pari,
+				zero,
+				sc_clr,							// Shift/Carry In/Out clear signal
+				sc_en,							// Shift/Carry In/Out enable signal
 
-  alu alu1(.alu_cmd(),
-         .inA    (datA),
-		 .inB    (muxB),
-		 .sc_i   (sc),   // output from sc register
-		 .rslt       ,
-		 .sc_o   (sc_o), // input to sc register
-		 .pari  );  
+// Control Signals
+wire  		RegWrite;						// Register Write Control Signal
+				MemWrite,						// Memory Write Control Signal
+				ALUSrc;		              	// ALU Source Control Signal
 
-  dat_mem dm1(.dat_in(datB)  ,  // from reg_file
-             .clk           ,
-			 .wr_en  (MemWrite), // stores
-			 .addr   (datA),
-             .dat_out());
+// MODULE INSTANTIATIONS
 
-// registered flags from ALU
-  always_ff @(posedge clk) begin
-    pariQ <= pari;
+// Program Counter
+PC #(.D(D)) 					  // D sets Program Counter width
+	pc1 (
+		.reset					,
+		.clk						,
+		.reljump_en (relj)	,
+		.absjump_en (absj)	,
+		.target					,
+		.prog_ctr
+	);
+
+// Program Counter Lookup Table
+PC_LUT #(.D(D))
+	pl1 (
+		.addr  (how_high),					// wtf is how_high???
+		.target
+	);   
+
+// Instruction ROM (Read-Only Memory)
+instr_ROM
+	ir1(
+		.prog_ctr,
+		.mach_code
+	);
+
+// Control Decoder
+Control
+	ctl1(
+		.instr		(),
+		.RegDst  	(), 
+		.Branch  	(relj), 
+		.MemWrite	, 
+		.ALUSrc		, 
+		.RegWrite	,     
+		.MemtoReg	(),
+		.ALUOp		()
+	);
+
+// Instruction decoding prior to Register File
+assign rd_addrA = mach_code[2:0];
+assign rd_addrB = mach_code[5:3];
+assign alu_cmd  = mach_code[8:6];
+
+// Register File
+reg_file #(.pw(3))						// Register Pointer width - 3 for 8 registers
+	rf1(
+		.clk,
+		.rd_addrA	(rd_addrA),
+		.rd_addrB	(rd_addrB),
+		.wr_addr 	(rd_addrB),
+		.wr_en   	(RegWrite),
+		.dat_in		(regfile_dat),
+		.datA_out	(datA),
+		.datB_out	(datB)
+	); 
+
+// Mux B logic
+assign muxB = ALUSrc? immed : datB;
+
+// ALU
+alu
+	alu1(
+		.alu_cmd(),
+		.inA    (datA),
+		.inB    (muxB),
+		.sc_i   (sc),
+		.rslt       ,
+		.sc_o   (sc_o),
+		.pari
+	);
+
+// Data Memory
+dat_mem
+	dm1(
+		.dat_in	(datB),  // from reg_file
+		.clk		,
+		.wr_en	(MemWrite), // stores
+		.addr		(datA),
+		.dat_out	()
+	);
+
+// ALU bit flags update logic
+always_ff @(posedge clk) begin
+	pariQ <= pari;
 	zeroQ <= zero;
-    if(sc_clr)
-	  sc_in <= 'b0;
-    else if(sc_en)
-      sc_in <= sc_o;
-  end
+	if(sc_clr)
+		sc_in <= 'b0;
+	else if(sc_en)
+		sc_in <= sc_o;
+end
 
-  assign done = prog_ctr == 128;
+// TERMINATE ALL TESTS WHEN DONE
+assign done = prog_ctr == 128;
  
 endmodule
