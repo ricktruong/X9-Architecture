@@ -1,0 +1,13 @@
+# Ignore all files in db directory
+db/*
+
+# Ignore all files in incremental_db directory
+incremental_db/*
+
+# Ignore all files in output_files directory
+
+# Ignore all .qsf files
+*.qsf
+
+# Ignore all .qws files
+*.qws
