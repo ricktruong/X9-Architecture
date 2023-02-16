@@ -33,10 +33,10 @@ logic 		sc_in,							// Shift/Carry In/Out flag
 wire  		pari,
 				zero,
 				sc_clr,							// Shift/Carry In/Out clear signal
-				sc_en,							// Shift/Carry In/Out enable signal
+				sc_en;							// Shift/Carry In/Out enable signal
 
 // Control Signals
-wire  		RegWrite;						// Register Write Control Signal
+wire  		RegWrite,						// Register Write Control Signal
 				MemWrite,						// Memory Write Control Signal
 				ALUSrc;		              	// ALU Source Control Signal
 

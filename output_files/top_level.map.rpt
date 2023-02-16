@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_level
-Wed Feb 15 23:08:46 2023
+Thu Feb 16 02:03:36 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -56,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status       ; Successful - Wed Feb 15 23:08:46 2023       ;
+; Analysis & Synthesis Status       ; Successful - Thu Feb 16 02:03:36 2023       ;
 ; Quartus Prime Version             ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                     ; top_level                                   ;
 ; Top-level Entity Name             ; top_level                                   ;
@@ -363,10 +363,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------+--------------+
 ; Port           ; Type  ; Severity ; Details      ;
 +----------------+-------+----------+--------------+
-; dat_in         ; Input ; Info     ; Stuck at GND ;
 ; rd_addrA[3]    ; Input ; Info     ; Stuck at GND ;
 ; rd_addrB[3..1] ; Input ; Info     ; Stuck at GND ;
 ; wr_addr[3..1]  ; Input ; Info     ; Stuck at GND ;
+; dat_in         ; Input ; Info     ; Stuck at GND ;
 +----------------+-------+----------+--------------+
 
 
@@ -444,7 +444,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Wed Feb 15 23:08:38 2023
+    Info: Processing started: Thu Feb 16 02:03:29 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top_level -c top_level
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -454,52 +454,51 @@ Info (12021): Found 1 design units, including 1 entities, in source file reg_fil
     Info (12023): Found entity 1: reg_file File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/reg_file.sv Line: 3
 Info (12021): Found 0 design units, including 0 entities, in source file prog3.sv
 Info (12021): Found 1 design units, including 1 entities, in source file pc_lut.sv
-    Info (12023): Found entity 1: PC_LUT File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC_LUT.sv Line: 1
+    Info (12023): Found entity 1: PC_LUT File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC_LUT.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file pc.sv
     Info (12023): Found entity 1: PC File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file instr_rom.sv
-    Info (12023): Found entity 1: instr_ROM File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv Line: 4
+    Info (12023): Found entity 1: instr_ROM File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file dat_mem.sv
-    Info (12023): Found entity 1: dat_mem File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/dat_mem.sv Line: 2
+    Info (12023): Found entity 1: dat_mem File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/dat_mem.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file control.sv
     Info (12023): Found entity 1: Control File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/Control.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: alu File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/alu.sv Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(32): created implicit net for "absj" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 32
-Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(38): created implicit net for "how_high" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 38
-Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(56): created implicit net for "rd_addrB" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 56
-Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(59): created implicit net for "regfile_dat" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 59
-Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(73): created implicit net for "sc" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 73
-Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(75): created implicit net for "sc_o" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 75
+    Info (12023): Found entity 1: alu File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/alu.sv Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(59): created implicit net for "how_high" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 59
+Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(85): created implicit net for "rd_addrB" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 85
+Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(96): created implicit net for "regfile_dat" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 96
+Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(110): created implicit net for "sc" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 110
+Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(112): created implicit net for "sc_o" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 112
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Warning (10858): Verilog HDL warning at top_level.sv(13): object immed used but never assigned File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 13
-Warning (10036): Verilog HDL or VHDL warning at top_level.sv(14): object "sc_in" assigned a value but never read File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 14
-Warning (10036): Verilog HDL or VHDL warning at top_level.sv(15): object "pariQ" assigned a value but never read File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 15
-Warning (10036): Verilog HDL or VHDL warning at top_level.sv(16): object "zeroQ" assigned a value but never read File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 16
-Warning (10858): Verilog HDL warning at top_level.sv(19): object zero used but never assigned File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 19
-Warning (10858): Verilog HDL warning at top_level.sv(20): object sc_clr used but never assigned File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 20
-Warning (10858): Verilog HDL warning at top_level.sv(21): object sc_en used but never assigned File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 21
-Warning (10036): Verilog HDL or VHDL warning at top_level.sv(24): object "alu_cmd" assigned a value but never read File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 24
-Warning (10230): Verilog HDL assignment warning at top_level.sv(56): truncated value with size 3 to match size of target (1) File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 56
-Warning (10030): Net "immed" at top_level.sv(13) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 13
-Warning (10030): Net "absj" at top_level.sv(32) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 32
-Warning (10030): Net "how_high" at top_level.sv(38) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 38
-Warning (10030): Net "regfile_dat" at top_level.sv(59) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 59
-Warning (10030): Net "sc" at top_level.sv(73) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 73
-Info (12128): Elaborating entity "PC" for hierarchy "PC:pc1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 34
-Warning (10230): Verilog HDL assignment warning at PC.sv(21): truncated value with size 32 to match size of target (12) File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC.sv Line: 21
-Info (12128): Elaborating entity "PC_LUT" for hierarchy "PC_LUT:pl1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 39
-Warning (10230): Verilog HDL assignment warning at PC_LUT.sv(6): truncated value with size 32 to match size of target (12) File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC_LUT.sv Line: 6
-Info (12128): Elaborating entity "instr_ROM" for hierarchy "instr_ROM:ir1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 43
-Warning (10850): Verilog HDL warning at instr_ROM.sv(10): number of words (20) in memory file does not match the number of elements in the address range [0:4095] File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv Line: 10
-Warning (10030): Net "core.data_a" at instr_ROM.sv(8) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv Line: 8
-Warning (10030): Net "core.waddr_a" at instr_ROM.sv(8) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv Line: 8
-Warning (10030): Net "core.we_a" at instr_ROM.sv(8) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv Line: 8
-Info (12128): Elaborating entity "Control" for hierarchy "Control:ctl1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 53
-Warning (10270): Verilog HDL Case Statement warning at Control.sv(18): incomplete case statement has no default case item File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/Control.sv Line: 18
-Info (12128): Elaborating entity "reg_file" for hierarchy "reg_file:rf1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 66
-Info (12128): Elaborating entity "alu" for hierarchy "alu:alu1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 76
-Info (12128): Elaborating entity "dat_mem" for hierarchy "dat_mem:dm1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 82
+Warning (10858): Verilog HDL warning at top_level.sv(22): object immed used but never assigned File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 22
+Warning (10036): Verilog HDL or VHDL warning at top_level.sv(25): object "alu_cmd" assigned a value but never read File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 25
+Warning (10036): Verilog HDL or VHDL warning at top_level.sv(28): object "sc_in" assigned a value but never read File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 28
+Warning (10036): Verilog HDL or VHDL warning at top_level.sv(29): object "pariQ" assigned a value but never read File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 29
+Warning (10036): Verilog HDL or VHDL warning at top_level.sv(30): object "zeroQ" assigned a value but never read File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 30
+Warning (10858): Verilog HDL warning at top_level.sv(34): object zero used but never assigned File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 34
+Warning (10858): Verilog HDL warning at top_level.sv(35): object sc_clr used but never assigned File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 35
+Warning (10858): Verilog HDL warning at top_level.sv(36): object sc_en used but never assigned File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 36
+Warning (10230): Verilog HDL assignment warning at top_level.sv(85): truncated value with size 3 to match size of target (1) File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 85
+Warning (10030): Net "immed" at top_level.sv(22) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 22
+Warning (10030): Net "how_high" at top_level.sv(59) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 59
+Warning (10030): Net "regfile_dat" at top_level.sv(96) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 96
+Warning (10030): Net "sc" at top_level.sv(110) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 110
+Warning (10030): Net "absj" at top_level.sv(14) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 14
+Info (12128): Elaborating entity "PC" for hierarchy "PC:pc1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 54
+Warning (10230): Verilog HDL assignment warning at PC.sv(27): truncated value with size 32 to match size of target (12) File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC.sv Line: 27
+Info (12128): Elaborating entity "PC_LUT" for hierarchy "PC_LUT:pl1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 61
+Warning (10230): Verilog HDL assignment warning at PC_LUT.sv(11): truncated value with size 32 to match size of target (12) File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC_LUT.sv Line: 11
+Info (12128): Elaborating entity "instr_ROM" for hierarchy "instr_ROM:ir1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 68
+Warning (10850): Verilog HDL warning at instr_ROM.sv(12): number of words (20) in memory file does not match the number of elements in the address range [0:4095] File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv Line: 12
+Warning (10030): Net "core.data_a" at instr_ROM.sv(9) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv Line: 9
+Warning (10030): Net "core.waddr_a" at instr_ROM.sv(9) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv Line: 9
+Warning (10030): Net "core.we_a" at instr_ROM.sv(9) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv Line: 9
+Info (12128): Elaborating entity "Control" for hierarchy "Control:ctl1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 81
+Warning (10270): Verilog HDL Case Statement warning at Control.sv(27): incomplete case statement has no default case item File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/Control.sv Line: 27
+Info (12128): Elaborating entity "reg_file" for hierarchy "reg_file:rf1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 99
+Info (12128): Elaborating entity "alu" for hierarchy "alu:alu1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 114
+Info (12128): Elaborating entity "dat_mem" for hierarchy "dat_mem:dm1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 124
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -510,10 +509,10 @@ Info (21057): Implemented 19 device resources after synthesis - the final resour
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 15 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 4871 megabytes
-    Info: Processing ended: Wed Feb 15 23:08:46 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:16
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 4863 megabytes
+    Info: Processing ended: Thu Feb 16 02:03:36 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:17
 
 
