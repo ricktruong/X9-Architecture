@@ -1,5 +1,5 @@
 Flow report for top_level
-Thu Feb 16 02:03:53 2023
+Thu Feb 16 16:32:21 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Flow Status                       ; Successful - Thu Feb 16 02:03:50 2023       ;
+; Flow Status                       ; Successful - Thu Feb 16 16:32:16 2023       ;
 ; Quartus Prime Version             ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                     ; top_level                                   ;
 ; Top-level Entity Name             ; top_level                                   ;
@@ -71,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/16/2023 02:03:29 ;
+; Start date & time ; 02/16/2023 16:31:43 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; top_level           ;
 +-------------------+---------------------+
@@ -82,7 +82,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 75165843467621.167654180901004         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 66120940250893.167659390304448         ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -95,11 +95,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4863 MB             ; 00:00:17                           ;
-; Fitter               ; 00:00:09     ; 1.0                     ; 5957 MB             ; 00:00:10                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4824 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4929 MB             ; 00:00:02                           ;
-; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:31                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4863 MB             ; 00:00:24                           ;
+; Fitter               ; 00:00:16     ; 1.0                     ; 5958 MB             ; 00:00:17                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4824 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4925 MB             ; 00:00:03                           ;
+; Total                ; 00:00:34     ; --                      ; --                  ; 00:00:46                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
