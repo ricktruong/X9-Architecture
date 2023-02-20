@@ -1,20 +1,20 @@
-Analysis & Synthesis Status : Successful - Thu Feb 16 16:31:54 2023
+Analysis & Synthesis Status : Failed - Sun Feb 19 21:27:48 2023
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : top_level
 Top-level Entity Name : top_level
 Family : Arria II GX
-Logic utilization : N/A
-    Combinational ALUTs : 15
-    Memory ALUTs : 0
-    Dedicated logic registers : 12
-Total registers : 12
-Total pins : 4
-Total virtual pins : 0
-Total block memory bits : 0
-DSP block 18-bit elements : 0
-Total GXB Receiver Channel PCS : 0
-Total GXB Receiver Channel PMA : 0
-Total GXB Transmitter Channel PCS : 0
-Total GXB Transmitter Channel PMA : 0
-Total PLLs : 0
-Total DLLs : 0
+Logic utilization : N/A until Partition Merge
+    Combinational ALUTs : N/A until Partition Merge
+    Memory ALUTs : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total block memory bits : N/A until Partition Merge
+DSP block 18-bit elements : N/A until Partition Merge
+Total GXB Receiver Channel PCS : N/A until Partition Merge
+Total GXB Receiver Channel PMA : N/A until Partition Merge
+Total GXB Transmitter Channel PCS : N/A until Partition Merge
+Total GXB Transmitter Channel PMA : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge
+Total DLLs : N/A until Partition Merge

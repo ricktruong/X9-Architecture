@@ -19,27 +19,40 @@ always_comb begin
 	pari = ^rslt;
 	
 	case (alu_cmd)
-		3'b000: // add 2 8-bit unsigned; automatically makes carry-out
-			{sc_o,rslt} = inA + inB + sc_i;
-		3'b001: // left_shift
-			{sc_o,rslt} = {inA, sc_i};
-			/*begin
-			rslt[7:1] = ina[6:0];
-			rslt[0]   = sc_i;
-			sc_o      = ina[7];
-			end*/
-		3'b010: // right shift (alternative syntax -- works like left shift
-			{rslt,sc_o} = {sc_i,inA};
-		3'b011: // bitwise XOR
+	
+		4'b0000: //add
+			rslt = inA + inB;
+		4'b0001: // sub
+			rslt = inA - inB;
+		4'b0010: // addi
+			rslt = inA + inB;
+		4'b0011: // lb
+			rslt = inB;
+		4'b0100: //sb
+			rslt = inB;
+		4'b0101: //beq <-- movr
+			rslt = inB;
+		4'b0110: //bne <-- movi
+			rslt = rslt;
+		4'b0111: //nor
+			rslt = !(inA | inB);
+		4'b1000: //xor
 			rslt = inA ^ inB;
-		3'b100: // bitwise AND (mask)
+		4'b1001: // and
 			rslt = inA & inB;
-		3'b101: // left rotate
-			rslt = {inA[6:0],inA[7]};
-		3'b110: // subtract
-			{sc_o,rslt} = inA - inB + sc_i;
-		3'b111: // pass A
-			rslt = inA;
+		4'b1010: // or
+			rslt = inA | inB;
+		4'b1011: // sll
+			rslt = inA << inB;
+		4'b1100: // slr
+			rslt = inB >>inB;
+		4'b1101: //eq
+			rslt = (inA == inB);
+		4'b1110: //lt
+			rslt = (inA < inB);
+		4'b1111: //rxor
+			rslt = ^inB;
+
 	endcase
 	
 end

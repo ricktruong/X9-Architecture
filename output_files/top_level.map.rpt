@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_level
-Thu Feb 16 16:31:54 2023
+Sun Feb 19 21:27:48 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -10,26 +10,7 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |top_level
- 10. Parameter Settings for User Entity Instance: PC:pc1
- 11. Parameter Settings for User Entity Instance: PC_LUT:pl1
- 12. Parameter Settings for User Entity Instance: instr_ROM:ir1
- 13. Parameter Settings for User Entity Instance: Control:ctl1
- 14. Parameter Settings for User Entity Instance: reg_file:rf1
- 15. Port Connectivity Checks: "dat_mem:dm1"
- 16. Port Connectivity Checks: "alu:alu1"
- 17. Port Connectivity Checks: "reg_file:rf1"
- 18. Port Connectivity Checks: "Control:ctl1"
- 19. Port Connectivity Checks: "instr_ROM:ir1"
- 20. Port Connectivity Checks: "PC_LUT:pl1"
- 21. Port Connectivity Checks: "PC:pc1"
- 22. Post-Synthesis Netlist Statistics for Top Partition
- 23. Elapsed Time Per Partition
- 24. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -56,26 +37,26 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status       ; Successful - Thu Feb 16 16:31:54 2023       ;
+; Analysis & Synthesis Status       ; Failed - Sun Feb 19 21:27:48 2023           ;
 ; Quartus Prime Version             ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                     ; top_level                                   ;
 ; Top-level Entity Name             ; top_level                                   ;
 ; Family                            ; Arria II GX                                 ;
-; Logic utilization                 ; N/A                                         ;
-;     Combinational ALUTs           ; 15                                          ;
-;     Memory ALUTs                  ; 0                                           ;
-;     Dedicated logic registers     ; 12                                          ;
-; Total registers                   ; 12                                          ;
-; Total pins                        ; 4                                           ;
-; Total virtual pins                ; 0                                           ;
-; Total block memory bits           ; 0                                           ;
-; DSP block 18-bit elements         ; 0                                           ;
-; Total GXB Receiver Channel PCS    ; 0                                           ;
-; Total GXB Receiver Channel PMA    ; 0                                           ;
-; Total GXB Transmitter Channel PCS ; 0                                           ;
-; Total GXB Transmitter Channel PMA ; 0                                           ;
-; Total PLLs                        ; 0                                           ;
-; Total DLLs                        ; 0                                           ;
+; Logic utilization                 ; N/A until Partition Merge                   ;
+;     Combinational ALUTs           ; N/A until Partition Merge                   ;
+;     Memory ALUTs                  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers     ; N/A until Partition Merge                   ;
+; Total registers                   ; N/A until Partition Merge                   ;
+; Total pins                        ; N/A until Partition Merge                   ;
+; Total virtual pins                ; N/A until Partition Merge                   ;
+; Total block memory bits           ; N/A until Partition Merge                   ;
+; DSP block 18-bit elements         ; N/A until Partition Merge                   ;
+; Total GXB Receiver Channel PCS    ; N/A until Partition Merge                   ;
+; Total GXB Receiver Channel PMA    ; N/A until Partition Merge                   ;
+; Total GXB Transmitter Channel PCS ; N/A until Partition Merge                   ;
+; Total GXB Transmitter Channel PMA ; N/A until Partition Merge                   ;
+; Total PLLs                        ; N/A until Partition Merge                   ;
+; Total DLLs                        ; N/A until Partition Merge                   ;
 +-----------------------------------+---------------------------------------------+
 
 
@@ -174,268 +155,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
-; top_level.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv  ;         ;
-; reg_file.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/reg_file.sv   ;         ;
-; PC_LUT.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC_LUT.sv     ;         ;
-; PC.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC.sv         ;         ;
-; instr_ROM.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv  ;         ;
-; dat_mem.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/dat_mem.sv    ;         ;
-; Control.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/Control.sv    ;         ;
-; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/alu.sv        ;         ;
-; mach_code.txt                    ; yes             ; Auto-Found File              ; C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/mach_code.txt ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+-----------------------------------------------+-----------+
-; Resource                                      ; Usage     ;
-+-----------------------------------------------+-----------+
-; Estimated ALUTs Used                          ; 15        ;
-;     -- Combinational ALUTs                    ; 15        ;
-;     -- Memory ALUTs                           ; 0         ;
-;     -- LUT_REGs                               ; 0         ;
-; Dedicated logic registers                     ; 12        ;
-;                                               ;           ;
-; Estimated ALUTs Unavailable                   ; 0         ;
-;     -- Due to unpartnered combinational logic ; 0         ;
-;     -- Due to Memory ALUTs                    ; 0         ;
-;                                               ;           ;
-; Total combinational functions                 ; 15        ;
-; Combinational ALUT usage by number of inputs  ;           ;
-;     -- 7 input functions                      ; 0         ;
-;     -- 6 input functions                      ; 0         ;
-;     -- 5 input functions                      ; 2         ;
-;     -- 4 input functions                      ; 1         ;
-;     -- <=3 input functions                    ; 12        ;
-;                                               ;           ;
-; Combinational ALUTs by mode                   ;           ;
-;     -- normal mode                            ; 3         ;
-;     -- extended LUT mode                      ; 0         ;
-;     -- arithmetic mode                        ; 12        ;
-;     -- shared arithmetic mode                 ; 0         ;
-;                                               ;           ;
-; Estimated ALUT/register pairs used            ; 15        ;
-;                                               ;           ;
-; Total registers                               ; 12        ;
-;     -- Dedicated logic registers              ; 12        ;
-;     -- I/O registers                          ; 0         ;
-;     -- LUT_REGs                               ; 0         ;
-;                                               ;           ;
-;                                               ;           ;
-; I/O pins                                      ; 4         ;
-;                                               ;           ;
-; DSP block 18-bit elements                     ; 0         ;
-;                                               ;           ;
-; Maximum fan-out node                          ; clk~input ;
-; Maximum fan-out                               ; 12        ;
-; Total fan-out                                 ; 78        ;
-; Average fan-out                               ; 2.23      ;
-+-----------------------------------------------+-----------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
-; |top_level                 ; 15 (3)              ; 12 (0)                    ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 4    ; 0            ; |top_level          ; top_level   ; work         ;
-;    |PC:pc1|                ; 12 (12)             ; 12 (12)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |top_level|PC:pc1   ; PC          ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 12    ;
-; Number of registers using Synchronous Clear  ; 12    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |top_level ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; D              ; 12    ; Signed Integer                                   ;
-; A              ; 3     ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Parameter Settings for User Entity Instance: PC:pc1 ;
-+----------------+-------+----------------------------+
-; Parameter Name ; Value ; Type                       ;
-+----------------+-------+----------------------------+
-; D              ; 12    ; Signed Integer             ;
-+----------------+-------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PC_LUT:pl1 ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; D              ; 12    ; Signed Integer                 ;
-+----------------+-------+--------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: instr_ROM:ir1 ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; D              ; 12    ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Control:ctl1 ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; opwidth        ; 3     ; Signed Integer                   ;
-; mcodebits      ; 4     ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: reg_file:rf1 ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; pw             ; 3     ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------+
-; Port Connectivity Checks: "dat_mem:dm1"              ;
-+---------+--------+----------+------------------------+
-; Port    ; Type   ; Severity ; Details                ;
-+---------+--------+----------+------------------------+
-; dat_out ; Output ; Info     ; Explicitly unconnected ;
-+---------+--------+----------+------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "alu:alu1"                                                                                                   ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; alu_cmd ; Input  ; Info     ; Explicitly unconnected                                                                                   ;
-; sc_i    ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; rslt    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; sc_o    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; pari    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; zero    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------+
-; Port Connectivity Checks: "reg_file:rf1"         ;
-+----------------+-------+----------+--------------+
-; Port           ; Type  ; Severity ; Details      ;
-+----------------+-------+----------+--------------+
-; rd_addrA[3]    ; Input ; Info     ; Stuck at GND ;
-; rd_addrB[3..1] ; Input ; Info     ; Stuck at GND ;
-; wr_addr[3..1]  ; Input ; Info     ; Stuck at GND ;
-; dat_in         ; Input ; Info     ; Stuck at GND ;
-+----------------+-------+----------+--------------+
-
-
-+-------------------------------------------------------+
-; Port Connectivity Checks: "Control:ctl1"              ;
-+----------+--------+----------+------------------------+
-; Port     ; Type   ; Severity ; Details                ;
-+----------+--------+----------+------------------------+
-; instr    ; Input  ; Info     ; Explicitly unconnected ;
-; RegDst   ; Output ; Info     ; Explicitly unconnected ;
-; MemtoReg ; Output ; Info     ; Explicitly unconnected ;
-; ALUOp    ; Output ; Info     ; Explicitly unconnected ;
-+----------+--------+----------+------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "instr_ROM:ir1"                                                                                 ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port            ; Type   ; Severity ; Details                                                                             ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-; mach_code[8..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------+
-; Port Connectivity Checks: "PC_LUT:pl1" ;
-+------+-------+----------+--------------+
-; Port ; Type  ; Severity ; Details      ;
-+------+-------+----------+--------------+
-; addr ; Input ; Info     ; Stuck at GND ;
-+------+-------+----------+--------------+
-
-
-+----------------------------------------------+
-; Port Connectivity Checks: "PC:pc1"           ;
-+------------+-------+----------+--------------+
-; Port       ; Type  ; Severity ; Details      ;
-+------------+-------+----------+--------------+
-; absjump_en ; Input ; Info     ; Stuck at GND ;
-+------------+-------+----------+--------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriaii_ff            ; 12                          ;
-;     SCLR              ; 12                          ;
-; boundary_port         ; 4                           ;
-; stratixiv_lcell_comb  ; 15                          ;
-;     arith             ; 12                          ;
-;         1 data inputs ; 12                          ;
-;     normal            ; 3                           ;
-;         4 data inputs ; 1                           ;
-;         5 data inputs ; 2                           ;
-;                       ;                             ;
-; Max LUT depth         ; 2.10                        ;
-; Average LUT depth     ; 1.74                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -444,7 +168,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu Feb 16 16:31:42 2023
+    Info: Processing started: Sun Feb 19 21:27:42 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top_level -c top_level
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -479,40 +203,12 @@ Warning (10036): Verilog HDL or VHDL warning at top_level.sv(30): object "zeroQ"
 Warning (10858): Verilog HDL warning at top_level.sv(34): object zero used but never assigned File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 34
 Warning (10858): Verilog HDL warning at top_level.sv(35): object sc_clr used but never assigned File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 35
 Warning (10858): Verilog HDL warning at top_level.sv(36): object sc_en used but never assigned File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 36
-Warning (10230): Verilog HDL assignment warning at top_level.sv(85): truncated value with size 3 to match size of target (1) File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 85
-Warning (10030): Net "immed" at top_level.sv(22) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 22
-Warning (10030): Net "how_high" at top_level.sv(59) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 59
-Warning (10030): Net "regfile_dat" at top_level.sv(96) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 96
-Warning (10030): Net "sc" at top_level.sv(110) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 110
-Warning (10030): Net "absj" at top_level.sv(14) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 14
-Info (12128): Elaborating entity "PC" for hierarchy "PC:pc1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 54
-Warning (10230): Verilog HDL assignment warning at PC.sv(27): truncated value with size 32 to match size of target (12) File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC.sv Line: 27
-Info (12128): Elaborating entity "PC_LUT" for hierarchy "PC_LUT:pl1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 61
-Warning (10230): Verilog HDL assignment warning at PC_LUT.sv(11): truncated value with size 32 to match size of target (12) File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC_LUT.sv Line: 11
-Info (12128): Elaborating entity "instr_ROM" for hierarchy "instr_ROM:ir1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 68
-Warning (10850): Verilog HDL warning at instr_ROM.sv(12): number of words (20) in memory file does not match the number of elements in the address range [0:4095] File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv Line: 12
-Warning (10030): Net "core.data_a" at instr_ROM.sv(9) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv Line: 9
-Warning (10030): Net "core.waddr_a" at instr_ROM.sv(9) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv Line: 9
-Warning (10030): Net "core.we_a" at instr_ROM.sv(9) has no driver or initial value, using a default initial value '0' File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv Line: 9
-Info (12128): Elaborating entity "Control" for hierarchy "Control:ctl1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 81
-Warning (10270): Verilog HDL Case Statement warning at Control.sv(27): incomplete case statement has no default case item File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/Control.sv Line: 27
-Info (12128): Elaborating entity "reg_file" for hierarchy "reg_file:rf1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 99
-Info (12128): Elaborating entity "alu" for hierarchy "alu:alu1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 114
-Info (12128): Elaborating entity "dat_mem" for hierarchy "dat_mem:dm1" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 124
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "req" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 3
-Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 15 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 4863 megabytes
-    Info: Processing ended: Thu Feb 16 16:31:54 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:24
+Error (10052): Verilog HDL error at top_level.sv(74): can't find port "RegDst" File: C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv Line: 74
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 14 warnings
+    Error: Peak virtual memory: 4786 megabytes
+    Error: Processing ended: Sun Feb 19 21:27:48 2023
+    Error: Elapsed time: 00:00:06
+    Error: Total CPU time (on all processors): 00:00:15
 
 
