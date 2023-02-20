@@ -15,12 +15,18 @@ wire  		relj,								// Relative Jump enable
 
 // Register File input wires
 wire[8:0]   mach_code;          			// Instruction to execute (9-bit)
-wire[2:0] 	rd_addrA, rd_adrB;   		// Read address 1, Read address 2
+wire[2:0] 	rd_addrA, rd_addrB,
+				rs_addrA, rt_addrB,// Read address 1, Read address 2
+				id_addrA,id_addrB,
+				instType;
+wire[3:0] helper = 4'b0000;
 
 //	ALU input and output wires
 wire[7:0]   datA, datB,						// Read data 1, Read data 2
 				immed,							// Immediate (in MIPS but not ours)
-				muxB,								// Mux - Between Read data 2 and Immediate
+				muxB,
+				memdat,// Mux - Between Read data 2 and Immediate
+				muxfin,
 				rslt;								// ALU result
 wire[A-1:0] alu_cmd;							// ALU Operation
 
@@ -38,7 +44,8 @@ wire  		pari,
 // Control Signals
 wire  		RegWrite,						// Register Write Control Signal
 				MemWrite,						// Memory Write Control Signal
-				ALUSrc;		              	// ALU Source Control Signal
+				ALUSrc,		              	// ALU Source Control Signal
+				MemtoReg;
 
 // MODULE INSTANTIATIONS
 
@@ -71,7 +78,7 @@ instr_ROM
 Control
 	ctl1(
 		.instr		(),
-		.RegDst  	(), 
+		.instType  	(instType), 
 		.Branch  	(relj), 
 		.MemWrite	, 
 		.ALUSrc		, 
@@ -81,9 +88,18 @@ Control
 	);
 
 // Instruction decoding prior to Register File
-assign rd_addrA = mach_code[2:0];
-assign rd_addrB = mach_code[5:3];
+assign rs_addrA = {1'b0,mach_code[3:2]};
+assign id_addrA = mach_code[6:4];
+assign rt_addrB = {1'b1,mach_code[1:0]};
+assign id_addrB = mach_code[3:1];
+assign immed = {helper, mach_code[3:0]};
+
 assign alu_cmd  = mach_code[8:6];
+
+
+mux_using_assign_rs #(.N(2)) rsmux (.ibits (id-addrA),.rbits (rs-addrA) ,.sel (instType[1]),.mux_out (rd_addrA));
+mux_using_assign_rs #(.N(2)) rdmux  (.ibits (id-addrB),.rbits (rt-addrB) ,.sel (instType[1]),.mux_out (rd_addrB));
+mux_using_assign_rs #(.N(7)) regdatamux (.ibits (immed), .rbits(muxfin) ,.sel (instType[0]),.mux_out (regfile_dat));
 
 // Register File
 reg_file #(.pw(3))						// Register Pointer width - 3 for 8 registers
@@ -91,7 +107,7 @@ reg_file #(.pw(3))						// Register Pointer width - 3 for 8 registers
 		.clk,
 		.rd_addrA	(rd_addrA),
 		.rd_addrB	(rd_addrB),
-		.wr_addr 	(rd_addrB),
+		.wr_addr 	(rd_addrA),
 		.wr_en   	(RegWrite),
 		.dat_in		(regfile_dat),
 		.datA_out	(datA),
@@ -120,8 +136,10 @@ dat_mem
 		.clk		,
 		.wr_en	(MemWrite), // stores
 		.addr		(datA),
-		.dat_out	()
+		.dat_out	(memdat)
 	);
+
+mux_using_assign_rs #(.N(7)) (.ibits (memdat),.rbits (rslt), .sel (MemtoReg), .mux_out (muxfin));
 
 // ALU bit flags update logic
 always_ff @(posedge clk) begin
