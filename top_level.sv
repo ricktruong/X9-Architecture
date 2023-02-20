@@ -78,7 +78,7 @@ instr_ROM
 Control
 	ctl1(
 		.instr		(),
-		.instType  	(instType), 
+		.InstType  	(InstType), 
 		.Branch  	(relj), 
 		.MemWrite	, 
 		.ALUSrc		, 

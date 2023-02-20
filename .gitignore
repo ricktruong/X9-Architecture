@@ -11,7 +11,43 @@ output
 output/*
 
 # Ignore all .qsf files
-*.qsf
+*.qsf*
 
 # Ignore all .qws files
-*.qws
+*.qws*
+
+# Igrnore all .qpf files
+*.qpf*
+
+# Ignore all .flow files
+*.flow*
+
+# Ignore all .map files
+*.map*
+
+# Ignore all .fit files
+*.fit*
+
+# Ignore all .jdi files
+*.jdi*
+
+# Ignore all .done files
+*.done*
+
+# Ignore all .asm files
+*.asm*
+
+# Ignore all .pin files
+*.pin*
+
+# Ignore all .sld files
+*.sof*
+
+# Ignore all .sta files
+*.sta*
+
+# Ignore all .bak files
+*.bak*
+
+# Ignore all .rpt files
+*.rpt*
