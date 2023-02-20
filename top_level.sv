@@ -17,8 +17,8 @@ wire  		relj,								// Relative Jump enable
 wire[8:0]   mach_code;          			// Instruction to execute (9-bit)
 wire[2:0] 	rd_addrA, rd_addrB,
 				rs_addrA, rt_addrB,// Read address 1, Read address 2
-				id_addrA,id_addrB,
-				instType;
+				id_addrA,id_addrB;
+wire[1:0]	InstType;
 wire[3:0] helper = 4'b0000;
 
 //	ALU input and output wires
@@ -46,6 +46,7 @@ wire  		RegWrite,						// Register Write Control Signal
 				MemWrite,						// Memory Write Control Signal
 				ALUSrc,		              	// ALU Source Control Signal
 				MemtoReg;
+wire[2:0] 		ALUOp;
 
 // MODULE INSTANTIATIONS
 
@@ -77,14 +78,14 @@ instr_ROM
 // Control Decoder
 Control
 	ctl1(
-		.instr		(),
-		.InstType  	(InstType), 
+		.instr		(mach_code),
+		.InstType  	, 
 		.Branch  	(relj), 
 		.MemWrite	, 
 		.ALUSrc		, 
 		.RegWrite	,     
-		.MemtoReg	(),
-		.ALUOp		()
+		.MemtoReg	,
+		.ALUOp		
 	);
 
 // Instruction decoding prior to Register File
@@ -94,12 +95,12 @@ assign rt_addrB = {1'b1,mach_code[1:0]};
 assign id_addrB = mach_code[3:1];
 assign immed = {helper, mach_code[3:0]};
 
-assign alu_cmd  = mach_code[8:6];
+//assign alu_cmd  = mach_code[8:6];
 
 
-mux_using_assign_rs #(.N(2)) rsmux (.ibits (id-addrA),.rbits (rs-addrA) ,.sel (instType[1]),.mux_out (rd_addrA));
-mux_using_assign_rs #(.N(2)) rdmux  (.ibits (id-addrB),.rbits (rt-addrB) ,.sel (instType[1]),.mux_out (rd_addrB));
-mux_using_assign_rs #(.N(7)) regdatamux (.ibits (immed), .rbits(muxfin) ,.sel (instType[0]),.mux_out (regfile_dat));
+mux_using_assign_rs #(.N(2)) rsmux (.ibits (id-addrA),.rbits (rs-addrA) ,.sel (InstType[1]),.mux_out (rd_addrA));
+mux_using_assign_rs #(.N(2)) rdmux  (.ibits (id-addrB),.rbits (rt-addrB) ,.sel (InstType[1]),.mux_out (rd_addrB));
+mux_using_assign_rs #(.N(7)) regdatamux (.ibits (immed), .rbits (muxfin) ,.sel (InstType[0]),.mux_out (regfile_dat));
 
 // Register File
 reg_file #(.pw(3))						// Register Pointer width - 3 for 8 registers
@@ -120,7 +121,7 @@ assign muxB = ALUSrc? immed : datB;
 // ALU
 alu
 	alu1(
-		.alu_cmd(),
+		.alu_cmd(ALUOp),
 		.inA    (datA),
 		.inB    (muxB),
 		.sc_i   (sc),

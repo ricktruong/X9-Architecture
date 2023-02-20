@@ -1,8 +1,8 @@
 // Control Decoder
 module Control #(parameter opwidth = 3, mcodebits = 4) (
   input [mcodebits-1:0]			instr,			// Instruction Opcode
-  output logic						InstType,		// Register Destination
-										Branch,			// Branch
+  output logic[1:0]				InstType,		// Register Destination
+  output logic						Branch,			// Branch
 										MemRead,
 										MemtoReg,		// Memory to Register
 										MemWrite,		// Memory Write
