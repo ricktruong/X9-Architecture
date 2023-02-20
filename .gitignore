@@ -1,10 +1,14 @@
 # Ignore all files in db directory
+db
 db/*
 
 # Ignore all files in incremental_db directory
+incremental_db
 incremental_db/*
 
 # Ignore all files in output_files directory
+output
+output/*
 
 # Ignore all .qsf files
 *.qsf
