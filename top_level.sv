@@ -4,8 +4,8 @@ module top_level(
   output logic done);
 
 // Bit width specification variables - Program Counter (Instruction Memory size), ALU Commands (ALU Operation Set size)
-parameter	D = 12,							// Program Counter width
-				A = 3;							// ALU Command bit width
+parameter	D = 9,							// Program Counter width
+				A = 4;							// ALU Command bit width
 
 // Program Counter input wires
 wire[D-1:0]	prog_ctr,						// Program Counter
