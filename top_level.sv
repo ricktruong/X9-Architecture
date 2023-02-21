@@ -12,6 +12,7 @@ wire[D-1:0]	prog_ctr,						// Program Counter
 				target;							// Target Instruction to jump/branch to
 wire  		relj,								// Relative Jump enable
 				absj;								// Absolute Jump enable
+wire[D-1-8:0]	target_helper = 4'b0000;	// Bit fill helper for target instruction
 
 // Register File input wires
 wire[8:0]   mach_code;          			// Instruction to execute (9-bit)
@@ -54,11 +55,11 @@ wire[3:0] 		ALUOp;
 // Program Counter
 PC #(.D(D)) 					  // D sets Program Counter width
 	pc1 (
-		.reset					,
-		.clk						,
-		.reljump_en (relj)	,
-		.absjump_en (absj)	,
-		.target					,
+		.reset										,
+		.clk											,
+		.reljump_en (relj && zeroQ)						,
+		.absjump_en (absj)						,
+		.target		({target_helper, datb})	,
 		.prog_ctr
 	);
 
@@ -82,7 +83,7 @@ Control
 		.instr		(mach_code),
 		.InstType  	, 
 		.Branch  	(relj), 
-		.MemWrite	, 
+		.MemWrite	,
 		.ALUSrc		, 
 		.RegWrite	,     
 		.MemtoReg	,
@@ -95,7 +96,7 @@ assign id_addrA = mach_code[6:4];
 assign rt_addrB = {1'b1,mach_code[1:0]};
 assign id_addrB = mach_code[3:1];
 assign immed = {helper, mach_code[3:0]};
-assign immedB = {helperB,mach_code[1:0]}
+assign immedB = {helperB, mach_code[1:0]};
 
 //assign alu_cmd  = mach_code[8:6];
 
@@ -124,12 +125,13 @@ assign muxB = ALUSrc? datB : immedB;
 alu
 	alu1(
 		.alu_cmd(ALUOp),
-		.inA    (datA),
-		.inB    (muxB),
-		.sc_i   (sc),
-		.rslt       ,
-		.sc_o   (sc_o),
-		.pari
+		.inA    (datA)	,
+		.inB    (muxB)	,
+		.sc_i   (sc)	,
+		.rslt       	,
+		.sc_o   (sc_o)	,
+		.pari				,
+		.zero
 	);
 
 // Data Memory
@@ -148,9 +150,9 @@ mux_using_assign_rs #(.N(7)) (.ibits (memdat),.rbits (rslt), .sel (MemtoReg), .m
 always_ff @(posedge clk) begin
 	pariQ <= pari;
 	zeroQ <= zero;
-	if(sc_clr)
+	if (sc_clr)
 		sc_in <= 'b0;
-	else if(sc_en)
+	else if (sc_en)
 		sc_in <= sc_o;
 end
 

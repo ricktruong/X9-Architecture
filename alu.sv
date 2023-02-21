@@ -20,7 +20,7 @@ always_comb begin
 	
 	case (alu_cmd)
 	
-		4'b0000: //add
+		4'b0000: // add
 			rslt = inA + inB;
 		4'b0001: // sub
 			rslt = inA - inB;
@@ -28,15 +28,15 @@ always_comb begin
 			rslt = inA + inB;
 		4'b0011: // lb
 			rslt = inB;
-		4'b0100: //sb
+		4'b0100: // sb
+			rslt = inB; 
+		4'b0101: // beq <-- movr
 			rslt = inB;
-		4'b0101: //beq <-- movr
-			rslt = inB;
-		4'b0110: //bne <-- movi
+		4'b0110: // bne <-- movi
 			rslt = rslt;
-		4'b0111: //nor
+		4'b0111: // nor
 			rslt = !(inA | inB);
-		4'b1000: //xor
+		4'b1000: // xor
 			rslt = inA ^ inB;
 		4'b1001: // and
 			rslt = inA & inB;
@@ -46,11 +46,11 @@ always_comb begin
 			rslt = inA << inB;
 		4'b1100: // slr
 			rslt = inB >>inB;
-		4'b1101: //eq
+		4'b1101: // eq
 			rslt = (inA == inB);
-		4'b1110: //lt
+		4'b1110: // lt
 			rslt = (inA < inB);
-		4'b1111: //rxor
+		4'b1111: // rxor
 			rslt = ^inB;
 
 	endcase

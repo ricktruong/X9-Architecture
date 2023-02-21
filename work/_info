@@ -1,0 +1,279 @@
+m255
+K4
+z2
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA
+valu
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1676954308
+!i10b 1
+!s100 I7cjQ@n7Ea3H:6Z?<>>5M1
+ID^o]_QkWi73dP`Xz8X2z83
+S1
+R0
+w1676951416
+8C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/alu.sv
+FC:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/alu.sv
+!i122 22
+L0 2 60
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z5 !s108 1676954308.000000
+!s107 C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/alu.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/alu.sv|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vControl
+R1
+R2
+!i10b 1
+!s100 Y;XE<Dh[ISegQ5S2:c?1?2
+I`Nc=6Jl@o4aogkEg4lGMM0
+S1
+R0
+w1676952491
+8C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/Control.sv
+FC:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/Control.sv
+!i122 23
+L0 2 98
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/Control.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/Control.sv|
+!i113 0
+R6
+R7
+n@control
+vdat_mem
+R1
+R2
+!i10b 1
+!s100 9kOA5c_eHcH[7883k6e=n1
+IPnC1flZNPUb_DiU3no<AI3
+S1
+R0
+w1676541370
+8C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/dat_mem.sv
+FC:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/dat_mem.sv
+!i122 24
+L0 3 19
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/dat_mem.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/dat_mem.sv|
+!i113 0
+R6
+R7
+vinstr_ROM
+R1
+R2
+!i10b 1
+!s100 b<X8Y>V6HH2aVgUHNT36J2
+IC=Yc2<f?DR8XkZ^`DJ5h_2
+S1
+R0
+w1676538384
+8C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv
+FC:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv
+!i122 25
+L0 3 15
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/instr_ROM.sv|
+!i113 0
+R6
+R7
+ninstr_@r@o@m
+vmilestone2_quicktest_tb
+R1
+R2
+!i10b 1
+!s100 Hfi_i5i:7k?j?=UEYThOF0
+IHg:cH=d]TmXGS[J_mYL]`0
+S1
+R0
+w1676953244
+8C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/milestone2_quicktest_tb.sv
+FC:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/milestone2_quicktest_tb.sv
+!i122 26
+L0 1 32
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/milestone2_quicktest_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/milestone2_quicktest_tb.sv|
+!i113 0
+R6
+R7
+vmilestone2_simple_tb
+R1
+R2
+!i10b 1
+!s100 SWc035h>f?JDmD:cQ_Lih1
+IhZLL7lk5I>=7>CEiDb2nU1
+S1
+R0
+w1676953538
+8C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/milestone2_simple_tb.sv
+FC:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/milestone2_simple_tb.sv
+!i122 27
+L0 1 30
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/milestone2_simple_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/milestone2_simple_tb.sv|
+!i113 0
+R6
+R7
+vmux_using_assign_rs
+R1
+R2
+!i10b 1
+!s100 SnHEkNbi6hC7U>I9;CD3I1
+IY8W8g==9fHhJUKf1N7Xbk3
+S1
+R0
+w1676890386
+8C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/muxrcompact.sv
+FC:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/muxrcompact.sv
+!i122 28
+L0 7 15
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/muxrcompact.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/muxrcompact.sv|
+!i113 0
+R6
+R7
+vPC
+R1
+R2
+!i10b 1
+!s100 iP8<:fFbPe>E^i=1h3PYX0
+IJH03fXXjN03Dj7IMAf24>0
+S1
+R0
+w1676537809
+8C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC.sv
+FC:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC.sv
+!i122 29
+L0 4 27
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC.sv|
+!i113 0
+R6
+R7
+n@p@c
+vPC_LUT
+R1
+R2
+!i10b 1
+!s100 5F63B5BTe>c1AA?`W@W_>1
+IKF8iKT^Il5I]VXGFSAX]83
+S1
+R0
+w1676538404
+8C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC_LUT.sv
+FC:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC_LUT.sv
+!i122 30
+L0 3 16
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC_LUT.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/PC_LUT.sv|
+!i113 0
+R6
+R7
+n@p@c_@l@u@t
+vreg_file
+R1
+Z8 !s110 1676954309
+!i10b 1
+!s100 IdMQR5eI7mQD@_UnU`J>Y1
+IP2ag:BCT[TH2NefSPPeZI2
+S1
+R0
+w1676943897
+8C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/reg_file.sv
+FC:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/reg_file.sv
+!i122 31
+L0 3 25
+R3
+R4
+r1
+!s85 0
+31
+Z9 !s108 1676954309.000000
+!s107 C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/reg_file.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/reg_file.sv|
+!i113 0
+R6
+R7
+vtop_level
+R1
+R8
+!i10b 1
+!s100 J3JdfOCf[]z?XdoKLLW`b0
+IaCW[IIl;TM@nChQU3O:Qj0
+S1
+R0
+w1676951526
+8C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv
+FC:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv
+!i122 32
+L0 2 161
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/top_level.sv|
+!i113 0
+R6
+R7
