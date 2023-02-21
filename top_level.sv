@@ -101,8 +101,8 @@ assign immedB = {helperB, mach_code[1:0]};
 //assign alu_cmd  = mach_code[8:6];
 
 
-mux_using_assign_rs #(.N(2)) rsmux (.ibits (id-addrA),.rbits (rs-addrA) ,.sel (InstType[1]),.mux_out (rd_addrA));
-mux_using_assign_rs #(.N(2)) rdmux  (.ibits (id-addrB),.rbits (rt-addrB) ,.sel (InstType[1]),.mux_out (rd_addrB));
+mux_using_assign_rs #(.N(2)) rsmux (.ibits (id_addrA),.rbits (rs_addrA) ,.sel (InstType[1]),.mux_out (rd_addrA));
+mux_using_assign_rs #(.N(2)) rdmux  (.ibits (id_addrB),.rbits (rt_addrB) ,.sel (InstType[1]),.mux_out (rd_addrB));
 mux_using_assign_rs #(.N(7)) regdatamux (.ibits (immed), .rbits (muxfin) ,.sel (InstType[0]),.mux_out (regfile_dat));
 
 // Register File
@@ -119,7 +119,7 @@ reg_file #(.pw(3))						// Register Pointer width - 3 for 8 registers
 	); 
 
 // Mux B logic
-assign muxB = ALUSrc? datB : immedB;
+assign muxB = ALUSrc ? datB : immedB;
 
 // ALU
 alu
@@ -130,7 +130,7 @@ alu
 		.sc_i   (sc)	,
 		.rslt       	,
 		.sc_o   (sc_o)	,
-		.pari				,
+		.pari			,
 		.zero
 	);
 
