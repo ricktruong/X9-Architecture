@@ -4,7 +4,7 @@ module top_level(
   output logic done);
 
 // Bit width specification variables - Program Counter (Instruction Memory size), ALU Commands (ALU Operation Set size)
-parameter	D = 9,							// Program Counter width
+parameter	D = 12,							// Program Counter width
 				A = 4;							// ALU Command bit width
 
 // Program Counter input wires
@@ -20,6 +20,7 @@ wire[2:0] 	rd_addrA, rd_addrB,
 				id_addrA,id_addrB;
 wire[1:0]	InstType;
 wire[3:0] helper = 4'b0000;
+wire[5:0] helperB = 6'b000000;
 
 //	ALU input and output wires
 wire[7:0]   datA, datB,						// Read data 1, Read data 2
@@ -94,6 +95,7 @@ assign id_addrA = mach_code[6:4];
 assign rt_addrB = {1'b1,mach_code[1:0]};
 assign id_addrB = mach_code[3:1];
 assign immed = {helper, mach_code[3:0]};
+assign immedB = {helperB,mach_code[1:0]}
 
 //assign alu_cmd  = mach_code[8:6];
 
@@ -116,7 +118,7 @@ reg_file #(.pw(3))						// Register Pointer width - 3 for 8 registers
 	); 
 
 // Mux B logic
-assign muxB = ALUSrc? immed : datB;
+assign muxB = ALUSrc? datB : immedB;
 
 // ALU
 alu
