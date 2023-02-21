@@ -133,10 +133,10 @@ alu
 // Data Memory
 dat_mem
 	dm1(
-		.dat_in	(rslt),  // from reg_file
+		.dat_in	(datB),  // from reg_file
 		.clk		,
 		.wr_en	(MemWrite), // stores
-		.addr		(datA),
+		.addr		(rslt),
 		.dat_out	(memdat)
 	);
 
