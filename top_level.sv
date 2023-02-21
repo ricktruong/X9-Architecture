@@ -46,7 +46,7 @@ wire  		RegWrite,						// Register Write Control Signal
 				MemWrite,						// Memory Write Control Signal
 				ALUSrc,		              	// ALU Source Control Signal
 				MemtoReg;
-wire[2:0] 		ALUOp;
+wire[3:0] 		ALUOp;
 
 // MODULE INSTANTIATIONS
 
@@ -133,7 +133,7 @@ alu
 // Data Memory
 dat_mem
 	dm1(
-		.dat_in	(datB),  // from reg_file
+		.dat_in	(rslt),  // from reg_file
 		.clk		,
 		.wr_en	(MemWrite), // stores
 		.addr		(datA),

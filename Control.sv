@@ -1,5 +1,5 @@
 // Control Decoder
-module Control #(parameter opwidth = 3, mcodebits = 4) (
+module Control #(parameter opwidth = 4, mcodebits = 5) (
   input [mcodebits-1:0]			instr,			// Instruction Opcode
   output logic[1:0]				InstType,		// Register Destination
   output logic						Branch,			// Branch
@@ -18,7 +18,7 @@ always_comb begin
 	// Defaults
 	InstType =	'b00;			// 1: not in place  just leave 0
 	Branch	=  'b0;			// 1: branch (jump)
-	MemRead = 'b0;				// 0: read from memory
+	MemRead 	= 	'b0;			// 0: read from memory
 	MemWrite	=	'b0;			// 1: store to memory
 	ALUSrc	=	'b1;			// 1: immediate  0: second reg file output
 	RegWrite	=	'b1;			// 0: for store or no op  1: most other operations 
