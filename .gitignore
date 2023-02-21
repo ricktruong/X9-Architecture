@@ -10,6 +10,10 @@ incremental_db/*
 output
 output/*
 
+# Ignore all files in work directory
+work
+work/*
+
 # Ignore all .qsf files
 *.qsf*
 
@@ -54,3 +58,7 @@ output/*
 
 # Ignore all .sld files
 *.sld*
+
+# Ignore all .ini files
+*.ini*
+
