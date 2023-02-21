@@ -153,6 +153,6 @@ always_ff @(posedge clk) begin
 end
 
 // TERMINATE ALL TESTS WHEN DONE
-assign done = prog_ctr == 128;
+assign done = prog_ctr == 2**D;
  
 endmodule

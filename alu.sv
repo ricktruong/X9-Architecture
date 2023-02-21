@@ -1,5 +1,5 @@
 // Arithmetic Logic Unit (ALU)
-module alu(
+module alu (
 	input[3:0]			alu_cmd,			// ALU Operation
 	input[7:0]			inA,				// Read data 1
 							inB,				// Reat data 2
