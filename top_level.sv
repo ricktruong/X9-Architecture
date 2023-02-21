@@ -144,7 +144,7 @@ dat_mem
 		.dat_out	(memdat)
 	);
 
-mux_using_assign_rs #(.N(7)) (.ibits (memdat),.rbits (rslt), .sel (MemtoReg), .mux_out (muxfin));
+mux_using_assign_rs #(.N(7)) memtoregmux (.ibits (memdat),.rbits (rslt), .sel (MemtoReg), .mux_out (muxfin));
 
 // ALU bit flags update logic
 always_ff @(posedge clk) begin
