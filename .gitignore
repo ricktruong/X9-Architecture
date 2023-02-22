@@ -62,3 +62,5 @@ work/*
 # Ignore all .ini files
 *.ini*
 
+# Ignore all .wlf files
+*.wlf*
