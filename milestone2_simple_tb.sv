@@ -25,6 +25,6 @@ initial begin
   #10 error[1] = dut.dm1.core[2];
   #10 $display(error[0],,,error[1]);
   $stop;
-end    
+end
 
 endmodule

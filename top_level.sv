@@ -1,6 +1,6 @@
 // sample top level design
 module top_level(
-  input        clk, reset, req, 
+  input        clk, reset, //req, 
   output logic done);
 
 // Bit width specification variables - Program Counter (Instruction Memory size), ALU Commands (ALU Operation Set size)
@@ -28,6 +28,7 @@ wire[7:0]   datA, datB,						// Read data 1, Read data 2
 				immed,							// Immediate (in MIPS but not ours)
 				muxB,
 				memdat,// Mux - Between Read data 2 and Immediate
+				regfile_dat,
 				muxfin,
 				rslt;								// ALU result
 wire[A-1:0] alu_cmd;							// ALU Operation
@@ -46,7 +47,8 @@ wire  		pari,
 // Control Signals
 wire  		RegWrite,						// Register Write Control Signal
 				MemWrite,						// Memory Write Control Signal
-				ALUSrc,		              	// ALU Source Control Signal
+				ALUSrc,
+				MemRead,		              	// ALU Source Control Signal
 				MemtoReg;
 wire[3:0] 		ALUOp;
 
@@ -83,6 +85,7 @@ Control
 		.instr		(mach_code),
 		.InstType  	, 
 		.Branch  	(relj), 
+		.MemRead	,
 		.MemWrite	,
 		.ALUSrc		, 
 		.RegWrite	,     
