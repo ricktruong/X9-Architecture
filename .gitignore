@@ -70,3 +70,6 @@ work/*
 
 # Ignore zhl assembler
 *zhl*
+
+# Ignore tcl_stacktrace.txt
+tcl_stacktrace*
