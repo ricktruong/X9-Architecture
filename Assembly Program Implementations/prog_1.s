@@ -1,5 +1,5 @@
 PROGRAM_1:
-    movi    $0, #1                  ; Initialize i = 0 ($0);
+    movi    $0, #0                  ; Initialize i = 0 ($0);
 
 
 LOAD_MESSAGE:                       ; while (i < 30) {
