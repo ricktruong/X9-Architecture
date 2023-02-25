@@ -1,6 +1,6 @@
 // Control Decoder
 module Control #(parameter opwidth = 4, mcodebits = 5) (
-  input [8:8-mcodebits+1]			instr,			// Instruction Opcode
+  input [mcodebits-1:0]			instr,			// Instruction Opcode
   output logic[1:0]				InstType,		// Register Destination
   output logic						Branch,			// Branch
 										MemRead,
@@ -25,7 +25,7 @@ always_comb begin
 	MemtoReg	=	'b0;			// 1: load -- route memory instead of ALU to reg_file data in
 	ALUOp		=  'b1111;		// y = a+0;
 	
-	case (instr)    // override defaults with exceptions
+	casez (instr)    // override defaults with exceptions
 
 		'b00000	:	begin	// add
 							ALUOp	= 'b0000;
@@ -82,11 +82,11 @@ always_comb begin
 		'b01111	:	begin	// rxor
 							ALUOp = 'b1111;
 						end 
-		'b10000	:	begin	// movr
+		'b10???	:	begin	// movr
 							InstType = 'b10;
 							ALUOp = 'b0101;
 						end
-		'b11000	:	begin	// movi
+		'b11???	:	begin	// movi
 							InstType = 'b11;
 							ALUOp = 'b0110;
 						end

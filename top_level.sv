@@ -82,7 +82,7 @@ instr_ROM
 // Control Decoder
 Control
 	ctl1(
-		.instr		(mach_code),
+		.instr		(mach_code[8:4]),
 		.InstType  	, 
 		.Branch  	(relj), 
 		.MemRead	,
@@ -160,6 +160,6 @@ always_ff @(posedge clk) begin
 end
 
 // TERMINATE ALL TESTS WHEN DONE
-assign done = prog_ctr == 2**D;
+assign done = prog_ctr == 15;
  
 endmodule
