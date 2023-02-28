@@ -81,8 +81,11 @@ reg_map_Mi ={
 }
 def parse_R(line, insttype):
     operands = line
+    print ("operand line is " + operands)
     aluop = op_map[insttype]
     operands = operands.split(", $")
+    print("insttype is "+ insttype)
+    print(" Operand 0 is" + operands[0] + "Operand 1 is" + operands[1])
     operand1 = reg_map_R[operands[0]]
     operand2 = reg_map_R[operands[1]]
     finalinstruction = aluop+operand1+operand2+"\n"
@@ -151,7 +154,8 @@ def main(input, output):
                 uncommentedline = line.strip()
             # print("uncommented line is " + uncommentedline )
             
-            # print(count )   
+            # print(count )
+            print("uncommented line is "+ uncommentedline)   
             operands = uncommentedline.split("$", 1)[1].strip()
             insttype = uncommentedline.split("$", 1)[0].strip()
             ##print("operands are " + operands)
