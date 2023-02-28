@@ -86,7 +86,7 @@ def parse_R(line, insttype):
     operand1 = reg_map_R[operands[0]]
     operand2 = reg_map_R[operands[1]]
     finalinstruction = aluop+operand1+operand2+"\n"
-    print(operands)
+    # print(operands)
     return finalinstruction
 
 
@@ -97,7 +97,7 @@ def parse_Ri(line, insttype):
     operand1 = reg_map_R[operands[0]]
     operand2 = reg_map_Ri[operands[1]]
     finalinstruction = aluop+operand1+operand2+"\n"
-    print(operands)
+    # print(operands)
     return finalinstruction
 
 
@@ -107,7 +107,7 @@ def parse_M(line, insttype):
     operands = operands.split(", $")
     operand1 = reg_map_M[operands[0]]
     operand2 = reg_map_M[operands[1]]
-    print(operands)
+    # print(operands)
     finalinstruction = aluop+operand1+operand2+"0"+"\n"
     return finalinstruction
 
@@ -116,7 +116,7 @@ def parse_Mi(line, insttype):
     operands = line
     aluop = op_map[insttype]
     operands = operands.split(", #")
-    print(operands)
+    # print(operands)
     operand1 = reg_map_M[operands[0]]
     operand2 = reg_map_Mi[operands[1]]
     finalinstruction = aluop+operand1+operand2+"\n"
@@ -139,7 +139,7 @@ def main(input, output):
                 continue
             if ":" in line:
                 continue
-            print("unaltered line is " + line)
+            # print("unaltered line is " + line)
             if ";" in line:
                 uncommentedline= line.split(";")[0]
                 if uncommentedline.isspace():
@@ -149,14 +149,14 @@ def main(input, output):
             else:
                 ##uncommentedline = "".join(line.split())
                 uncommentedline = line.strip()
-            print("uncommented line is " + uncommentedline )
+            # print("uncommented line is " + uncommentedline )
             
-            print(count )   
+            # print(count )   
             operands = uncommentedline.split("$", 1)[1].strip()
             insttype = uncommentedline.split("$", 1)[0].strip()
             ##print("operands are " + operands)
             insttype = insttype.upper()
-            print(insttype)
+            # print(insttype)
             
             if insttype in R_set:
                finalinstruction = parse_R(operands, insttype)
