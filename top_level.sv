@@ -104,9 +104,9 @@ assign immedB = {helperB, mach_code[1:0]};
 //assign alu_cmd  = mach_code[8:6];
 
 
-mux_using_assign_rs #(.N(2)) rsmux (.ibits (id_addrA),.rbits (rs_addrA) ,.sel (InstType[1]),.mux_out (rd_addrA));
-mux_using_assign_rs #(.N(2)) rdmux  (.ibits (id_addrB),.rbits (rt_addrB) ,.sel (InstType[1]),.mux_out (rd_addrB));
-mux_using_assign_rs #(.N(7)) regdatamux (.ibits (immed), .rbits (muxfin) ,.sel (InstType[0]),.mux_out (regfile_dat));
+variable_mux #(.N(2)) rsmux (.ibits (id_addrA),.rbits (rs_addrA) ,.sel (InstType[1]),.mux_out (rd_addrA));
+variable_mux #(.N(2)) rdmux  (.ibits (id_addrB),.rbits (rt_addrB) ,.sel (InstType[1]),.mux_out (rd_addrB));
+variable_mux #(.N(7)) regdatamux (.ibits (immed), .rbits (muxfin) ,.sel (InstType[0]),.mux_out (regfile_dat));
 
 // Register File
 reg_file #(.pw(3))						// Register Pointer width - 3 for 8 registers
@@ -147,7 +147,7 @@ dat_mem
 		.dat_out	(memdat)
 	);
 
-mux_using_assign_rs #(.N(7)) memtoregmux (.ibits (memdat),.rbits (rslt), .sel (MemtoReg), .mux_out (muxfin));
+variable_mux #(.N(7)) memtoregmux (.ibits (memdat),.rbits (rslt), .sel (MemtoReg), .mux_out (muxfin));
 
 // ALU bit flags update logic
 always_ff @(posedge clk) begin
