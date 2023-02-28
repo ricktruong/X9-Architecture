@@ -3,12 +3,12 @@ import sys
 import os
 import string
 import argparse
-R_set =set(["ADD", "SUB", "LB", "SB","BEQ", "BT","NOR", "XOR", "AND", "OR", "SLL", "SLR", "EQ", "LT", "RXOR"])
+R_set =set(["ADD", "SUB", "LB", "SB","BT","BNE", "NOR", "XOR", "AND", "OR", "SLL", "SLR", "EQ", "LT", "RXOR"])
 Ri_set = set(["ADDI"])
 M_set = set(["MOVR"])
 Mi_set = set(["MOVI"])
-B_set = set (["BEQ"])
-B_map ={}
+# B_set = set (["BEQ"])
+# B_map ={}
 op_map ={ 
         "ADD" : "00000",
         "SUB" : "00001", 
