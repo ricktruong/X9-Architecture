@@ -2,6 +2,7 @@
 import sys
 import os
 import string
+import argparse
 R_set =set(["ADD", "SUB", "LB", "SB","BEQ", "BT","NOR", "XOR", "AND", "OR", "SLL", "SLR", "EQ", "LT", "RXOR"])
 Ri_set = set(["ADDI"])
 M_set = set(["MOVR"])
@@ -123,16 +124,15 @@ def parse_Mi(line, insttype):
 
 
 
-
-def main():
+""" ASSEMBLER MAIN FUNCTIONALITY """
+def main(input, output):
     print("Hi")
     count = 1
-    # str = input("Enter your input: ")
-    # print("Received input is : ", str)
-    str = "prog_1.s"
+    # str = "prog_1.s"
+    
     try:
-        inputfile = open(str, "r")
-        outputfile = open("mach_code.txt", "w")
+        inputfile = open(input, "r")
+        outputfile = open(output, "w")
         content = inputfile.readlines()
         for line in content:
             if line.isspace():
@@ -178,5 +178,16 @@ def main():
         inputfile.close()
         outputfile.close()
 
+
 if __name__ == "__main__":
-    main()
+    
+    # Command line arguments are formatted incorrectly
+    if (len(sys.argv) != 3):
+        print("Invalid number of arguments.")
+        print("usage: assembler.py INPUT_FILE OUTPUT_FILE")
+        exit(0)
+    
+    # Input and output command line argument received
+    else:
+        input, output = sys.argv[1], sys.argv[2]
+        main(input, output)
