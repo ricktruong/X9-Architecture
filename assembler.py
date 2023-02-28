@@ -126,7 +126,7 @@ def parse_Mi(line, insttype):
 
 """ ASSEMBLER MAIN FUNCTIONALITY """
 def main(input, output):
-    print("Hi")
+    # print("Hi")
     count = 1
     # str = "prog_1.s"
     
