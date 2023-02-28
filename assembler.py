@@ -3,6 +3,8 @@ import sys
 import os
 import string
 import argparse
+import re
+
 R_set =set(["ADD", "SUB", "LB", "SB","BT","BNE", "NOR", "XOR", "AND", "OR", "SLL", "SLR", "EQ", "LT", "RXOR"])
 Ri_set = set(["ADDI"])
 M_set = set(["MOVR"])
@@ -80,46 +82,62 @@ reg_map_Mi ={
     "-1": "1111",
 }
 def parse_R(line, insttype):
-    operands = line
-    print ("operand line is " + operands)
+
+    #Regex for removing spaces
+    pattern=r"\s+"
+    operands = re.sub(pattern, "", line)
+    #print ("operand line is " + operands)
+
     aluop = op_map[insttype]
-    operands = operands.split(", $")
-    print("insttype is "+ insttype)
-    print(" Operand 0 is" + operands[0] + "Operand 1 is" + operands[1])
+    operands = operands.split(",$")
+    #print("insttype is "+ insttype)
+    #print(" Operand 0 is" + operands[0] + "Operand 1 is" + operands[1])
     operand1 = reg_map_R[operands[0]]
     operand2 = reg_map_R[operands[1]]
     finalinstruction = aluop+operand1+operand2+"\n"
-    # print(operands)
+    #print(operands)
     return finalinstruction
 
 
 def parse_Ri(line, insttype):
-    operands = line
+    
+    #Regex for removing spaces
+    pattern=r"\s+"
+    operands = re.sub(pattern, "", line)
+    #print ("operand line is " + operands)
+
     aluop = op_map[insttype]
-    operands = operands.split(", #")
+    operands = operands.split(",#")
     operand1 = reg_map_R[operands[0]]
     operand2 = reg_map_Ri[operands[1]]
     finalinstruction = aluop+operand1+operand2+"\n"
-    # print(operands)
+    #print(operands)
     return finalinstruction
 
 
 def parse_M(line, insttype):
-    operands = line
+    #Regex for removing spaces
+    pattern=r"\s+"
+    operands = re.sub(pattern, "", line)
+    #print ("operand line is " + operands)
+
     aluop = op_map[insttype]
-    operands = operands.split(", $")
+    operands = operands.split(",$")
     operand1 = reg_map_M[operands[0]]
     operand2 = reg_map_M[operands[1]]
-    # print(operands)
+    #print(operands)
     finalinstruction = aluop+operand1+operand2+"0"+"\n"
     return finalinstruction
 
 
 def parse_Mi(line, insttype):
-    operands = line
+    #Regex for removing spaces
+    pattern=r"\s+"
+    operands = re.sub(pattern, "", line)
+
     aluop = op_map[insttype]
-    operands = operands.split(", #")
-    # print(operands)
+    operands = operands.split(",#")
+    #print(operands)
     operand1 = reg_map_M[operands[0]]
     operand2 = reg_map_Mi[operands[1]]
     finalinstruction = aluop+operand1+operand2+"\n"
@@ -129,7 +147,6 @@ def parse_Mi(line, insttype):
 
 """ ASSEMBLER MAIN FUNCTIONALITY """
 def main(input, output):
-    # print("Hi")
     count = 1
     # str = "prog_1.s"
     
@@ -142,25 +159,23 @@ def main(input, output):
                 continue
             if ":" in line:
                 continue
-            # print("unaltered line is " + line)
+            #print("unaltered line is " + line)
             if ";" in line:
                 uncommentedline= line.split(";")[0]
                 if uncommentedline.isspace():
-                    continue;
+                    continue
           
-                ##uncommentedline = "".join(commentedline[0].split())
             else:
-                ##uncommentedline = "".join(line.split())
                 uncommentedline = line.strip()
-            # print("uncommented line is " + uncommentedline )
+            #print("uncommented line is " + uncommentedline )
             
-            # print(count )
-            print("uncommented line is "+ uncommentedline)   
+            #print(count )
+            #print("uncommented line is "+ uncommentedline)   
             operands = uncommentedline.split("$", 1)[1].strip()
             insttype = uncommentedline.split("$", 1)[0].strip()
-            ##print("operands are " + operands)
+            #print("operands are " + operands)
             insttype = insttype.upper()
-            # print(insttype)
+            #print(insttype)
             
             if insttype in R_set:
                finalinstruction = parse_R(operands, insttype)
