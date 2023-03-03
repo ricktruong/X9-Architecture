@@ -27,9 +27,9 @@ always_comb begin
 		4'b0010: // addi
 			rslt = inA + inB;
 		4'b0011: // lb
-			rslt = inB;
+			rslt = inA;
 		4'b0100: // sb
-			rslt = inB; 
+			rslt = inA; 
 		4'b0101: // beq <-- movr
 			rslt = inB;
 		4'b0110: // bne <-- movi

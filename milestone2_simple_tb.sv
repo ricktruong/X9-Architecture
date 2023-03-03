@@ -16,12 +16,12 @@ always begin
 end
 
 initial begin
-  dut.dm1.core[0] = 8'b00000001;
+  dut.dm1.core[0] = 8'b00000000;
   dut.dm1.core[1] = 8'b00000010;
   #10 reset = 1;
   #10 reset = 0;
   #10 wait(done);
-  #10 error[0] = 8'b00000001 + 8'b00000010;
+  #10 error[0] = 8'b00000010 + 8'b00000010;
   #10 error[1] = dut.dm1.core[2];
   #10 $display(error[0],,,error[1]);
   $stop;

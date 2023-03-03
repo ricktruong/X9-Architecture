@@ -38,6 +38,7 @@ always_comb begin
 							ALUOp = 'b0010;
 						end
 		'b00011	:	begin	// lb
+							InstType = 'b01;
 							MemRead = 'b1;
 							MemtoReg = 'b1;
 							ALUOp = 'b0011;
