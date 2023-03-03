@@ -4,53 +4,56 @@ module top_level(
   output logic done);
 
 // Bit width specification variables - Program Counter (Instruction Memory size), ALU Commands (ALU Operation Set size)
-parameter	D = 12,							// Program Counter width
-				A = 4;							// ALU Command bit width
+parameter		D = 12,							// Program Counter width
+					A = 4;							// ALU Command bit width
 
 // Program Counter input wires
-wire[D-1:0]	prog_ctr,						// Program Counter
-				target;							// Target Instruction to jump/branch to
-wire  		relj,								// Relative Jump enable
-				absj;								// Absolute Jump enable
+wire[D-1:0]		prog_ctr,						// Program Counter
+					target;							// Target Instruction to jump/branch to
+wire  			relj,								// Relative Jump enable
+					absj;								// Absolute Jump enable
 wire[D-1-8:0]	target_helper = 4'b0000;	// Bit fill helper for target instruction
 
+// Branch Operator wires
+wire branch_and_true;							// Branch Operator output
+
 // Register File input wires
-wire[8:0]   mach_code;          			// Instruction to execute (9-bit)
-wire[2:0] 	rd_addrA, rd_addrB,
-				rs_addrA, rt_addrB,// Read address 1, Read address 2
-				id_addrA,id_addrB,
-				wr_reg;
-wire[1:0]	InstType;
-wire[3:0] helper = 4'b0000;
-wire[5:0] helperB = 6'b000000;
+wire[8:0]   	mach_code;          			// Instruction to execute (9-bit)
+wire[2:0] 		rd_addrA, rd_addrB,			// Read address 1, Read address 2
+					rs_addrA, rt_addrB,			// R-Type
+					id_addrA,id_addrB,			// I-Type
+					wr_reg;							// Write register
+wire[3:0] 		helper = 4'b0000;
+wire[5:0] 		helperB = 6'b000000;
 
 //	ALU input and output wires
-wire[7:0]   datA, datB,						// Read data 1, Read data 2
-				immed,							// Immediate (in MIPS but not ours)
-				alumux,
-				memdat,// Mux - Between Read data 2 and Immediate
-				regfile_dat,
-				muxfin,
-				rslt;								// ALU result
-
-// ALU bit flags
-logic 		sc_in,							// Shift/Carry In/Out flag
-				pariQ,              	  		// Registered Parity flag
-				zeroQ;                    	// Registered Zero flag 
-
-// ALU bit flags enable signals?
-wire  		pari,
-				zero,
-				sc_clr,							// Shift/Carry In/Out clear signal
-				sc_en;							// Shift/Carry In/Out enable signal
+wire[7:0]   	datA, datB,						// Read data 1, Read data 2
+					immed,							// Immediate (in MIPS but not ours)
+					alumux,
+					memdat,// Mux - Between Read data 2 and Immediate
+					regfile_dat,
+					muxfin,
+					rslt;								// ALU result
 
 // Control Signals
-wire  		RegWrite,						// Register Write Control Signal
-				MemWrite,						// Memory Write Control Signal
-				ALUSrc,
-				MemRead,		              	// ALU Source Control Signal
-				MemtoReg;
-wire[3:0] 		ALUOp;						// ALU Operation
+wire[1:0]		InstType;						// Instruction Type Control Signal
+wire  			Branch,							// Branch Control Signal
+					MemRead,							// Read Memory Control Signal
+					MemtoReg;						// Memory to Register Control Signal
+wire[3:0] 		ALUOp;							// ALU Operation
+wire				MemWrite,						// Memory Write Control Signal
+					ALUSrc,							// ALU Source Control Signal
+					RegWrite;						// Register Write Control Signal
+
+// Top Level registers for ALU bit flags
+logic 			sc_in,							// Shift/Carry In/Out flag
+					pariQ,              	  		// Lagging Parity flag
+					zeroQ;                    	// Lagging Zero flag 
+wire  			pari,								// Current Parity flag
+					zero,								// Current Zero flag
+					sc_clr,							// Shift/Carry In/Out clear signal
+					sc_en;							// Shift/Carry In/Out enable signal
+					
 
 // MODULE INSTANTIATIONS
 
@@ -59,7 +62,7 @@ PC #(.D(D)) 					  // D sets Program Counter width
 	pc1 (
 		.reset										,
 		.clk											,
-		.reljump_en (relj && zeroQ)						,
+		.reljump_en (branch_and_true)						,
 		.absjump_en (absj)						,
 		.target		({target_helper, datb})	,
 		.prog_ctr
@@ -70,7 +73,7 @@ PC_LUT #(.D(D))
 	pl1 (
 		.addr  (how_high),					// wtf is how_high???
 		.target
-	);   
+	);
 
 // Instruction ROM (Read-Only Memory)
 instr_ROM
@@ -84,14 +87,17 @@ Control
 	ctl1(
 		.instr		(mach_code[8:4]),
 		.InstType  	, 
-		.Branch  	(relj), 
-		.MemRead	,
+		.Branch  	, 
+		.MemRead		,
 		.MemWrite	,
 		.ALUSrc		, 
 		.RegWrite	,     
 		.MemtoReg	,
 		.ALUOp		
 	);
+	
+// Branching logic
+assign branch_and_true = Branch && zeroQ;
 
 // Instruction decoding prior to Register File
 assign rs_addrA = {1'b0,mach_code[3:2]};
@@ -125,13 +131,13 @@ assign alumux = ALUSrc ? datB : immedB;
 // ALU
 alu
 	alu1(
-		.alu_cmd(ALUOp),
-		.inA    (datA)	,
-		.inB    (alumux)	,
-		.sc_i   (sc)	,
-		.rslt       	,
-		.sc_o   (sc_o)	,
-		.pari			,
+		.alu_cmd	(ALUOp)	,
+		.inA    	(datA)	,
+		.inB    	(alumux)	,
+		.sc_i   	(sc)	,
+		.rslt       		,
+		.sc_o   	(sc_o)	,
+		.pari					,
 		.zero
 	);
 

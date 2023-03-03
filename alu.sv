@@ -30,7 +30,7 @@ always_comb begin
 			rslt = inA;
 		4'b0100: // sb
 			rslt = inA; 
-		4'b0101: // beq <-- movr
+		4'b0101: // bt  <-- movr
 			rslt = inB;
 		4'b0110: // bne <-- movi
 			rslt = rslt;
