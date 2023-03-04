@@ -7,7 +7,7 @@ module alu (
 	output logic[7:0]	rslt,				// ALU result
 	output logic		sc_o,				// Shift/Carry Out bit
 							pari,				// reduction XOR (output)
-							zero				// NOR (output) - If current output is 0, zero flag will be 1. If current output is not 0, zero flag will be 0.
+							one				// Flag to indicate 1 (True) for branching
 );
 
 
@@ -15,7 +15,7 @@ module alu (
 always_comb begin 
 	rslt = 'b0;            
 	sc_o = 'b0;    
-	zero = !rslt;
+	one = &rslt;
 	pari = ^rslt;
 	
 	case (alu_cmd)
