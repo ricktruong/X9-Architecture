@@ -2,7 +2,7 @@
 module Control #(parameter opwidth = 4, mcodebits = 5) (
   input [mcodebits-1:0]			instr,			// Instruction Opcode
   output logic[1:0]				InstType,		// Register Destination
-  output logic						Branch,			// Branch
+  output logic						BranchInst,		// BranchInst Instruction
 										MemRead,
 										MemtoReg,		// Memory to Register
 										MemWrite,		// Memory Write
@@ -16,14 +16,14 @@ module Control #(parameter opwidth = 4, mcodebits = 5) (
 always_comb begin
 	
 	// Defaults
-	InstType =	'b00;			// 1: not in place  just leave 0
-	Branch	=  'b0;			// 1: branch (jump)
-	MemRead 	= 	'b0;			// 0: read from memory
-	MemWrite	=	'b0;			// 1: store to memory
-	ALUSrc	=	'b1;			// 1: immediate  0: second reg file output
-	RegWrite	=	'b1;			// 0: for store or no op  1: most other operations 
-	MemtoReg	=	'b0;			// 1: load -- route memory instead of ALU to reg_file data in
-	ALUOp		=  'b1111;		// y = a+0;
+	InstType		=	'b00;			// 1: not in place  just leave 0
+	BranchInst	=  'b0;			// 1: BranchInst (jump)
+	MemRead 		= 	'b0;			// 0: read from memory
+	MemWrite		=	'b0;			// 1: store to memory
+	ALUSrc		=	'b1;			// 1: immediate  0: second reg file output
+	RegWrite		=	'b1;			// 0: for store or no op  1: most other operations 
+	MemtoReg		=	'b0;			// 1: load -- route memory instead of ALU to reg_file data in
+	ALUOp			=  'b1111;		// y = a+0;
 	
 	casez (instr)    // override defaults with exceptions
 
@@ -38,21 +38,23 @@ always_comb begin
 							ALUOp = 'b0010;
 						end
 		'b00011	:	begin	// lb
+							InstType = 'b01;
 							MemRead = 'b1;
 							MemtoReg = 'b1;
 							ALUOp = 'b0011;
 						end
 		'b00100	:	begin	// sb
+							InstType = 'b01;
 							MemWrite = 'b1;
 							RegWrite = 'b0;
 							ALUOp = 'b0100;
 						end
 		'b00101	:	begin	// beq
-							Branch = 'b1;
+							BranchInst = 'b1;
 							RegWrite = 'b0;
 						end
 		'b00110	:	begin	//	bne
-							Branch = 'b1;
+							BranchInst = 'b1;
 							RegWrite = 'b0;
 						end
 		'b00111	:	begin	//nor
@@ -75,9 +77,11 @@ always_comb begin
 						end
 		'b01101	:	begin	// eq
 							ALUOp = 'b1101;
+							RegWrite = 'b0;
 						end
 		'b01110	:	begin	// lt
 							ALUOp = 'b1110;
+							RegWrite = 'b0;
 						end
 		'b01111	:	begin	// rxor
 							ALUOp = 'b1111;

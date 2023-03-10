@@ -230,5 +230,5 @@ LESS_THAN_30:
    ; }
     movr    $1, $0                      ; $1 = i;
     movi    $4, #-3                     ; $4 = 30;
-    lt      $1, $4                      ; $1 = i < 30;
-    bt      $1, $5                      ; if ($1) branch LOAD_MESSAGE --- CORRECT THIS LINE---
+    lt      $1, $4                      ; $one = i < 30;
+    bt      @LOAD_MESSAGE               ; if ($one) branch to LOAD_MESSAGE

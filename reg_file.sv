@@ -2,7 +2,7 @@
 // Default register address pointer width = 4, for 16 registers
 module reg_file #(parameter pw=3)(
 	input					clk,
-	input[pw-1:0]			rd_addrA,			// Read register 1
+	input[pw-1:0]		rd_addrA,			// Read register 1
 							rd_addrB,			// Read register 2
 							wr_addr,				// Write register pointer
 	input					wr_en,				// Write register enable
