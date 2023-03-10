@@ -5,12 +5,14 @@ import string
 import argparse
 import re
 
-R_set =set(["ADD", "SUB", "LB", "SB","BT","BNE", "NOR", "XOR", "AND", "OR", "SLL", "SLR", "EQ", "LT", "RXOR"])
+R_set =set(["ADD", "SUB", "LB", "SB","BNE", "NOR", "XOR", "AND", "OR", "SLL", "SLR", "EQ", "LT", "RXOR"])
 Ri_set = set(["ADDI"])
 M_set = set(["MOVR"])
 Mi_set = set(["MOVI"])
-# B_set = set (["BEQ"])
-# B_map ={}
+B_set = set (["BT"])
+
+B_map = { "LOAD_MESSAGE":"0000"}
+
 op_map ={ 
         "ADD" : "00000",
         "SUB" : "00001", 
@@ -143,6 +145,20 @@ def parse_Mi(line, insttype):
     finalinstruction = aluop+operand1+operand2+"\n"
     return finalinstruction
 
+def parse_B(line, insttype):
+
+    # bt   @LOAD_MESSAGE
+    #Regex for removing spaces
+    pattern=r"\s+"
+    operands = re.sub(pattern, "", line)
+
+    aluop = op_map[insttype]
+    #print(operands)
+    operand1 = B_map[operands]
+    #operand1 = "0000"
+    finalinstruction = aluop+operand1+"\n"
+    return finalinstruction
+
 
 
 """ ASSEMBLER MAIN FUNCTIONALITY """
@@ -155,6 +171,8 @@ def main(input, output):
         outputfile = open(output, "w")
         content = inputfile.readlines()
         for line in content:
+
+            # Remove whitespace, labels, comments
             if line.isspace():
                 continue
             if ":" in line:
@@ -165,17 +183,28 @@ def main(input, output):
                 if uncommentedline.isspace():
                     continue
           
+            # Instructions 
             else:
                 uncommentedline = line.strip()
+
             #print("uncommented line is " + uncommentedline )
-            
             #print(count )
             #print("uncommented line is "+ uncommentedline)   
-            operands = uncommentedline.split("$", 1)[1].strip()
-            insttype = uncommentedline.split("$", 1)[0].strip()
+            
+            cleanline = uncommentedline.replace("@", "$", 1)
+            operands = cleanline.split("$", 1)[1].strip()
+            insttype = cleanline.split("$", 1)[0].strip()
+
             #print("operands are " + operands)
+            #print("operands_b are " + operands_b)
             insttype = insttype.upper()
+
             #print(insttype)
+            #print(insttype_b)
+
+            if insttype in B_set:
+                finalinstruction = parse_B(operands, insttype)
+                outputfile.write(finalinstruction)
             
             if insttype in R_set:
                finalinstruction = parse_R(operands, insttype)
