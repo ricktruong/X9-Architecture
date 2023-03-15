@@ -23,8 +23,11 @@ always_ff @(posedge clk)
 	else if (absjump_en)
 		prog_ctr <= target;						// Absolute Jump to target
 		
-	else
-		prog_ctr <= prog_ctr + 'b1;			// Normal Program Counter incrementation
+	else begin
+		$display("current pc before inc is %d",prog_ctr);
+		//$display(prog_ctr);
+		prog_ctr <= prog_ctr + 'b1;	
+	end		// Normal Program Counter incrementation
 
 
 endmodule

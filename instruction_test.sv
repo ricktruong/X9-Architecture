@@ -101,8 +101,7 @@ Control
 		.ALUSrc		, 
 		.RegWrite	, 
 		.isaddi , 
-		.ismovr, 
-		.iscond,  
+		.ismovr,   
 		.MemtoReg	,
 		.ALUOp		
 	);
@@ -145,9 +144,9 @@ end
 always @(rd_addrB) begin
 		$display("value being treated as rt is %d", rd_addrB);
 end
-always @(regfile_dat) begin
+/*always @(regfile_dat) begin
 	$display("data taht could be written into the regfile is : %d", regfile_dat);
-end
+end*/
 /*always @(rd_addrA or rd_addrB) begin
 	$display("value being treated as rs is %d", rd_addrA);
 	$display("value being treated as rt is %d", rd_addrB);
@@ -160,7 +159,6 @@ reg_file #(.pw(3))						// Register Pointer width - 3 for 8 registers
 		.clk,
 		.isaddi,
 		.ismovr,
-		.iscond,
 		//.alusrcdiv,
 		.addi_im    (addi_addrB) ,
 		.rd_addrA	(rd_addrA)		,
@@ -177,9 +175,9 @@ reg_file #(.pw(3))						// Register Pointer width - 3 for 8 registers
 
 // ALU Mux logic
 assign alumux = ALUSrc  ? immedB : datB;
-always @(alumux) begin
+/*always @(alumux) begin
 	$display("This is going into alu : %d between the immedB %d and the datB %d", alumux, immedB, datB);
-end
+end*/
 
 // ALU
 alu
@@ -206,9 +204,9 @@ dat_mem
 	
 // Memory to Register mux
 variable_mux #(.N(7)) memtoregmux (.ibits (memdat),.rbits (rslt), .sel (MemtoReg), .mux_out (muxfin));
-always @(muxfin) begin
+/*always @(muxfin) begin
 	$display("This is going into reg : %d", muxfin);
-end
+end*/
 
 // Top Level registers for ALU bit flags update logic
 always_ff @(posedge clk) begin

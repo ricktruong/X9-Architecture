@@ -15,7 +15,9 @@ assign dat_out = core[addr];
 
 // Write Memory logic
 always_ff @(posedge clk)
-	if (wr_en)
-		core[addr] <= dat_in;				// Write Memory Address with dat_in
+	if (wr_en) begin
+		//$display("we are writing %d into core index %d", dat_in, addr);
+		core[addr] <= dat_in;	
+		end			// Write Memory Address with dat_in
 
 endmodule

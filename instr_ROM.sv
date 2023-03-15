@@ -8,8 +8,10 @@ module instr_ROM #(parameter D=12) (
 
 logic[8:0] core[2**D];							// Instruction Memory core/space
 
-initial
-	$readmemb("mach_code.txt", core);		// Load mach_code.txt program I, II, & III instructions into core
+initial begin
+	//$display("hello about to read stuff");
+	$readmemb("mach_code.txt", core);
+end		// Load mach_code.txt program I, II, & III instructions into core
 
 always_comb mach_code = core[prog_ctr];	// Output current instruction at program counter
 
