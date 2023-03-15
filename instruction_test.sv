@@ -13,7 +13,7 @@ wire[D-1:0]		prog_ctr,						// Program Counter
 					target;							// Target Instruction to jump/branch to
 wire  			relj,alusrcdiv,								// Relative Jump enable
 					absj;								// Absolute Jump enable
-logic 				isaddi,ismovr;
+logic 				isaddi,ismovr,iscond;
 // Register File input wires
 wire[8:0]   	mach_code; 
 wire[1:0]       addi_addrB;       			// Instruction to execute (9-bit)
@@ -101,7 +101,8 @@ Control
 		.ALUSrc		, 
 		.RegWrite	, 
 		.isaddi , 
-		.ismovr,   
+		.ismovr, 
+		.iscond,  
 		.MemtoReg	,
 		.ALUOp		
 	);
@@ -144,6 +145,9 @@ end
 always @(rd_addrB) begin
 		$display("value being treated as rt is %d", rd_addrB);
 end
+always @(regfile_dat) begin
+	$display("data taht could be written into the regfile is : %d", regfile_dat);
+end
 /*always @(rd_addrA or rd_addrB) begin
 	$display("value being treated as rs is %d", rd_addrA);
 	$display("value being treated as rt is %d", rd_addrB);
@@ -156,6 +160,7 @@ reg_file #(.pw(3))						// Register Pointer width - 3 for 8 registers
 		.clk,
 		.isaddi,
 		.ismovr,
+		.iscond,
 		//.alusrcdiv,
 		.addi_im    (addi_addrB) ,
 		.rd_addrA	(rd_addrA)		,
@@ -219,7 +224,7 @@ end
  end
 
 // TERMINATE ALL TESTS WHEN DONE
-assign  done = prog_ctr == 31;
+assign  done = prog_ctr == 65;
 
  
 endmodule
