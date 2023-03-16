@@ -66,7 +66,7 @@ After running the instructions in dummy_basic
   $display("checking if movr works");
   //$display(dut.rf1.core[3]);
   $display(error[2]);
-  $display("checking if sll and slr  work");
+ /* $display("checking if sll and slr  work");
   $display(error[4]);
  // $display("Answer : %b compared to expected : %b",dut.rf1.core[1],8'b00000011);
   $display("checking if movi works");

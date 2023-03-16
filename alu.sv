@@ -52,8 +52,10 @@ always_comb begin
 						rslt = inA;
 						$display("sb instruction which stored data %d" ,rslt);
 					end 
-		4'b0101: // bt  <-- movr
+		4'b0101: begin // bt  <-- movr
 			rslt = inB;
+			$display("moving %b into a reg",inB);
+		end
 		4'b0110: begin // bne <-- movi
 						
 						rslt = rslt;

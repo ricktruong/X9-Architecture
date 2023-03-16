@@ -17,13 +17,10 @@ logic[7:0] helper;
 // Output Read data 1 & Read data 2
 
 assign datA_out = core[rd_addrA];
-/*always@(dat_in) begin
-	$display("dat_in is %d and wr-en is %b and iscond is %b", dat_in, wr_en, iscond);
-	if(iscond) begin
-		$display("");
-	end*
+always@(dat_in) begin
+	$display("dat_in is %d and wr-en is %b", dat_in, wr_en);
 
-end*/
+end
 always @(*) begin
 if(isaddi) begin
 	//if(alusrcdiv) begin 
@@ -49,14 +46,14 @@ always_ff @(posedge clk)
 
 	if (wr_en) begin
 		
-		if(ismovr) begin
-			//$display("we are writing %d into register number %d : ", helper, wr_addr);
+		/*if(ismovr) begin
+			$display("we are writing %d into register number %d : ", helper, wr_addr);
 			core[wr_addr] <= helper;
 		end
-		else begin
-			//$display("we are writing %d into register number %d : ", dat_in, wr_addr);
+		else begin*/
+			$display("we are writing %d into register number %d : ", dat_in, wr_addr);
 			core[wr_addr] <= dat_in;			// Write register with dat_in
-			end
+			
 		end
 	
 

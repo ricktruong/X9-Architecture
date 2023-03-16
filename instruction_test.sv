@@ -175,9 +175,9 @@ reg_file #(.pw(3))						// Register Pointer width - 3 for 8 registers
 
 // ALU Mux logic
 assign alumux = ALUSrc  ? immedB : datB;
-/*always @(alumux) begin
+always @(alumux) begin
 	$display("This is going into alu : %d between the immedB %d and the datB %d", alumux, immedB, datB);
-end*/
+end
 
 // ALU
 alu
@@ -222,7 +222,7 @@ end
  end
 
 // TERMINATE ALL TESTS WHEN DONE
-assign  done = prog_ctr == 65;
+assign  done = prog_ctr == 9;
 
  
 endmodule

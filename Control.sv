@@ -127,7 +127,7 @@ always_comb begin
 							InstType = 'b10;
 							ALUOp = 'b0101;
 							ismovr = 'b1;
-							//ALUSrc = 'b0;
+							ALUSrc = 'b0;
 						end
 		'b11???	:	begin	// movi
 							$display("movi instruction(control)");
