@@ -42,12 +42,14 @@ always_comb begin
 							MemRead = 'b1;
 							MemtoReg = 'b1;
 							ALUOp = 'b0011;
+							$display("load function");
 						end
 		'b00100	:	begin	// sb
 							InstType = 'b01;
 							MemWrite = 'b1;
 							RegWrite = 'b0;
 							ALUOp = 'b0100;
+							$display("store function");
 						end
 		'b00101	:	begin	// beq
 							BranchInst = 'b1;
@@ -93,6 +95,7 @@ always_comb begin
 		'b11???	:	begin	// movi
 							InstType = 'b10;
 							ALUOp = 'b0110;
+							$display("movi function");
 						end
 						
 	endcase

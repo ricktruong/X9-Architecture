@@ -10,7 +10,9 @@ module alu (
 							one				// Flag to indicate 1 (True) for branching
 );
 
-
+always @(alu_cmd) begin
+	$display("The opcode is %b and the operands are %d and %d",alu_cmd,inA,inB);
+end
 // ALU Operations
 always_comb begin 
 	rslt = 'b0;            
@@ -26,14 +28,20 @@ always_comb begin
 			rslt = inA - inB;
 		4'b0010: // addi
 			rslt = inA + inB;
-		4'b0011: // lb
+		4'b0011: begin // lb
 			rslt = inA;
-		4'b0100: // sb
+			$display("we are trying to load %d",rslt);
+			end
+		4'b0100: begin // sb
 			rslt = inA; 
+			$display("we are trying to store %d",rslt);
+		end
 		4'b0101: // bt  <-- movr
 			rslt = inB;
-		4'b0110: // bne <-- movi
+		4'b0110: begin // bne <-- movi
 			rslt = rslt;
+			$display("we are trying to movi %d",rslt);
+		end
 		4'b0111: // nor
 			rslt = !(inA | inB);
 		4'b1000: // xor
