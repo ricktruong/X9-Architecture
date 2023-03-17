@@ -87,11 +87,11 @@ always_comb begin
 							ALUOp = 'b1111;
 						end 
 		'b10???	:	begin	// movr
-							InstType = 'b10;
+							InstType = 'b11;
 							ALUOp = 'b0101;
 						end
 		'b11???	:	begin	// movi
-							InstType = 'b11;
+							InstType = 'b10;
 							ALUOp = 'b0110;
 						end
 						

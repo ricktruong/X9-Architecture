@@ -105,9 +105,9 @@ assign immed = {helper, mach_code[3:0]};
 assign immedB = {helperB, mach_code[1:0]};
 
 // Instruction decoding muxes
-variable_mux #(.N(2)) rsmux (.ibits (id_addrA),.rbits (rs_addrA) ,.sel (InstType[1]),.mux_out (rd_addrA));
-variable_mux #(.N(2)) rdmux  (.ibits (id_addrB),.rbits (rt_addrB) ,.sel (InstType[1]),.mux_out (rd_addrB));
-variable_mux #(.N(7)) regdatamux (.ibits (immed), .rbits (muxfin) ,.sel (InstType[0]),.mux_out (regfile_dat));
+variable_mux #(.N(2)) rsmux (.ibits (id_addrA),.rbits (rs_addrA) ,.sel (InstType[0]),.mux_out (rd_addrA));
+variable_mux #(.N(2)) rdmux  (.ibits (id_addrB),.rbits (rt_addrB) ,.sel (InstType[0]),.mux_out (rd_addrB));
+variable_mux #(.N(7)) regdatamux (.ibits (immed), .rbits (muxfin) ,.sel (InstType[1]),.mux_out (regfile_dat));
 assign wr_reg = (InstType == 'b01) ? rd_addrB : rd_addrA;
 
 // Register File
