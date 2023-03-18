@@ -11,8 +11,9 @@ module alu (
 );
 
 always @(alu_cmd) begin
-	$display("The opcode is %b and the operands are %d and %d",alu_cmd,inA,inB);
+	$display("The ALUOp is %b and the operands are %d and %d",alu_cmd,inA,inB);
 end
+
 // ALU Operations
 always_comb begin 
 	rslt = 'b0;            
@@ -30,11 +31,11 @@ always_comb begin
 			rslt = inA + inB;
 		4'b0011: begin // lb
 			rslt = inA;
-			$display("we are trying to load %d",rslt);
-			end
+			$display("we are trying to load at Mem[%d]",rslt);
+		end
 		4'b0100: begin // sb
 			rslt = inA; 
-			$display("we are trying to store %d",rslt);
+			$display("we are trying to store at Mem[%d]",rslt);
 		end
 		4'b0101: // bt  <-- movr
 			rslt = inB;

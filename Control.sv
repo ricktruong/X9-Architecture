@@ -38,14 +38,12 @@ always_comb begin
 							ALUOp = 'b0010;
 						end
 		'b00011	:	begin	// lb
-							InstType = 'b01;
 							MemRead = 'b1;
 							MemtoReg = 'b1;
 							ALUOp = 'b0011;
 							$display("load function");
 						end
 		'b00100	:	begin	// sb
-							InstType = 'b01;
 							MemWrite = 'b1;
 							RegWrite = 'b0;
 							ALUOp = 'b0100;
@@ -89,11 +87,12 @@ always_comb begin
 							ALUOp = 'b1111;
 						end 
 		'b10???	:	begin	// movr
-							InstType = 'b11;
+							InstType = 'b10;
 							ALUOp = 'b0101;
+							$display("movr function");
 						end
 		'b11???	:	begin	// movi
-							InstType = 'b10;
+							InstType = 'b11;
 							ALUOp = 'b0110;
 							$display("movi function");
 						end

@@ -12,24 +12,16 @@ wire[D-1:0]		prog_ctr,						// Program Counter
 					target;							// Target Instruction to jump/branch to
 wire  			relj,								// Relative Jump enable
 					absj;								// Absolute Jump enable
-
+					
 // Register File input wires
 wire[8:0]   	mach_code;          			// Instruction to execute (9-bit)
 wire[2:0] 		rd_addrA, rd_addrB,			// Read address 1, Read address 2
 					rs_addrA, rt_addrB,			// R-Type
 					id_addrA,id_addrB,			// I-Type
 					wr_reg;							// Write register
+wire[7:0]		regfile_dat,					// Write data
+					immed;							// Immediate for movi to get written into Write data in Register File
 wire[3:0] 		helper = 4'b0000;
-wire[5:0] 		helperB = 6'b000000;
-
-//	ALU input and output wires
-wire[7:0]   	datA, datB,						// Read data 1, Read data 2
-					immed,							// Immediate (in MIPS but not ours)
-					alumux,
-					memdat,// Mux - Between Read data 2 and Immediate
-					regfile_dat,
-					muxfin,
-					rslt;								// ALU result
 
 // Control Signals
 wire[1:0]		InstType;						// Instruction Type Control Signal
@@ -41,6 +33,12 @@ wire				MemWrite,						// Memory Write Control Signal
 					ALUSrc,							// ALU Source Control Signal
 					RegWrite;						// Register Write Control Signal
 
+//	ALU input and output wires
+wire[7:0]   	datA, datB,						// Read data 1, Read data 2
+					alumux,
+					rslt;								// ALU result
+wire[5:0] 		helperB = 6'b000000;			// Bit-extension helper for addi immediate (WE WANT SIGN-EXTEND)
+
 // Top Level registers for ALU bit flags
 logic 			sc_in,							// Lagging Shift/Carry In/Out register
 					pariQ,              	  		// Lagging Parity register
@@ -51,6 +49,10 @@ wire				pari,								// Current Parity wire
 					sc_clr,							// Shift/Carry In/Out clear signal
 					sc_en;							// Shift/Carry In/Out enable signal
 					
+// Data Memory input and output wires
+wire[7:0]		memdat,							// Data Memory output
+					muxfin;							// Final MemToReg mux output value
+
 
 // MODULE INSTANTIATIONS
 
@@ -78,6 +80,7 @@ instr_ROM
 		.prog_ctr,
 		.mach_code
 	);
+
 always @(mach_code) begin
 	$display("The mach_code for this instruction is %b", mach_code);
 	$display("potential rs number for r-type:%d",rs_addrA);
@@ -86,6 +89,7 @@ always @(mach_code) begin
 	$display("potential rt number for i-type:%d", id_addrB);
 	$display("potential immediate value if the instruction is movi:%d",immed);
 end
+
 // Control Decoder
 Control
 	ctl1(
@@ -99,10 +103,12 @@ Control
 		.MemtoReg	,
 		.ALUOp		
 	);
-	always @(InstType) begin
-		$display("Insttype is %b with LSB being Insttype[0]",InstType);
 
-	end
+always @(InstType) begin
+	$display("Insttype is %b with LSB being Insttype[0]",InstType);
+
+end
+
 // Branching logic
 assign absj = BranchInst && oneQ;					// Branch Operator output
 
@@ -112,18 +118,20 @@ assign id_addrA = mach_code[6:4];
 assign rt_addrB = {1'b1,mach_code[1:0]};
 assign id_addrB = mach_code[3:1];
 assign immed = {helper, mach_code[3:0]};
-assign immedB = {helperB, mach_code[1:0]};
+assign immedB = {helperB, mach_code[1:0]};		// ***MUST FIGURE OUT HOW TO MAKE SIGN EXTEND MACH_CODE[1:0] FOR ADDI OF NEGATIVE NUMBERS
 
 // Instruction decoding muxes
-variable_mux #(.N(2)) rsmux (.ibits (id_addrA),.rbits (rs_addrA) ,.sel (InstType[0]),.mux_out (rd_addrA));
-variable_mux #(.N(2)) rdmux  (.ibits (id_addrB),.rbits (rt_addrB) ,.sel (InstType[0]),.mux_out (rd_addrB));
-variable_mux #(.N(7)) regdatamux (.ibits (immed), .rbits (muxfin) ,.sel (InstType[1]),.mux_out (regfile_dat));
-assign wr_reg = (InstType == 'b01) ? rd_addrB : rd_addrA;
+variable_mux #(.N(2)) rsmux (.ibits (id_addrA),.rbits (rs_addrA) ,.sel (InstType[1]),.mux_out (rd_addrA));
+variable_mux #(.N(2)) rdmux  (.ibits (id_addrB),.rbits (rt_addrB) ,.sel (InstType[1]),.mux_out (rd_addrB));
+variable_mux #(.N(7)) regdatamux (.ibits (immed), .rbits (muxfin) ,.sel (InstType[0]),.mux_out (regfile_dat));
+assign wr_reg = (MemtoReg == 'b1) ? rd_addrB : rd_addrA;		// LB/SB Mux
+
 always @(regfile_dat) begin
-$display("The number of register rs is %d",rd_addrA);
-$display("The number of register rt is %d", rd_addrB);
-$display("The value going into the register to be potentiall written is %d",regfile_dat);
+	$display("The number of register rs is %d",rd_addrA);
+	$display("The number of register rt is %d", rd_addrB);
+	$display("The value going into the register to be potentially written is %d",regfile_dat);
 end
+
 // Register File
 reg_file #(.pw(3))						// Register Pointer width - 3 for 8 registers
 	rf1(
@@ -179,7 +187,7 @@ end
 
 
 // TERMINATE ALL TESTS WHEN DONE
-assign done = prog_ctr == 3;
+assign done = prog_ctr == 5;
 
  
 endmodule
