@@ -110,7 +110,7 @@ always @(InstType) begin
 end
 
 // Branching logic
-assign absj = BranchInst & oneQ[0];				// Branch Operator output
+assign absj = BranchInst & oneQ;				// Branch Operator output
 
 // Instruction decoding prior to Register File
 assign rs_addrA = {1'b0,mach_code[3:2]};
