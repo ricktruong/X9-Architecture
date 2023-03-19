@@ -83,6 +83,7 @@ reg_map_Mi ={
     "-2": "1110",
     "-1": "1111",
 }
+
 def parse_R(line, insttype):
 
     #Regex for removing spaces

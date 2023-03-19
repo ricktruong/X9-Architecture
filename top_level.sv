@@ -83,11 +83,11 @@ instr_ROM
 
 always @(mach_code) begin
 	$display("The mach_code for this instruction is %b", mach_code);
-	$display("potential rs number for r-type:%d",rs_addrA);
-	$display("potential rt number for r-type:%d",rt_addrB);
+	$display("potential rs number for r-type:%d", rs_addrA);
+	$display("potential rt number for r-type:%d", rt_addrB);
 	$display("potential rs number for i-type:%d", id_addrA);
 	$display("potential rt number for i-type:%d", id_addrB);
-	$display("potential immediate value if the instruction is movi:%d",immed);
+	$display("potential immediate value if the instruction is movi:%d", immed);
 end
 
 // Control Decoder
@@ -110,7 +110,7 @@ always @(InstType) begin
 end
 
 // Branching logic
-assign absj = BranchInst && oneQ;					// Branch Operator output
+assign absj = BranchInst & oneQ[0];				// Branch Operator output
 
 // Instruction decoding prior to Register File
 assign rs_addrA = {1'b0,mach_code[3:2]};
