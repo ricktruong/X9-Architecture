@@ -66,7 +66,9 @@ PC #(.D(D)) 					  // D sets Program Counter width
 		.target										,
 		.prog_ctr
 	);
-
+always @(prog_ctr) begin
+	$display("prog_ctr is %d", prog_ctr);
+end
 // Program Counter Lookup Table
 PC_LUT #(.D(D))				// D - Program Counter width
 	pl1 (
@@ -188,6 +190,6 @@ always_ff @(posedge clk) begin
 end
 
 // TERMINATE ALL TESTS WHEN DONE
-assign done = prog_ctr == 50;
+assign done = prog_ctr == 5;
  
 endmodule
