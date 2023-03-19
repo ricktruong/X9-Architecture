@@ -9,10 +9,8 @@ module PC_LUT #(parameter D=12) (
 // LUT
 always_comb case (addr)
 	
-	0 : target = 2;							// LOAD_MESSAGE
-	1 : target = 0;							// 
-	2 : target = 1;							// 
-	default: target = 'b0;					// Halt instruction
+	'b0000 : target = 1;							// PC = 1 (LOAD_MESSAGE)
+	default: target = 0;							// PC reset
 
 endcase
 

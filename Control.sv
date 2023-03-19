@@ -23,7 +23,7 @@ always_comb begin
 	ALUSrc		=	'b1;			// 1: immediate  0: second reg file output
 	RegWrite		=	'b1;			// 0: for store or no op  1: most other operations 
 	MemtoReg		=	'b0;			// 1: load -- route memory instead of ALU to reg_file data in
-	ALUOp			=  'b1111;		// y = a+0;
+	ALUOp			=  'b1111;
 	
 	casez (instr)    // override defaults with exceptions
 
