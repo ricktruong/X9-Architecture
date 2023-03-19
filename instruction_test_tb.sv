@@ -2,7 +2,7 @@ module instruction_test_tb();
 
 bit clk, reset;
 wire done;
-logic error[11];
+logic error[12];
 
 top_level dut(
   .clk,
@@ -55,20 +55,22 @@ After running the instructions in dummy_basic
   error[8] = 8'b10101010 == dut.dm1.core[5];
   error[9] = 8'b00000000 == dut.dm1.core[8];
   error[10] = 8'b01010101 == dut.dm1.core[9];
+  error[11] = 8'b00000000 == dut.rf1.core[2];
+  //error[11] = dut.oneQ == 'b1;
   //error[11] = 8'b00000001 == dut.dm1.core[10];
   //error[12] = 8'b00000000 == dut.dm1.core[11];
   //error[13] = 8'b00000000 == dut.dm1.core[12];
 
   $display("checking if lb and sb worked");
   $display(error[1]);
-  /*$display("checking if addi works");
+  $display("checking if addi works");
   $display(error[3]);
- $display("checking if movr works");
-  $display(dut.rf1.core[3]);
- // $display(error[2]);
- /* $display("checking if sll and slr  work");
+$display("checking if movr works");
+  //$display(dut.rf1.core[3]);
+  $display(error[2]);
+ $display("checking if sll and slr  work");
   $display(error[4]);
- // $display("Answer : %b compared to expected : %b",dut.rf1.core[1],8'b00000011);
+  $display("Answer : %b compared to expected : %b",dut.rf1.core[1],8'b00000011);
   $display("checking if movi works");
   $display(error[5]);
   $display("checking if add/sub work");
@@ -82,11 +84,13 @@ After running the instructions in dummy_basic
   $display("checking if nor works");
   $display(error[10]);
   /*$display("checking if eq works");
-  $display(error[11]);
-  $display("checking if lt works");
-  $display(error[12]);
+  $display(error[11]);*/
+  //$display("value in oneQ is %b", dut.oneQ);
+  //$display("checking if lt works");
+  //$display(error[11]);
   $display("checking if rxor works");
-  $display(error[13]);*/
+  $display(error[11]);
+  $display("data thats there is %b should be b00000000",dut.rf1.core[2]);
   $display("This is the first instruction ");
   $display(dut.ir1.core[0]);
   $display("This is the second instruction ");
