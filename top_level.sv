@@ -87,7 +87,7 @@ always @(mach_code) begin
 	$display("potential rt number for r-type:%d", rt_addrB);
 	$display("potential rs number for i-type:%d", id_addrA);
 	$display("potential rt number for i-type:%d", id_addrB);
-	$display("potential immediate value if the instruction is movi:%d", immed);
+	$display("potential immediate value if the instruction is movi:%d",immed);
 end
 
 // Control Decoder
@@ -160,7 +160,9 @@ alu
 		.pari					,
 		.one
 	);
-
+always_comb begin
+	$display("value of one changed to %b",one);
+end
 // Data Memory
 dat_mem
 	dm1(
@@ -185,9 +187,7 @@ always_ff @(posedge clk) begin
 		sc_in <= sc_o;
 end
 
-
 // TERMINATE ALL TESTS WHEN DONE
-assign done = prog_ctr == 5;
-
+assign done = prog_ctr == 50;
  
 endmodule

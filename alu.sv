@@ -18,15 +18,19 @@ end
 always_comb begin 
 	rslt = 'b0;            
 	sc_o = 'b0;    
-	one = &rslt;
+	one = 'bx;
 	pari = ^rslt;
 	
 	case (alu_cmd)
 	
-		4'b0000: // add
+		4'b0000: begin // add
 			rslt = inA + inB;
-		4'b0001: // sub
+			$display("We are adding %d to %d to get %d", inA, inB,rslt);
+		end
+		4'b0001: begin // sub
 			rslt = inA - inB;
+			$display("We are subtracting %d from %d to get %d",inB,inA,rslt);
+		end
 		4'b0010: // addi
 			rslt = inA + inB;
 		4'b0011: begin // lb
@@ -43,25 +47,38 @@ always_comb begin
 			rslt = rslt;
 			$display("we are trying to movi %d",rslt);
 		end
-		4'b0111: // nor
-			rslt = !(inA | inB);
+		4'b0111:begin // nor
+			rslt = ~( inA | inB);
+			$display("we are norring %b with %b to get %b",inA, inB,rslt);
+		end
 		4'b1000: // xor
 			rslt = inA ^ inB;
 		4'b1001: // and
 			rslt = inA & inB;
 		4'b1010: // or
 			rslt = inA | inB;
-		4'b1011: // sll
+		4'b1011: begin // sll
 			rslt = inA << inB;
-		4'b1100: // slr
-			rslt = inB >>inB;
-		4'b1101: // eq
+			$display("%b is shifted left by %d bits to give %b",inA,inB,rslt);
+		end
+		4'b1100: begin // slr
+			rslt = inA >> inB;
+			$display("%b is shifted right by %d bits to give %b",inB,inB,rslt);
+		end
+		4'b1101: begin // eq
 			rslt = (inA == inB);
-		4'b1110: // lt
+			one = rslt[0];
+			$display("checking if %b is equal to %b and correctly displayd as %b and one is rightly updated to %b", inA, inB,rslt,one);
+		end
+		4'b1110: begin // lt
 			rslt = (inA < inB);
-		4'b1111: // rxor
+			one = rslt[0];
+			$display("checking if %d is less than %d and correctly display as %b,",inA,inB,rslt);
+		end
+		4'b1111:begin // rxor
 			rslt = ^inB;
-
+			$display("we have reduce xor'd %b to get %b",inB,rslt);
+		end
 	endcase
 	
 end
