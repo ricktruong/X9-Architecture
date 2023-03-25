@@ -7,7 +7,8 @@ logic error[12];
 top_level dut(
   .clk,
   .reset,
-  .done);
+  .done
+);
 
 
 always begin

@@ -193,34 +193,33 @@ P0:
     movr    $6, $2                      ; $6 =  b4  b3  b2  p4 _  b1  p2   p1 p0;
 
 STORE_MESSAGE:
+    ; Increment i by 30 to store output
     movi    $5, #6                      ; $5 = 6;
-    add     $0, $5                      ; $0 = 0 + 6;
-    add     $0, $5                      ; $0 = 6 + 6;
-    add     $0, $5                      ; $0 = 12 + 6;
-    add     $0, $5                      ; $0 = 18 + 6;
-    add     $0, $5                      ; $0 = 24 + 6;
+    add     $0, $5                      ; i = i (0) + 6;
+    add     $0, $5                      ; i = i (6) + 6;
+    add     $0, $5                      ; i = i (12) + 6;
+    add     $0, $5                      ; i = i (18) + 6;
+    add     $0, $5                      ; i = i (24) + 6;
     sb      $0, $6                      ; mem[i] =  b4  b3  b2  p4 _  b1  p2   p1 p0;
-    movi    $5, #1                      ; $5 = 1;
-    add     $0, $5                      ; $0 = 30 + 1;
+    addi    $0, #1                      ; i++; (30 + 1)
     sb      $0, $7                      ; mem[i] = b11 b10  b9  b8 _  b7  b6  b5  p8;
 
-    movi    $5, #6                      ; $5 = 6;
-    sub     $0, $5                      ; $0 = 31 - 6;
-    add     $0, $5                      ; $0 = 25 - 6;
-    add     $0, $5                      ; $0 = 19 - 6;
-    add     $0, $5                      ; $0 = 13 - 6;
-    add     $0, $5                      ; $0 = 7 - 6;
-    movi    $5, #1                      ; $5 = 1;
-    add     $0, $5                      ; $0 = 1 + 1;
+    ; Decrement i by 30 to reset memory pointer
+    sub     $0, $5                      ; i = i (31) - 6;
+    add     $0, $5                      ; i = i (25) - 6;
+    add     $0, $5                      ; i = i (19) - 6;
+    add     $0, $5                      ; i = i (13) - 6;
+    add     $0, $5                      ; i = i (7) - 6;
+    addi    $0, #1                      ; i++ (1 + 1);
 
-    ; Alternative solution using Lookup Tables
-    movi    $4, #-3                     ; $4 = 30;
-    add     $0, $4                      ; $0 = i + 30;
-    sb      $0, $6                      ; mem[i] =  b4  b3  b2  p4 _  b1  p2   p1 p0;
-    addi    $0, #1                      ; $0 = i++;
-    sb      $0, $7                      ; mem[i] = b11 b10  b9  b8 _  b7  b6  b5  p8;
-    sub     $0, $4                      ; $0 = i - 30;
-    addi    $0, #1                      ; $0 = i++;
+    ; ; Alternative solution using Lookup Tables
+    ; movi    $4, #-3                     ; $4 = 30;
+    ; add     $0, $4                      ; $0 = i + 30;
+    ; sb      $0, $6                      ; mem[i] =  b4  b3  b2  p4 _  b1  p2   p1 p0;
+    ; addi    $0, #1                      ; $0 = i++;
+    ; sb      $0, $7                      ; mem[i] = b11 b10  b9  b8 _  b7  b6  b5  p8;
+    ; sub     $0, $4                      ; $0 = i - 30;
+    ; addi    $0, #1                      ; $0 = i++;
 
 
 LESS_THAN_30:
@@ -228,7 +227,13 @@ LESS_THAN_30:
    ; immediateLookupTable = {
    ;   '-3' : '30'
    ; }
-    movr    $1, $0                      ; $1 = i;
-    movi    $4, #-3                     ; $4 = 30;
-    lt      $1, $4                      ; $one = i < 30;
+    movi    $3, #6                      ; $3 = 6;
+    movi    $2, #0                      ; $2 = 0;
+    add     $2, $3                      ; $2 = 0 + 6;
+    add     $2, $2                      ; $2 = 6 + 6;
+    add     $2, $2                      ; $2 = 12 + 12;
+    add     $2, $3                      ; $2 = 24 + 6
+    movr    $4, $2                      ; $4 = 30;
+
+    lt      $0, $4                      ; $one = i < 30;
     bt      @LOAD_MESSAGE               ; if ($one) branch to LOAD_MESSAGE

@@ -190,6 +190,6 @@ always_ff @(posedge clk) begin
 end
 
 // TERMINATE ALL TESTS WHEN DONE
-assign done = prog_ctr == 5;
+assign done = prog_ctr == 180;
  
 endmodule

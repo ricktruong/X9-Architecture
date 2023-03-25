@@ -73,3 +73,6 @@ work/*
 
 # Ignore tcl_stacktrace.txt
 tcl_stacktrace*
+
+# Ignore work files
+wlf*

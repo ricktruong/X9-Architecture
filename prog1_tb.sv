@@ -10,8 +10,8 @@
 module prog1_tb();
 
 bit   clk    ,                   // clock source -- drives DUT input of same name
-	  req  ;	                 // req -- start program -- drives DUT input
-wire  done;		    	         // ack -- from DUT -- done w/ program
+	  reset  ;	                 // reset -- start program -- drives DUT input
+wire  done;		    	         // done -- from DUT -- done w/ program
 
 // program 1-specific variables
 bit  [11:1] d1_in[15];           // original messages
@@ -23,7 +23,7 @@ bit  [15:0] score1, case1;
 // change "top_level" if you called your device something different
 // explicitly list ports if your names differ from test bench's
 // if you used any parameters, override them here
-top_level DUT(.clk, .start, .ack);            // replace "proc" with the name of your top level module
+top_level DUT(.clk, .reset, .done);            // replace "proc" with the name of your top level module
 
 initial begin
   for(int i=0;i<15;i++)	begin
@@ -33,14 +33,15 @@ initial begin
     // 3. Randomized sample of exhuastive 11-bit combinations
     // 4. Edge tests
     
-    d1_in[i] = $random>>4;        // create 15 messages	   '1    '0
+    d1_in[i] = 1'b1 << i;
+    // d1_in[i] = $random>>4;        // create 15 messages	   '1    '0
 // copy 15 original messages into first 30 bytes of memory 
 // rename "dm1" and/or "core" if you used different names for these
     DUT.dm1.core[2*i+1]  = {5'b0,d1_in[i][11:9]};
     DUT.dm1.core[2*i]    =       d1_in[i][ 8:1];
   end
-  #10ns req   = 1'b1;          // pulse request to DUT
-  #10ns req   = 1'b0;
+  #10ns reset   = 1'b1;          // pulse reset to DUT
+  #10ns reset   = 1'b0;
   wait(done);                   // wait for ack from DUT
 // generate parity for each message; display result and that of DUT
   $display("start program 1");
