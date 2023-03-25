@@ -31,8 +31,14 @@ always_comb begin
 			rslt = inA - inB;
 			// $display("We are subtracting %d from %d to get %d",inB,inA,rslt);
 		end
-		4'b0010: // addi
-			rslt = inA + inB;
+		4'b0010: begin // addi
+			if (inB == 2)
+				rslt = inA - 2;
+			else if (inB == 3)
+				rslt = inA - 1;
+			else
+				rslt = inA + inB;
+		end
 		4'b0011: begin // lb
 			rslt = inA;
 			$display("we are trying to load at Mem[%d]",rslt);
