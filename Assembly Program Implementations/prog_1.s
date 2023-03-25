@@ -204,10 +204,10 @@ STORE_MESSAGE:
     sb      $0, $7                      ; mem[i] = b11 b10  b9  b8 _  b7  b6  b5  p8;
 
     sub     $0, $5                      ; i = i (31) - 6;
-    add     $0, $5                      ; i = i (25) - 6;
-    add     $0, $5                      ; i = i (19) - 6;
-    add     $0, $5                      ; i = i (13) - 6;
-    add     $0, $5                      ; i = i (7) - 6;
+    sub     $0, $5                      ; i = i (25) - 6;
+    sub     $0, $5                      ; i = i (19) - 6;
+    sub     $0, $5                      ; i = i (13) - 6;
+    sub     $0, $5                      ; i = i (7) - 6;
     addi    $0, #1                      ; i++ (1 + 1);
 
 LESS_THAN_30:
