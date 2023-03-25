@@ -10,9 +10,9 @@ module alu (
 							one				// Flag to indicate 1 (True) for branching
 );
 
-always @(alu_cmd) begin
-	$display("The ALUOp is %b and the operands are %d and %d",alu_cmd,inA,inB);
-end
+// always @(alu_cmd) begin
+// 	$display("The ALUOp is %b and the operands are %d and %d",alu_cmd,inA,inB);
+// end
 
 // ALU Operations
 always_comb begin 
@@ -25,11 +25,11 @@ always_comb begin
 	
 		4'b0000: begin // add
 			rslt = inA + inB;
-			$display("We are adding %d to %d to get %d", inA, inB,rslt);
+			// $display("We are adding %d to %d to get %d", inA, inB,rslt);
 		end
 		4'b0001: begin // sub
 			rslt = inA - inB;
-			$display("We are subtracting %d from %d to get %d",inB,inA,rslt);
+			// $display("We are subtracting %d from %d to get %d",inB,inA,rslt);
 		end
 		4'b0010: // addi
 			rslt = inA + inB;
@@ -49,7 +49,7 @@ always_comb begin
 		end
 		4'b0111:begin // nor
 			rslt = ~( inA | inB);
-			$display("we are norring %b with %b to get %b",inA, inB,rslt);
+			// $display("we are norring %b with %b to get %b",inA, inB,rslt);
 		end
 		4'b1000: // xor
 			rslt = inA ^ inB;
@@ -59,25 +59,25 @@ always_comb begin
 			rslt = inA | inB;
 		4'b1011: begin // sll
 			rslt = inA << inB;
-			$display("%b is shifted left by %d bits to give %b",inA,inB,rslt);
+			// $display("%b is shifted left by %d bits to give %b",inA,inB,rslt);
 		end
 		4'b1100: begin // slr
 			rslt = inA >> inB;
-			$display("%b is shifted right by %d bits to give %b",inB,inB,rslt);
+			// $display("%b is shifted right by %d bits to give %b",inB,inB,rslt);
 		end
 		4'b1101: begin // eq
 			rslt = (inA == inB);
 			one = rslt[0];
-			$display("checking if %b is equal to %b and correctly displayd as %b and one is rightly updated to %b", inA, inB,rslt,one);
+			// $display("checking if %b is equal to %b and correctly displayd as %b and one is rightly updated to %b", inA, inB,rslt,one);
 		end
 		4'b1110: begin // lt
 			rslt = (inA < inB);
 			one = rslt[0];
-			$display("checking if %d is less than %d and correctly display as %b,",inA,inB,rslt);
+			// $display("checking if %d is less than %d and correctly display as %b,",inA,inB,rslt);
 		end
 		4'b1111:begin // rxor
 			rslt = ^inB;
-			$display("we have reduce xor'd %b to get %b",inB,rslt);
+			// $display("we have reduce xor'd %b to get %b",inB,rslt);
 		end
 	endcase
 	
