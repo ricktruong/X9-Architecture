@@ -1,188 +1,147 @@
-# $3 :   1, 00000001
-# $4 : 128, 10000000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  30 into register 0
-# prog_ctr is  139
-# current reg_file input is  36 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  30, 00011110
-# $1 : 128, 10000000
-# $2 :  49, 00110001
-# $3 :   1, 00000001
-# $4 : 128, 10000000
-# $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
-#  ---------------------------- 
-# We wrote  36 into register 0
-# prog_ctr is  140
-# current reg_file input is  42 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  36, 00100100
-# $1 : 128, 10000000
-# $2 :  49, 00110001
-# $3 :   1, 00000001
-# $4 : 128, 10000000
-# $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
-#  ---------------------------- 
-# We wrote  42 into register 0
-# prog_ctr is  141
-# current reg_file input is  48 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  42, 00101010
-# $1 : 128, 10000000
-# $2 :  49, 00110001
-# $3 :   1, 00000001
-# $4 : 128, 10000000
-# $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
-#  ---------------------------- 
-# We wrote  48 into register 0
+# We wrote  32 into register 0
 # prog_ctr is  142
 # store function
-# current reg_file input is  54 and wr_en is 1
-# we are trying to store at Mem[ 48]
-# current reg_file input is  97 and wr_en is 0
-# current reg_file input is  48 and wr_en is 0
+# current reg_file input is  38 and wr_en is 1
+# we are trying to store at Mem[ 32]
+# current reg_file input is  86 and wr_en is 0
+# current reg_file input is  32 and wr_en is 0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  48, 00110000
-# $1 : 128, 10000000
-# $2 :  49, 00110001
-# $3 :   1, 00000001
-# $4 : 128, 10000000
+# $0 :  32, 00100000
+# $1 :  16, 00010000
+# $2 :  54, 00110110
+# $3 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # prog_ctr is  143
-# we are trying to store at Mem[ 48]
-# current reg_file input is  49 and wr_en is 1
+# we are trying to store at Mem[ 32]
+# current reg_file input is  33 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  48, 00110000
-# $1 : 128, 10000000
-# $2 :  49, 00110001
-# $3 :   1, 00000001
-# $4 : 128, 10000000
+# $0 :  32, 00100000
+# $1 :  16, 00010000
+# $2 :  54, 00110110
+# $3 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  49 into register 0
+# We wrote  33 into register 0
 # prog_ctr is  144
 # store function
-# current reg_file input is  50 and wr_en is 1
-# we are trying to store at Mem[ 49]
-# current reg_file input is  49 and wr_en is 0
+# current reg_file input is  34 and wr_en is 1
+# we are trying to store at Mem[ 33]
+# current reg_file input is  33 and wr_en is 0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  49, 00110001
-# $1 : 128, 10000000
-# $2 :  49, 00110001
-# $3 :   1, 00000001
-# $4 : 128, 10000000
+# $0 :  33, 00100001
+# $1 :  16, 00010000
+# $2 :  54, 00110110
+# $3 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # prog_ctr is  145
-# we are trying to store at Mem[ 49]
-# current reg_file input is  43 and wr_en is 1
+# we are trying to store at Mem[ 33]
+# current reg_file input is  27 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  49, 00110001
-# $1 : 128, 10000000
-# $2 :  49, 00110001
-# $3 :   1, 00000001
-# $4 : 128, 10000000
+# $0 :  33, 00100001
+# $1 :  16, 00010000
+# $2 :  54, 00110110
+# $3 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  43 into register 0
+# We wrote  27 into register 0
 # prog_ctr is  146
-# current reg_file input is  37 and wr_en is 1
+# current reg_file input is  21 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  43, 00101011
-# $1 : 128, 10000000
-# $2 :  49, 00110001
-# $3 :   1, 00000001
-# $4 : 128, 10000000
+# $0 :  27, 00011011
+# $1 :  16, 00010000
+# $2 :  54, 00110110
+# $3 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  37 into register 0
+# We wrote  21 into register 0
 # prog_ctr is  147
-# current reg_file input is  31 and wr_en is 1
+# current reg_file input is  15 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  37, 00100101
-# $1 : 128, 10000000
-# $2 :  49, 00110001
-# $3 :   1, 00000001
-# $4 : 128, 10000000
+# $0 :  21, 00010101
+# $1 :  16, 00010000
+# $2 :  54, 00110110
+# $3 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  31 into register 0
+# We wrote  15 into register 0
 # prog_ctr is  148
-# current reg_file input is  25 and wr_en is 1
+# current reg_file input is   9 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  31, 00011111
-# $1 : 128, 10000000
-# $2 :  49, 00110001
-# $3 :   1, 00000001
-# $4 : 128, 10000000
+# $0 :  15, 00001111
+# $1 :  16, 00010000
+# $2 :  54, 00110110
+# $3 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  25 into register 0
+# We wrote   9 into register 0
 # prog_ctr is  149
-# current reg_file input is  19 and wr_en is 1
+# current reg_file input is   3 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 : 128, 10000000
-# $2 :  49, 00110001
-# $3 :   1, 00000001
-# $4 : 128, 10000000
+# $0 :   9, 00001001
+# $1 :  16, 00010000
+# $2 :  54, 00110110
+# $3 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  19 into register 0
+# We wrote   3 into register 0
 # prog_ctr is  150
-# current reg_file input is  13 and wr_en is 1
-# current reg_file input is  20 and wr_en is 1
+# current reg_file input is 253 and wr_en is 1
+# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  19, 00010011
-# $1 : 128, 10000000
-# $2 :  49, 00110001
-# $3 :   1, 00000001
-# $4 : 128, 10000000
+# $0 :   3, 00000011
+# $1 :  16, 00010000
+# $2 :  54, 00110110
+# $3 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  20 into register 0
+# We wrote   4 into register 0
 # prog_ctr is  151
 # movi function
-# current reg_file input is  21 and wr_en is 1
+# current reg_file input is   5 and wr_en is 1
 # current reg_file input is   6 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  20, 00010100
-# $1 : 128, 10000000
-# $2 :  49, 00110001
-# $3 :   1, 00000001
-# $4 : 128, 10000000
+# $0 :   4, 00000100
+# $1 :  16, 00010000
+# $2 :  54, 00110110
+# $3 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   6 into register 3
 # prog_ctr is  152
@@ -191,14 +150,14 @@
 # we are trying to movi   0
 # movi function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  20, 00010100
-# $1 : 128, 10000000
-# $2 :  49, 00110001
+# $0 :   4, 00000100
+# $1 :  16, 00010000
+# $2 :  54, 00110110
 # $3 :   6, 00000110
-# $4 : 128, 10000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  153
@@ -206,205 +165,203 @@
 # current reg_file input is  11 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
-# current reg_file input is  32 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  20, 00010100
-# $1 : 128, 10000000
+# $0 :   4, 00000100
+# $1 :  16, 00010000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
-# $4 : 128, 10000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  32 into register 2
+# We wrote   0 into register 2
 # prog_ctr is  154
-# current reg_file input is  64 and wr_en is 1
-# current reg_file input is  81 and wr_en is 1
+# current reg_file input is  54 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  20, 00010100
-# $1 : 128, 10000000
-# $2 :  32, 00100000
+# $0 :   4, 00000100
+# $1 :  16, 00010000
+# $2 :   0, 00000000
 # $3 :   6, 00000110
-# $4 : 128, 10000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  81 into register 2
+# We wrote  54 into register 2
 # prog_ctr is  155
-# current reg_file input is 130 and wr_en is 1
+# current reg_file input is 108 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  20, 00010100
-# $1 : 128, 10000000
-# $2 :  81, 01010001
+# $0 :   4, 00000100
+# $1 :  16, 00010000
+# $2 :  54, 00110110
 # $3 :   6, 00000110
-# $4 : 128, 10000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 130 into register 2
+# We wrote 108 into register 2
 # prog_ctr is  156
-# current reg_file input is 179 and wr_en is 1
 # current reg_file input is 162 and wr_en is 1
+# current reg_file input is 108 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  20, 00010100
-# $1 : 128, 10000000
-# $2 : 130, 10000010
+# $0 :   4, 00000100
+# $1 :  16, 00010000
+# $2 : 108, 01101100
 # $3 :   6, 00000110
-# $4 : 128, 10000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 162 into register 2
+# We wrote 108 into register 2
 # prog_ctr is  157
 # movr function
-# current reg_file input is 194 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
-# current reg_file input is 162 and wr_en is 1
+# current reg_file input is  32 and wr_en is 1
+# current reg_file input is 108 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  20, 00010100
-# $1 : 128, 10000000
-# $2 : 162, 10100010
+# $0 :   4, 00000100
+# $1 :  16, 00010000
+# $2 : 108, 01101100
 # $3 :   6, 00000110
-# $4 : 128, 10000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 162 into register 4
+# We wrote 108 into register 4
 # prog_ctr is  158
-# current reg_file input is  20 and wr_en is 0
+# current reg_file input is   4 and wr_en is 0
 # current reg_file input is   1 and wr_en is 0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  20, 00010100
-# $1 : 128, 10000000
-# $2 : 162, 10100010
+# $0 :   4, 00000100
+# $1 :  16, 00010000
+# $2 : 108, 01101100
 # $3 :   6, 00000110
-# $4 : 162, 10100010
+# $4 : 108, 01101100
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # prog_ctr is  159
+# current reg_file input is   0 and wr_en is 0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  20, 00010100
-# $1 : 128, 10000000
-# $2 : 162, 10100010
+# $0 :   4, 00000100
+# $1 :  16, 00010000
+# $2 : 108, 01101100
 # $3 :   6, 00000110
-# $4 : 162, 10100010
+# $4 : 108, 01101100
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # prog_ctr is    1
 # load function
-# we are trying to load at Mem[ 20]
-# current reg_file input is   0 and wr_en is 1
+# we are trying to load at Mem[  4]
+# current reg_file input is   1 and wr_en is 1
+# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  20, 00010100
-# $1 : 128, 10000000
-# $2 : 162, 10100010
+# $0 :   4, 00000100
+# $1 :  16, 00010000
+# $2 : 108, 01101100
 # $3 :   6, 00000110
-# $4 : 162, 10100010
+# $4 : 108, 01101100
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 4
+# We wrote   4 into register 4
 # prog_ctr is    2
-# we are trying to load at Mem[ 20]
-# we are trying to load at Mem[162]
+# we are trying to load at Mem[  4]
+# we are trying to load at Mem[108]
 # movr function
-# current reg_file input is 162 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
+# current reg_file input is 108 and wr_en is 1
+# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  20, 00010100
-# $1 : 128, 10000000
-# $2 : 162, 10100010
+# $0 :   4, 00000100
+# $1 :  16, 00010000
+# $2 : 108, 01101100
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 1
+# We wrote   4 into register 1
 # prog_ctr is    3
-# current reg_file input is  20 and wr_en is 1
-# current reg_file input is  21 and wr_en is 1
+# current reg_file input is   5 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  20, 00010100
-# $1 :   0, 00000000
-# $2 : 162, 10100010
+# $0 :   4, 00000100
+# $1 :   4, 00000100
+# $2 : 108, 01101100
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  21 into register 0
+# We wrote   5 into register 0
 # prog_ctr is    4
 # load function
-# current reg_file input is  22 and wr_en is 1
-# we are trying to load at Mem[ 21]
+# current reg_file input is   6 and wr_en is 1
+# we are trying to load at Mem[  5]
+# current reg_file input is   8 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
-# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
-# $1 :   0, 00000000
-# $2 : 162, 10100010
+# $0 :   5, 00000101
+# $1 :   4, 00000100
+# $2 : 108, 01101100
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   6, 00000110
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   4 into register 5
+# We wrote   0 into register 5
 # prog_ctr is    5
-# we are trying to load at Mem[ 21]
-# we are trying to load at Mem[162]
+# we are trying to load at Mem[  5]
+# we are trying to load at Mem[108]
 # movr function
-# current reg_file input is 162 and wr_en is 1
-# current reg_file input is   4 and wr_en is 1
+# current reg_file input is 108 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
-# $1 :   0, 00000000
-# $2 : 162, 10100010
+# $0 :   5, 00000101
+# $1 :   4, 00000100
+# $2 : 108, 01101100
 # $3 :   6, 00000110
-# $4 :   0, 00000000
-# $5 :   4, 00000100
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $4 :   4, 00000100
+# $5 :   0, 00000000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   4 into register 2
+# We wrote   0 into register 2
 # prog_ctr is    6
 # movi function
 # we are trying to movi   0
+# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
-# $1 :   0, 00000000
-# $2 :   4, 00000100
+# $0 :   5, 00000101
+# $1 :   4, 00000100
+# $2 :   0, 00000000
 # $3 :   6, 00000110
-# $4 :   0, 00000000
-# $5 :   4, 00000100
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $4 :   4, 00000100
+# $5 :   0, 00000000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   4 into register 4
 # prog_ctr is    7
-# we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
-# $1 :   0, 00000000
-# $2 :   4, 00000100
+# $0 :   5, 00000101
+# $1 :   4, 00000100
+# $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   4, 00000100
-# $5 :   4, 00000100
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $5 :   0, 00000000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 1
 # prog_ctr is    8
@@ -412,14 +369,14 @@
 # current reg_file input is   1 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
+# $0 :   5, 00000101
 # $1 :   0, 00000000
-# $2 :   4, 00000100
+# $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   4, 00000100
-# $5 :   4, 00000100
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $5 :   0, 00000000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   1 into register 4
 # prog_ctr is    9
@@ -428,29 +385,29 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
+# $0 :   5, 00000101
 # $1 :   0, 00000000
-# $2 :   4, 00000100
+# $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
-# $5 :   4, 00000100
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $5 :   0, 00000000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 1
 # prog_ctr is   10
 # movi function
-# current reg_file input is   5 and wr_en is 1
 # we are trying to movi   0
+# current reg_file input is   5 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
+# $0 :   5, 00000101
 # $1 :   0, 00000000
-# $2 :   4, 00000100
+# $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
-# $5 :   4, 00000100
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $5 :   0, 00000000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   5 into register 5
 # prog_ctr is   11
@@ -458,60 +415,56 @@
 # current reg_file input is   9 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
-# current reg_file input is 128 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
+# $0 :   5, 00000101
 # $1 :   0, 00000000
-# $2 :   4, 00000100
+# $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 128 into register 2
+# We wrote   0 into register 2
 # prog_ctr is   12
 # movr function
-# current reg_file input is   0 and wr_en is 1
-# current reg_file input is 128 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
+# $0 :   5, 00000101
 # $1 :   0, 00000000
-# $2 : 128, 10000000
+# $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
-# $6 :  49, 00110001
-# $7 :  32, 00100000
+# $6 :  54, 00110110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 128 into register 6
+# We wrote   0 into register 6
 # prog_ctr is   13
 # current reg_file input is   6 and wr_en is 1
-# current reg_file input is 128 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
+# $0 :   5, 00000101
 # $1 :   0, 00000000
-# $2 : 128, 10000000
+# $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
-# $6 : 128, 10000000
-# $7 :  32, 00100000
+# $6 :   0, 00000000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 128 into register 1
+# We wrote   0 into register 1
 # prog_ctr is   14
-# current reg_file input is   0 and wr_en is 1
-# current reg_file input is 133 and wr_en is 1
+# current reg_file input is   5 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
-# $1 : 128, 10000000
-# $2 : 128, 10000000
+# $0 :   5, 00000101
+# $1 :   0, 00000000
+# $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
-# $6 : 128, 10000000
-# $7 :  32, 00100000
+# $6 :   0, 00000000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   15
@@ -519,159 +472,157 @@
 # current reg_file input is   1 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
-# $1 : 128, 10000000
+# $0 :   5, 00000101
+# $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
-# $6 : 128, 10000000
-# $7 :  32, 00100000
+# $6 :   0, 00000000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 6
 # prog_ctr is   16
 # current reg_file input is   6 and wr_en is 1
-# current reg_file input is 128 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
-# $1 : 128, 10000000
+# $0 :   5, 00000101
+# $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :  32, 00100000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 128 into register 1
+# We wrote   0 into register 1
 # prog_ctr is   17
 # movr function
-# current reg_file input is  21 and wr_en is 1
-# current reg_file input is 128 and wr_en is 1
+# current reg_file input is   5 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
-# $1 : 128, 10000000
+# $0 :   5, 00000101
+# $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :  32, 00100000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 128 into register 7
+# We wrote   0 into register 7
 # prog_ctr is   18
-# current reg_file input is   0 and wr_en is 1
-# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
-# $1 : 128, 10000000
+# $0 :   5, 00000101
+# $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   4 into register 1
+# We wrote   0 into register 1
 # prog_ctr is   19
-# current reg_file input is   0 and wr_en is 1
-# current reg_file input is 128 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
-# $1 :   4, 00000100
+# $0 :   5, 00000101
+# $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 128 into register 1
+# We wrote   0 into register 1
 # prog_ctr is   20
-# current reg_file input is   0 and wr_en is 1
-# current reg_file input is  22 and wr_en is 1
+# current reg_file input is   5 and wr_en is 1
+# current reg_file input is   6 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  21, 00010101
-# $1 : 128, 10000000
+# $0 :   5, 00000101
+# $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  22 into register 0
+# We wrote   6 into register 0
 # prog_ctr is   21
 # load function
-# current reg_file input is  23 and wr_en is 1
-# we are trying to load at Mem[ 22]
-# current reg_file input is   0 and wr_en is 1
+# current reg_file input is   7 and wr_en is 1
+# we are trying to load at Mem[  6]
+# current reg_file input is   8 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 4
+# We wrote   8 into register 4
 # prog_ctr is   22
-# we are trying to load at Mem[ 22]
+# we are trying to load at Mem[  6]
 # we are trying to load at Mem[  0]
 # movr function
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is   8 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   8, 00001000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   8 into register 2
 # prog_ctr is   23
 # load function
-# we are trying to load at Mem[ 22]
+# we are trying to load at Mem[  6]
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
-# $2 :   0, 00000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   8, 00001000
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   8, 00001000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 4
+# We wrote   8 into register 4
 # prog_ctr is   24
-# we are trying to load at Mem[  0]
+# we are trying to load at Mem[  8]
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
-# $2 :   0, 00000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   8, 00001000
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   8, 00001000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 3
+# We wrote   8 into register 3
 # prog_ctr is   25
 # movi function
 # we are trying to movi   0
 # current reg_file input is   7 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   8, 00001000
+# $3 :   8, 00001000
+# $4 :   8, 00001000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   7 into register 4
 # prog_ctr is   26
@@ -680,14 +631,14 @@
 # current reg_file input is   8 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   8, 00001000
+# $3 :   8, 00001000
 # $4 :   7, 00000111
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   27
@@ -695,14 +646,14 @@
 # current reg_file input is   4 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :   8, 00001000
 # $4 :   7, 00000111
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   4 into register 4
 # prog_ctr is   28
@@ -711,249 +662,255 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :   8, 00001000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   29
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :   8, 00001000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 6
 # prog_ctr is   30
-# current reg_file input is 128 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   4, 00000100
-# $5 :   5, 00000101
-# $6 :   0, 00000000
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote 128 into register 1
-# prog_ctr is   31
-# current reg_file input is   4 and wr_en is 1
+# current reg_file input is   8 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :   8, 00001000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 3
-# prog_ctr is   32
+# We wrote   0 into register 1
+# prog_ctr is   31
+# current reg_file input is  12 and wr_en is 1
+# current reg_file input is 128 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :   8, 00001000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 3
+# We wrote 128 into register 3
+# prog_ctr is   32
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is   4 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 : 128, 10000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   4 into register 3
 # prog_ctr is   33
 # movr function
-# current reg_file input is 128 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :   4, 00000100
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 6
+# We wrote   4 into register 6
 # prog_ctr is   34
-# current reg_file input is 128 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :   4, 00000100
 # $4 :   4, 00000100
 # $5 :   5, 00000101
-# $6 :   0, 00000000
-# $7 : 128, 10000000
+# $6 :   4, 00000100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 128 into register 1
+# We wrote   4 into register 1
 # prog_ctr is   35
 # movr function
-# current reg_file input is  22 and wr_en is 1
-# current reg_file input is 128 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is   2 and wr_en is 1
+# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   4, 00000100
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :   4, 00000100
 # $4 :   4, 00000100
 # $5 :   5, 00000101
-# $6 :   0, 00000000
-# $7 : 128, 10000000
+# $6 :   4, 00000100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 128 into register 6
+# We wrote   4 into register 6
 # prog_ctr is   36
 # current reg_file input is   5 and wr_en is 1
 # current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   4, 00000100
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :   4, 00000100
 # $4 :   4, 00000100
 # $5 :   5, 00000101
-# $6 : 128, 10000000
-# $7 : 128, 10000000
+# $6 :   4, 00000100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   1 into register 2
 # prog_ctr is   37
 # current reg_file input is  16 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   4, 00000100
 # $2 :   1, 00000001
-# $3 :   0, 00000000
+# $3 :   4, 00000100
 # $4 :   4, 00000100
 # $5 :   5, 00000101
-# $6 : 128, 10000000
-# $7 : 128, 10000000
+# $6 :   4, 00000100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote  16 into register 2
 # prog_ctr is   38
 # current reg_file input is   0 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
-# $2 :  16, 00010000
-# $3 :   0, 00000000
-# $4 :   4, 00000100
-# $5 :   5, 00000101
-# $6 : 128, 10000000
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote   0 into register 3
-# prog_ctr is   39
-# movr function
-#  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
-# $2 :  16, 00010000
-# $3 :   0, 00000000
-# $4 :   4, 00000100
-# $5 :   5, 00000101
-# $6 : 128, 10000000
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote   0 into register 6
-# prog_ctr is   40
-# current reg_file input is   5 and wr_en is 1
-# current reg_file input is  16 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
-# $2 :  16, 00010000
-# $3 :   0, 00000000
-# $4 :   4, 00000100
-# $5 :   5, 00000101
-# $6 :   0, 00000000
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote  16 into register 2
-# prog_ctr is   41
-# movr function
-# current reg_file input is 132 and wr_en is 1
-# current reg_file input is  16 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
-# $2 :  16, 00010000
-# $3 :   0, 00000000
-# $4 :   4, 00000100
-# $5 :   5, 00000101
-# $6 :   0, 00000000
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote  16 into register 6
-# prog_ctr is   42
-# movr function
 # current reg_file input is 128 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
-# $2 :  16, 00010000
-# $3 :   0, 00000000
-# $4 :   4, 00000100
-# $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote 128 into register 1
-# prog_ctr is   43
-# current reg_file input is  16 and wr_en is 1
-# current reg_file input is   4 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
-# $2 :  16, 00010000
-# $3 :   0, 00000000
-# $4 :   4, 00000100
-# $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote   4 into register 1
-# prog_ctr is   44
-# movr function
-# current reg_file input is   0 and wr_en is 1
-# current reg_file input is 128 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
+# $0 :   6, 00000110
 # $1 :   4, 00000100
 # $2 :  16, 00010000
-# $3 :   0, 00000000
+# $3 :   4, 00000100
 # $4 :   4, 00000100
 # $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 :   4, 00000100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 128 into register 2
+# We wrote 128 into register 3
+# prog_ctr is   39
+# movr function
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is  64 and wr_en is 1
+# current reg_file input is 128 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   6, 00000110
+# $1 :   4, 00000100
+# $2 :  16, 00010000
+# $3 : 128, 10000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   4, 00000100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote 128 into register 6
+# prog_ctr is   40
+# current reg_file input is   5 and wr_en is 1
+# current reg_file input is 144 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   6, 00000110
+# $1 :   4, 00000100
+# $2 :  16, 00010000
+# $3 : 128, 10000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 : 128, 10000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote 144 into register 2
+# prog_ctr is   41
+# movr function
+# current reg_file input is  16 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is 144 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   6, 00000110
+# $1 :   4, 00000100
+# $2 : 144, 10010000
+# $3 : 128, 10000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 : 128, 10000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote 144 into register 6
+# prog_ctr is   42
+# movr function
+# current reg_file input is   0 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   6, 00000110
+# $1 :   4, 00000100
+# $2 : 144, 10010000
+# $3 : 128, 10000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 : 144, 10010000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 into register 1
+# prog_ctr is   43
+# current reg_file input is 144 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 : 144, 10010000
+# $3 : 128, 10000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 : 144, 10010000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 into register 1
+# prog_ctr is   44
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 : 144, 10010000
+# $3 : 128, 10000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 : 144, 10010000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 into register 2
 # prog_ctr is   45
 # movi function
 # we are trying to movi   0
 # current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
-# $2 : 128, 10000000
-# $3 :   0, 00000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 : 128, 10000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   2 into register 4
 # prog_ctr is   46
@@ -961,74 +918,67 @@
 # current reg_file input is   8 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
-# current reg_file input is  32 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
-# $2 : 128, 10000000
-# $3 :   0, 00000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 : 128, 10000000
 # $4 :   2, 00000010
 # $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  32 into register 2
+# We wrote   0 into register 2
 # prog_ctr is   47
-# current reg_file input is   8 and wr_en is 1
-# current reg_file input is   1 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
-# $2 :  32, 00100000
-# $3 :   0, 00000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 : 128, 10000000
 # $4 :   2, 00000010
 # $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   48
 # movr function
-# current reg_file input is  16 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 : 128, 10000000
 # $4 :   2, 00000010
 # $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is   49
-# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 : 128, 10000000
 # $4 :   0, 00000000
 # $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   4 into register 1
+# We wrote   0 into register 1
 # prog_ctr is   50
 # movi function
 # current reg_file input is   7 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 : 128, 10000000
 # $4 :   0, 00000000
 # $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   7 into register 4
 # prog_ctr is   51
@@ -1036,30 +986,32 @@
 # we are trying to movi   0
 # current reg_file input is  12 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 : 128, 10000000
 # $4 :   7, 00000111
 # $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 3
+# We wrote   1 into register 3
 # prog_ctr is   52
 # movi function
+# current reg_file input is   0 and wr_en is 1
 # current reg_file input is   5 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :   1, 00000001
 # $4 :   7, 00000111
 # $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   5 into register 4
 # prog_ctr is   53
@@ -1067,84 +1019,92 @@
 # current reg_file input is  12 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is  32 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :   1, 00000001
 # $4 :   5, 00000101
 # $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 3
+# We wrote  32 into register 3
 # prog_ctr is   54
 # movr function
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is  32 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :  32, 00100000
 # $4 :   5, 00000101
 # $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 4
+# We wrote  32 into register 4
 # prog_ctr is   55
-# current reg_file input is   4 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is  32 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
+# $3 :  32, 00100000
+# $4 :  32, 00100000
 # $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   4 into register 1
+# We wrote  32 into register 1
 # prog_ctr is   56
 # load function
-# we are trying to load at Mem[ 22]
-# current reg_file input is   2 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
+# we are trying to load at Mem[  6]
+# current reg_file input is   8 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
+# $3 :  32, 00100000
+# $4 :  32, 00100000
 # $5 :   5, 00000101
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 5
+# We wrote   8 into register 5
 # prog_ctr is   57
-# we are trying to load at Mem[ 22]
+# we are trying to load at Mem[  6]
 # we are trying to load at Mem[  0]
 # movr function
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is   8 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   0, 00000000
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $3 :  32, 00100000
+# $4 :  32, 00100000
+# $5 :   8, 00001000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   8 into register 2
 # prog_ctr is   58
+# current reg_file input is  32 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   0, 00000000
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :  32, 00100000
+# $2 :   8, 00001000
+# $3 :  32, 00100000
+# $4 :  32, 00100000
+# $5 :   8, 00001000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   59
@@ -1152,14 +1112,14 @@
 # current reg_file input is   3 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   0, 00000000
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $3 :  32, 00100000
+# $4 :  32, 00100000
+# $5 :   8, 00001000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   3 into register 5
 # prog_ctr is   60
@@ -1168,71 +1128,69 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
+# $3 :  32, 00100000
+# $4 :  32, 00100000
 # $5 :   3, 00000011
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   61
 # movr function
-# current reg_file input is   4 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
+# $3 :  32, 00100000
+# $4 :  32, 00100000
 # $5 :   3, 00000011
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is   62
-# current reg_file input is   4 and wr_en is 1
+# current reg_file input is  32 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :  32, 00100000
 # $4 :   0, 00000000
 # $5 :   3, 00000011
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   4 into register 1
+# We wrote  32 into register 1
 # prog_ctr is   63
 # movr function
-# current reg_file input is   6 and wr_en is 1
-# current reg_file input is   4 and wr_en is 1
+# current reg_file input is 150 and wr_en is 1
+# current reg_file input is  32 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :  32, 00100000
 # $4 :   0, 00000000
 # $5 :   3, 00000011
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   4 into register 4
+# We wrote  32 into register 4
 # prog_ctr is   64
-# current reg_file input is  16 and wr_en is 1
+# current reg_file input is 144 and wr_en is 1
 # current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   4, 00000100
+# $3 :  32, 00100000
+# $4 :  32, 00100000
 # $5 :   3, 00000011
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   1 into register 3
 # prog_ctr is   65
@@ -1240,14 +1198,14 @@
 # current reg_file input is   2 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
 # $3 :   1, 00000001
-# $4 :   4, 00000100
+# $4 :  32, 00100000
 # $5 :   3, 00000011
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   2 into register 5
 # prog_ctr is   66
@@ -1257,44 +1215,44 @@
 # current reg_file input is   0 and wr_en is 1
 # current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
 # $3 :   1, 00000001
-# $4 :   4, 00000100
+# $4 :  32, 00100000
 # $5 :   2, 00000010
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   4 into register 3
 # prog_ctr is   67
 # current reg_file input is  16 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
-# current reg_file input is  20 and wr_en is 1
+# current reg_file input is 148 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
 # $3 :   4, 00000100
-# $4 :   4, 00000100
+# $4 :  32, 00100000
 # $5 :   2, 00000010
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  20 into register 3
+# We wrote 148 into register 3
 # prog_ctr is   68
 # movi function
 # current reg_file input is   4 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
-# $4 :   4, 00000100
+# $3 : 148, 10010100
+# $4 :  32, 00100000
 # $5 :   2, 00000010
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   4 into register 5
 # prog_ctr is   69
@@ -1303,95 +1261,97 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
-# $4 :   4, 00000100
+# $3 : 148, 10010100
+# $4 :  32, 00100000
 # $5 :   4, 00000100
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   70
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
-# $4 :   4, 00000100
+# $3 : 148, 10010100
+# $4 :  32, 00100000
 # $5 :   4, 00000100
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   71
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
-# $4 :   4, 00000100
+# $3 : 148, 10010100
+# $4 :  32, 00100000
 # $5 :   4, 00000100
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is   72
-# current reg_file input is  16 and wr_en is 1
-# current reg_file input is  20 and wr_en is 1
+# current reg_file input is 144 and wr_en is 1
+# current reg_file input is 148 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   4, 00000100
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  20 into register 3
+# We wrote 148 into register 3
 # prog_ctr is   73
 # movr function
+# current reg_file input is 176 and wr_en is 1
+# current reg_file input is 148 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   4, 00000100
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $6 : 144, 10010000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  20 into register 6
+# We wrote 148 into register 6
 # prog_ctr is   74
 # movr function
-# current reg_file input is 128 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   4, 00000100
+# $0 :   6, 00000110
+# $1 :  32, 00100000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   4, 00000100
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 128 into register 1
+# We wrote   0 into register 1
 # prog_ctr is   75
 # movi function
 # we are trying to movi   0
 # current reg_file input is   7 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   4, 00000100
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   7 into register 4
 # prog_ctr is   76
@@ -1399,32 +1359,30 @@
 # we are trying to movi   0
 # current reg_file input is   4 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
-# current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   7, 00000111
 # $5 :   4, 00000100
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   1 into register 1
+# We wrote   0 into register 1
 # prog_ctr is   77
 # movi function
-# current reg_file input is   0 and wr_en is 1
 # current reg_file input is   5 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   7, 00000111
 # $5 :   4, 00000100
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   5 into register 5
 # prog_ctr is   78
@@ -1433,101 +1391,94 @@
 # we are trying to movi   0
 # movr function
 # current reg_file input is   0 and wr_en is 1
-# current reg_file input is 128 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   7, 00000111
 # $5 :   5, 00000101
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 128 into register 2
+# We wrote   0 into register 2
 # prog_ctr is   79
 # current reg_file input is   7 and wr_en is 1
-# current reg_file input is   4 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 : 128, 10000000
-# $3 :  20, 00010100
-# $4 :   7, 00000111
-# $5 :   5, 00000101
-# $6 :  20, 00010100
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote   4 into register 2
-# prog_ctr is   80
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 :   4, 00000100
-# $3 :  20, 00010100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 : 148, 10010100
 # $4 :   7, 00000111
 # $5 :   5, 00000101
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 into register 2
+# prog_ctr is   80
+#  --- REGISTER FILE VALUES --- 
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 : 148, 10010100
+# $4 :   7, 00000111
+# $5 :   5, 00000101
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   81
 # movr function
-# current reg_file input is 128 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   7, 00000111
 # $5 :   5, 00000101
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is   82
-# current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   5, 00000101
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   1 into register 1
+# We wrote   0 into register 1
 # prog_ctr is   83
 # movr function
-# current reg_file input is   0 and wr_en is 1
-# current reg_file input is 128 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   5, 00000101
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 128 into register 2
+# We wrote   0 into register 2
 # prog_ctr is   84
 # movi function
 # we are trying to movi   0
 # current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 : 128, 10000000
-# $3 :  20, 00010100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   5, 00000101
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   4 into register 5
 # prog_ctr is   85
@@ -1536,14 +1487,14 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 : 128, 10000000
-# $3 :  20, 00010100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   4, 00000100
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   86
@@ -1551,14 +1502,14 @@
 # current reg_file input is   7 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   4, 00000100
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   7 into register 5
 # prog_ctr is   87
@@ -1567,14 +1518,14 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   7, 00000111
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   88
@@ -1582,14 +1533,14 @@
 # current reg_file input is   1 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   7, 00000111
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   1 into register 5
 # prog_ctr is   89
@@ -1598,72 +1549,67 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   1, 00000001
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   90
 # movr function
-# current reg_file input is   1 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   1, 00000001
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is   91
-# current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   1, 00000001
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   1 into register 1
+# We wrote   0 into register 1
 # prog_ctr is   92
 # movr function
-# current reg_file input is   0 and wr_en is 1
-# current reg_file input is 128 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   1, 00000001
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 128 into register 2
+# We wrote   0 into register 2
 # prog_ctr is   93
 # movi function
 # we are trying to movi   0
 # current reg_file input is   6 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 : 128, 10000000
-# $3 :  20, 00010100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   1, 00000001
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   6 into register 5
 # prog_ctr is   94
@@ -1672,14 +1618,14 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 : 128, 10000000
-# $3 :  20, 00010100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   6, 00000110
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   95
@@ -1687,14 +1633,14 @@
 # current reg_file input is   7 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   6, 00000110
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   7 into register 5
 # prog_ctr is   96
@@ -1703,14 +1649,14 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   7, 00000111
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   97
@@ -1718,14 +1664,14 @@
 # current reg_file input is   2 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   7, 00000111
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   2 into register 5
 # prog_ctr is   98
@@ -1734,71 +1680,68 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   2, 00000010
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   99
 # movr function
-# current reg_file input is   1 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   2, 00000010
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is  100
-# current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   2, 00000010
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   1 into register 1
+# We wrote   0 into register 1
 # prog_ctr is  101
 # movr function
-# current reg_file input is  20 and wr_en is 1
+# current reg_file input is 148 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   2, 00000010
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  20 into register 2
+# We wrote 148 into register 2
 # prog_ctr is  102
 # movi function
 # we are trying to movi   0
 # current reg_file input is   7 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 :  20, 00010100
-# $3 :  20, 00010100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 : 148, 10010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   2, 00000010
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   7 into register 5
 # prog_ctr is  103
@@ -1806,30 +1749,32 @@
 # current reg_file input is   9 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 :  20, 00010100
-# $3 :  20, 00010100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 : 148, 10010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   7, 00000111
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   1 into register 2
 # prog_ctr is  104
 # movi function
+# current reg_file input is   0 and wr_en is 1
 # current reg_file input is   3 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 :   0, 00000000
-# $3 :  20, 00010100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   1, 00000001
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   7, 00000111
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   3 into register 5
 # prog_ctr is  105
@@ -1837,72 +1782,75 @@
 # current reg_file input is   9 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is   8 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 :   0, 00000000
-# $3 :  20, 00010100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   1, 00000001
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   3, 00000011
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   8 into register 2
 # prog_ctr is  106
 # movr function
-# current reg_file input is   1 and wr_en is 1
+# current reg_file input is  64 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is   8 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 :   0, 00000000
-# $3 :  20, 00010100
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   8, 00001000
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   3, 00000011
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 4
+# We wrote   8 into register 4
 # prog_ctr is  107
-# current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 :   0, 00000000
-# $3 :  20, 00010100
-# $4 :   0, 00000000
+# $0 :   6, 00000110
+# $1 :   0, 00000000
+# $2 :   8, 00001000
+# $3 : 148, 10010100
+# $4 :   8, 00001000
 # $5 :   3, 00000011
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   1 into register 1
+# We wrote   8 into register 1
 # prog_ctr is  108
 # movr function
-# current reg_file input is  20 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is 156 and wr_en is 1
+# current reg_file input is 148 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 :   0, 00000000
-# $3 :  20, 00010100
-# $4 :   0, 00000000
+# $0 :   6, 00000110
+# $1 :   8, 00001000
+# $2 :   8, 00001000
+# $3 : 148, 10010100
+# $4 :   8, 00001000
 # $5 :   3, 00000011
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  20 into register 2
+# We wrote 148 into register 2
 # prog_ctr is  109
 # movi function
 # we are trying to movi   0
 # current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 :  20, 00010100
-# $3 :  20, 00010100
-# $4 :   0, 00000000
+# $0 :   6, 00000110
+# $1 :   8, 00001000
+# $2 : 148, 10010100
+# $3 : 148, 10010100
+# $4 :   8, 00001000
 # $5 :   3, 00000011
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   2 into register 4
 # prog_ctr is  110
@@ -1912,14 +1860,14 @@
 # current reg_file input is   0 and wr_en is 1
 # current reg_file input is  80 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 :  20, 00010100
-# $3 :  20, 00010100
+# $0 :   6, 00000110
+# $1 :   8, 00001000
+# $2 : 148, 10010100
+# $3 : 148, 10010100
 # $4 :   2, 00000010
 # $5 :   3, 00000011
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote  80 into register 2
 # prog_ctr is  111
@@ -1928,14 +1876,14 @@
 # current reg_file input is   7 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :  80, 01010000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   2, 00000010
 # $5 :   3, 00000011
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   7 into register 4
 # prog_ctr is  112
@@ -1944,14 +1892,14 @@
 # current reg_file input is   8 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :  80, 01010000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   7, 00000111
 # $5 :   3, 00000011
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  113
@@ -1959,14 +1907,14 @@
 # current reg_file input is   4 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   7, 00000111
 # $5 :   3, 00000011
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   4 into register 5
 # prog_ctr is  114
@@ -1975,70 +1923,68 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   7, 00000111
 # $5 :   4, 00000100
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  115
 # movr function
-# current reg_file input is 128 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   7, 00000111
 # $5 :   4, 00000100
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is  116
-# current reg_file input is   1 and wr_en is 1
+# current reg_file input is   8 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   4, 00000100
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   1 into register 1
+# We wrote   8 into register 1
 # prog_ctr is  117
 # movr function
-# current reg_file input is  20 and wr_en is 1
+# current reg_file input is 148 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   4, 00000100
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  20 into register 2
+# We wrote 148 into register 2
 # prog_ctr is  118
 # current reg_file input is   0 and wr_en is 1
 # current reg_file input is  64 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 :  20, 00010100
-# $3 :  20, 00010100
+# $0 :   6, 00000110
+# $1 :   8, 00001000
+# $2 : 148, 10010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   4, 00000100
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote  64 into register 2
 # prog_ctr is  119
@@ -2047,14 +1993,14 @@
 # current reg_file input is   7 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :  64, 01000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   4, 00000100
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   7 into register 5
 # prog_ctr is  120
@@ -2063,14 +2009,14 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :  64, 01000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   7, 00000111
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  121
@@ -2078,14 +2024,14 @@
 # current reg_file input is   5 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   7, 00000111
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   5 into register 5
 # prog_ctr is  122
@@ -2094,428 +2040,424 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   5, 00000101
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  123
 # movr function
-# current reg_file input is   1 and wr_en is 1
+# current reg_file input is   8 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   5, 00000101
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is  124
-# current reg_file input is   1 and wr_en is 1
+# current reg_file input is   8 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   5, 00000101
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   1 into register 1
+# We wrote   8 into register 1
 # prog_ctr is  125
 # movr function
-# current reg_file input is   2 and wr_en is 1
-# current reg_file input is   1 and wr_en is 1
+# current reg_file input is 146 and wr_en is 1
+# current reg_file input is   8 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
+# $3 : 148, 10010100
 # $4 :   0, 00000000
 # $5 :   5, 00000101
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   1 into register 4
+# We wrote   8 into register 4
 # prog_ctr is  126
-# current reg_file input is  20 and wr_en is 1
+# current reg_file input is 148 and wr_en is 1
 # current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
-# $3 :  20, 00010100
-# $4 :   1, 00000001
+# $3 : 148, 10010100
+# $4 :   8, 00001000
 # $5 :   5, 00000101
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   1 into register 3
 # prog_ctr is  127
 # movi function
-# current reg_file input is   2 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
 # $3 :   1, 00000001
-# $4 :   1, 00000001
+# $4 :   8, 00001000
 # $5 :   5, 00000101
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   2 into register 5
+# We wrote   1 into register 5
 # prog_ctr is  128
 # we are trying to movi   0
 # current reg_file input is  13 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
-# current reg_file input is   4 and wr_en is 1
+# current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
 # $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   2, 00000010
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $4 :   8, 00001000
+# $5 :   1, 00000001
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   4 into register 3
+# We wrote   2 into register 3
 # prog_ctr is  129
-# current reg_file input is  16 and wr_en is 1
+# current reg_file input is   4 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
-# current reg_file input is  16 and wr_en is 1
+# current reg_file input is 150 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
-# $3 :   4, 00000100
-# $4 :   1, 00000001
-# $5 :   2, 00000010
-# $6 :  20, 00010100
-# $7 : 128, 10000000
+# $3 :   2, 00000010
+# $4 :   8, 00001000
+# $5 :   1, 00000001
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  16 into register 3
+# We wrote 150 into register 3
 # prog_ctr is  130
 # movr function
-# current reg_file input is   4 and wr_en is 1
-# current reg_file input is  21 and wr_en is 1
-# current reg_file input is  16 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 :   0, 00000000
-# $3 :  16, 00010000
-# $4 :   1, 00000001
-# $5 :   2, 00000010
-# $6 :  20, 00010100
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote  16 into register 6
-# prog_ctr is  131
 # current reg_file input is   2 and wr_en is 1
-# current reg_file input is   1 and wr_en is 1
+# current reg_file input is 156 and wr_en is 1
+# current reg_file input is 150 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
 # $2 :   0, 00000000
-# $3 :  16, 00010000
-# $4 :   1, 00000001
-# $5 :   2, 00000010
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $3 : 150, 10010110
+# $4 :   8, 00001000
+# $5 :   1, 00000001
+# $6 : 148, 10010100
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   1 into register 2
+# We wrote 150 into register 6
+# prog_ctr is  131
+# current reg_file input is   1 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   6, 00000110
+# $1 :   8, 00001000
+# $2 :   0, 00000000
+# $3 : 150, 10010110
+# $4 :   8, 00001000
+# $5 :   1, 00000001
+# $6 : 150, 10010110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 into register 2
 # prog_ctr is  132
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 :   1, 00000001
-# $3 :  16, 00010000
-# $4 :   1, 00000001
-# $5 :   2, 00000010
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   8, 00001000
+# $2 :   0, 00000000
+# $3 : 150, 10010110
+# $4 :   8, 00001000
+# $5 :   1, 00000001
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   1 into register 3
+# We wrote   0 into register 3
 # prog_ctr is  133
-# current reg_file input is 129 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 :   1, 00000001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   2, 00000010
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   8, 00001000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   1, 00000001
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 129 into register 2
+# We wrote   0 into register 2
 # prog_ctr is  134
-# current reg_file input is   1 and wr_en is 1
-# current reg_file input is 145 and wr_en is 1
+# current reg_file input is 150 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 : 129, 10000001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   2, 00000010
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   8, 00001000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   1, 00000001
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 145 into register 2
+# We wrote 150 into register 2
 # prog_ctr is  135
 # movr function
-# current reg_file input is 129 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
-# current reg_file input is 145 and wr_en is 1
+# current reg_file input is 150 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   2, 00000010
-# $6 :  16, 00010000
-# $7 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   1, 00000001
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 145 into register 6
+# We wrote 150 into register 6
 # prog_ctr is  136
 # movi function
 # we are trying to movi   0
 # current reg_file input is   6 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   2, 00000010
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $0 :   6, 00000110
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   1, 00000001
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   6 into register 5
 # prog_ctr is  137
 # we are trying to movi   0
-# current reg_file input is   1 and wr_en is 1
 # we are trying to movi   0
+# current reg_file input is   1 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
-# current reg_file input is  28 and wr_en is 1
+# current reg_file input is  12 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  22, 00010110
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
+# $0 :   6, 00000110
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  28 into register 0
+# We wrote  12 into register 0
 # prog_ctr is  138
-# current reg_file input is  34 and wr_en is 1
+# current reg_file input is  18 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  28, 00011100
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
+# $0 :  12, 00001100
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  34 into register 0
+# We wrote  18 into register 0
 # prog_ctr is  139
-# current reg_file input is  40 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  34, 00100010
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote  40 into register 0
-# prog_ctr is  140
-# current reg_file input is  46 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  40, 00101000
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote  46 into register 0
-# prog_ctr is  141
-# current reg_file input is  52 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  46, 00101110
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote  52 into register 0
-# prog_ctr is  142
-# store function
-# current reg_file input is  58 and wr_en is 1
-# we are trying to store at Mem[ 52]
-# current reg_file input is 197 and wr_en is 0
-# current reg_file input is  52 and wr_en is 0
-#  --- REGISTER FILE VALUES --- 
-# $0 :  52, 00110100
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
-#  ---------------------------- 
-# prog_ctr is  143
-# we are trying to store at Mem[ 52]
-# current reg_file input is  53 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  52, 00110100
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote  53 into register 0
-# prog_ctr is  144
-# store function
-# current reg_file input is  54 and wr_en is 1
-# we are trying to store at Mem[ 53]
-# current reg_file input is  53 and wr_en is 0
-#  --- REGISTER FILE VALUES --- 
-# $0 :  53, 00110101
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
-#  ---------------------------- 
-# prog_ctr is  145
-# we are trying to store at Mem[ 53]
-# current reg_file input is  47 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  53, 00110101
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote  47 into register 0
-# prog_ctr is  146
-# current reg_file input is  41 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  47, 00101111
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote  41 into register 0
-# prog_ctr is  147
-# current reg_file input is  35 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  41, 00101001
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote  35 into register 0
-# prog_ctr is  148
-# current reg_file input is  29 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  35, 00100011
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote  29 into register 0
-# prog_ctr is  149
-# current reg_file input is  23 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  29, 00011101
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
-# $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote  23 into register 0
-# prog_ctr is  150
-# current reg_file input is  17 and wr_en is 1
 # current reg_file input is  24 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  23, 00010111
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
+# $0 :  18, 00010010
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote  24 into register 0
-# prog_ctr is  151
-# movi function
-# current reg_file input is  25 and wr_en is 1
-# we are trying to movi   0
-# current reg_file input is   6 and wr_en is 1
+# prog_ctr is  140
+# current reg_file input is  30 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
 # $0 :  24, 00011000
-# $1 :   1, 00000001
-# $2 : 145, 10010001
-# $3 :   1, 00000001
-# $4 :   1, 00000001
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  30 into register 0
+# prog_ctr is  141
+# current reg_file input is  36 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  30, 00011110
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   6, 00000110
+# $6 : 150, 10010110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  36 into register 0
+# prog_ctr is  142
+# store function
+# current reg_file input is  42 and wr_en is 1
+# we are trying to store at Mem[ 36]
+# current reg_file input is 186 and wr_en is 0
+# current reg_file input is  36 and wr_en is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  36, 00100100
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   6, 00000110
+# $6 : 150, 10010110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# prog_ctr is  143
+# we are trying to store at Mem[ 36]
+# current reg_file input is  37 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  36, 00100100
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   6, 00000110
+# $6 : 150, 10010110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  37 into register 0
+# prog_ctr is  144
+# store function
+# current reg_file input is  38 and wr_en is 1
+# we are trying to store at Mem[ 37]
+# current reg_file input is  37 and wr_en is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  37, 00100101
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   6, 00000110
+# $6 : 150, 10010110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# prog_ctr is  145
+# we are trying to store at Mem[ 37]
+# current reg_file input is  31 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  37, 00100101
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   6, 00000110
+# $6 : 150, 10010110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  31 into register 0
+# prog_ctr is  146
+# current reg_file input is  25 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  31, 00011111
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   6, 00000110
+# $6 : 150, 10010110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  25 into register 0
+# prog_ctr is  147
+# current reg_file input is  19 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  25, 00011001
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   6, 00000110
+# $6 : 150, 10010110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  19 into register 0
+# prog_ctr is  148
+# current reg_file input is  13 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  19, 00010011
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   6, 00000110
+# $6 : 150, 10010110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  13 into register 0
+# prog_ctr is  149
+# current reg_file input is   7 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  13, 00001101
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   6, 00000110
+# $6 : 150, 10010110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   7 into register 0
+# prog_ctr is  150
+# current reg_file input is   1 and wr_en is 1
+# current reg_file input is   8 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   7, 00000111
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   6, 00000110
+# $6 : 150, 10010110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   8 into register 0
+# prog_ctr is  151
+# movi function
+# current reg_file input is   9 and wr_en is 1
+# current reg_file input is   6 and wr_en is 1
+# we are trying to movi   0
+#  --- REGISTER FILE VALUES --- 
+# $0 :   8, 00001000
+# $1 :   8, 00001000
+# $2 : 150, 10010110
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   6, 00000110
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   6 into register 3
 # prog_ctr is  152
@@ -2524,14 +2466,14 @@
 # we are trying to movi   0
 # movi function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  24, 00011000
-# $1 :   1, 00000001
-# $2 : 145, 10010001
+# $0 :   8, 00001000
+# $1 :   8, 00001000
+# $2 : 150, 10010110
 # $3 :   6, 00000110
-# $4 :   1, 00000001
+# $4 :   8, 00001000
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  153
@@ -2539,178 +2481,175 @@
 # current reg_file input is  11 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
-# current reg_file input is 128 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  24, 00011000
-# $1 :   1, 00000001
+# $0 :   8, 00001000
+# $1 :   8, 00001000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
-# $4 :   1, 00000001
+# $4 :   8, 00001000
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 128 into register 2
+# We wrote   0 into register 2
 # prog_ctr is  154
-# current reg_file input is   0 and wr_en is 1
-# current reg_file input is  17 and wr_en is 1
+# current reg_file input is 150 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  24, 00011000
-# $1 :   1, 00000001
-# $2 : 128, 10000000
+# $0 :   8, 00001000
+# $1 :   8, 00001000
+# $2 :   0, 00000000
 # $3 :   6, 00000110
-# $4 :   1, 00000001
+# $4 :   8, 00001000
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  17 into register 2
+# We wrote 150 into register 2
 # prog_ctr is  155
-# current reg_file input is 162 and wr_en is 1
+# current reg_file input is  44 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  24, 00011000
-# $1 :   1, 00000001
-# $2 :  17, 00010001
+# $0 :   8, 00001000
+# $1 :   8, 00001000
+# $2 : 150, 10010110
 # $3 :   6, 00000110
-# $4 :   1, 00000001
+# $4 :   8, 00001000
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote 162 into register 2
+# We wrote  44 into register 2
 # prog_ctr is  156
-# current reg_file input is  51 and wr_en is 1
-# current reg_file input is  34 and wr_en is 1
+# current reg_file input is 194 and wr_en is 1
+# current reg_file input is  44 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  24, 00011000
-# $1 :   1, 00000001
-# $2 : 162, 10100010
+# $0 :   8, 00001000
+# $1 :   8, 00001000
+# $2 :  44, 00101100
 # $3 :   6, 00000110
-# $4 :   1, 00000001
+# $4 :   8, 00001000
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  34 into register 2
+# We wrote  44 into register 2
 # prog_ctr is  157
 # movr function
-# current reg_file input is 162 and wr_en is 1
-# current reg_file input is   2 and wr_en is 1
-# current reg_file input is  34 and wr_en is 1
+# current reg_file input is  16 and wr_en is 1
+# current reg_file input is  44 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  24, 00011000
-# $1 :   1, 00000001
-# $2 :  34, 00100010
+# $0 :   8, 00001000
+# $1 :   8, 00001000
+# $2 :  44, 00101100
 # $3 :   6, 00000110
-# $4 :   1, 00000001
+# $4 :   8, 00001000
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  34 into register 4
+# We wrote  44 into register 4
 # prog_ctr is  158
-# current reg_file input is  24 and wr_en is 0
+# current reg_file input is   8 and wr_en is 0
 # current reg_file input is   1 and wr_en is 0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  24, 00011000
-# $1 :   1, 00000001
-# $2 :  34, 00100010
+# $0 :   8, 00001000
+# $1 :   8, 00001000
+# $2 :  44, 00101100
 # $3 :   6, 00000110
-# $4 :  34, 00100010
+# $4 :  44, 00101100
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # prog_ctr is  159
-# current reg_file input is   0 and wr_en is 0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  24, 00011000
-# $1 :   1, 00000001
-# $2 :  34, 00100010
+# $0 :   8, 00001000
+# $1 :   8, 00001000
+# $2 :  44, 00101100
 # $3 :   6, 00000110
-# $4 :  34, 00100010
+# $4 :  44, 00101100
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # prog_ctr is    1
 # load function
-# we are trying to load at Mem[ 24]
-# current reg_file input is   1 and wr_en is 1
+# we are trying to load at Mem[  8]
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is  16 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  24, 00011000
-# $1 :   1, 00000001
-# $2 :  34, 00100010
+# $0 :   8, 00001000
+# $1 :   8, 00001000
+# $2 :  44, 00101100
 # $3 :   6, 00000110
-# $4 :  34, 00100010
+# $4 :  44, 00101100
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 4
+# We wrote  16 into register 4
 # prog_ctr is    2
-# we are trying to load at Mem[ 24]
-# we are trying to load at Mem[ 34]
+# we are trying to load at Mem[  8]
+# we are trying to load at Mem[ 44]
 # movr function
-# current reg_file input is  34 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
+# current reg_file input is  44 and wr_en is 1
+# current reg_file input is  16 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  24, 00011000
-# $1 :   1, 00000001
-# $2 :  34, 00100010
+# $0 :   8, 00001000
+# $1 :   8, 00001000
+# $2 :  44, 00101100
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 1
+# We wrote  16 into register 1
 # prog_ctr is    3
-# current reg_file input is  24 and wr_en is 1
-# current reg_file input is  25 and wr_en is 1
+# current reg_file input is   8 and wr_en is 1
+# current reg_file input is   9 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  24, 00011000
-# $1 :   0, 00000000
-# $2 :  34, 00100010
+# $0 :   8, 00001000
+# $1 :  16, 00010000
+# $2 :  44, 00101100
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote  25 into register 0
+# We wrote   9 into register 0
 # prog_ctr is    4
 # load function
-# current reg_file input is  26 and wr_en is 1
-# we are trying to load at Mem[ 25]
+# current reg_file input is  10 and wr_en is 1
+# we are trying to load at Mem[  9]
+# current reg_file input is  32 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
-# $2 :  34, 00100010
+# $0 :   9, 00001001
+# $1 :  16, 00010000
+# $2 :  44, 00101100
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   6, 00000110
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 5
 # prog_ctr is    5
-# we are trying to load at Mem[ 25]
-# we are trying to load at Mem[ 34]
+# we are trying to load at Mem[  9]
+# we are trying to load at Mem[ 44]
 # movr function
-# current reg_file input is  34 and wr_en is 1
+# current reg_file input is  44 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
-# $2 :  34, 00100010
+# $0 :   9, 00001001
+# $1 :  16, 00010000
+# $2 :  44, 00101100
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   0, 00000000
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is    6
@@ -2718,43 +2657,45 @@
 # we are trying to movi   0
 # current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
+# $0 :   9, 00001001
+# $1 :  16, 00010000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :  16, 00010000
 # $5 :   0, 00000000
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   4 into register 4
 # prog_ctr is    7
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
+# $0 :   9, 00001001
+# $1 :  16, 00010000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   4, 00000100
 # $5 :   0, 00000000
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 1
+# We wrote   1 into register 1
 # prog_ctr is    8
 # movi function
+# current reg_file input is   0 and wr_en is 1
 # current reg_file input is   1 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
+# $0 :   9, 00001001
+# $1 :   1, 00000001
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   4, 00000100
 # $5 :   0, 00000000
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   1 into register 4
 # prog_ctr is    9
@@ -2762,30 +2703,32 @@
 # current reg_file input is   4 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
+# $0 :   9, 00001001
+# $1 :   1, 00000001
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   0, 00000000
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 1
+# We wrote   2 into register 1
 # prog_ctr is   10
 # movi function
-# we are trying to movi   0
+# current reg_file input is   4 and wr_en is 1
 # current reg_file input is   5 and wr_en is 1
+# we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
+# $0 :   9, 00001001
+# $1 :   2, 00000010
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   0, 00000000
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   5 into register 5
 # prog_ctr is   11
@@ -2794,55 +2737,57 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
+# $0 :   9, 00001001
+# $1 :   2, 00000010
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   12
 # movr function
+# current reg_file input is   4 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
+# $0 :   9, 00001001
+# $1 :   2, 00000010
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
-# $6 : 145, 10010001
-# $7 : 128, 10000000
+# $6 : 150, 10010110
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 6
 # prog_ctr is   13
 # current reg_file input is   6 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
+# current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
+# $0 :   9, 00001001
+# $1 :   2, 00000010
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
-# We wrote   0 into register 1
+# We wrote   2 into register 1
 # prog_ctr is   14
 # current reg_file input is   5 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
+# $0 :   9, 00001001
+# $1 :   2, 00000010
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   15
@@ -2850,155 +2795,158 @@
 # current reg_file input is   1 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
+# $0 :   9, 00001001
+# $1 :   2, 00000010
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 : 128, 10000000
+# $7 :   0, 00000000
 #  ---------------------------- 
 # We wrote   0 into register 6
 # prog_ctr is   16
 # current reg_file input is   6 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
+# current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   6, 00000110
-# $4 :   1, 00000001
-# $5 :   5, 00000101
-# $6 :   0, 00000000
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote   0 into register 1
-# prog_ctr is   17
-# movr function
-# current reg_file input is  25 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   6, 00000110
-# $4 :   1, 00000001
-# $5 :   5, 00000101
-# $6 :   0, 00000000
-# $7 : 128, 10000000
-#  ---------------------------- 
-# We wrote   0 into register 7
-# prog_ctr is   18
-#  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
-# $1 :   0, 00000000
+# $0 :   9, 00001001
+# $1 :   2, 00000010
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
 # $6 :   0, 00000000
 # $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   2 into register 1
+# prog_ctr is   17
+# movr function
+# current reg_file input is   9 and wr_en is 1
+# current reg_file input is   2 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   9, 00001001
+# $1 :   2, 00000010
+# $2 :   0, 00000000
+# $3 :   6, 00000110
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   2 into register 7
+# prog_ctr is   18
+# current reg_file input is   0 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   9, 00001001
+# $1 :   2, 00000010
+# $2 :   0, 00000000
+# $3 :   6, 00000110
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 1
 # prog_ctr is   19
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
+# $0 :   9, 00001001
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 1
 # prog_ctr is   20
-# current reg_file input is  25 and wr_en is 1
-# current reg_file input is  26 and wr_en is 1
+# current reg_file input is  36 and wr_en is 1
+# current reg_file input is  10 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  25, 00011001
+# $0 :   9, 00001001
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote  26 into register 0
+# We wrote  10 into register 0
 # prog_ctr is   21
 # load function
-# current reg_file input is  27 and wr_en is 1
-# we are trying to load at Mem[ 26]
-# current reg_file input is   0 and wr_en is 1
+# current reg_file input is  11 and wr_en is 1
+# we are trying to load at Mem[ 10]
+# current reg_file input is  32 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
 # $4 :   1, 00000001
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 4
+# We wrote  32 into register 4
 # prog_ctr is   22
-# we are trying to load at Mem[ 26]
+# we are trying to load at Mem[ 10]
 # we are trying to load at Mem[  0]
 # movr function
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is  32 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :  32, 00100000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote  32 into register 2
 # prog_ctr is   23
 # load function
-# we are trying to load at Mem[ 26]
+# we are trying to load at Mem[ 10]
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :  32, 00100000
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :  32, 00100000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 4
+# We wrote  32 into register 4
 # prog_ctr is   24
-# we are trying to load at Mem[  0]
+# we are trying to load at Mem[ 32]
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :  32, 00100000
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :  32, 00100000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 3
+# We wrote  32 into register 3
 # prog_ctr is   25
 # movi function
 # we are trying to movi   0
 # current reg_file input is   7 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
+# $2 :  32, 00100000
+# $3 :  32, 00100000
+# $4 :  32, 00100000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   7 into register 4
 # prog_ctr is   26
@@ -3007,14 +2955,14 @@
 # current reg_file input is   8 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
+# $2 :  32, 00100000
+# $3 :  32, 00100000
 # $4 :   7, 00000111
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   27
@@ -3022,14 +2970,14 @@
 # current reg_file input is   4 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :  32, 00100000
 # $4 :   7, 00000111
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   4 into register 4
 # prog_ctr is   28
@@ -3038,172 +2986,174 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :  32, 00100000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   29
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :  32, 00100000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 6
 # prog_ctr is   30
+# current reg_file input is  32 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :  32, 00100000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 1
 # prog_ctr is   31
-# current reg_file input is   4 and wr_en is 1
+# current reg_file input is  36 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
-# $3 :   0, 00000000
+# $3 :  32, 00100000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 3
 # prog_ctr is   32
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 3
 # prog_ctr is   33
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 6
 # prog_ctr is   34
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 1
 # prog_ctr is   35
 # movr function
-# current reg_file input is  26 and wr_en is 1
+# current reg_file input is  10 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 6
 # prog_ctr is   36
 # current reg_file input is   5 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   37
 # current reg_file input is   1 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   38
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 3
 # prog_ctr is   39
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 6
 # prog_ctr is   40
 # current reg_file input is   5 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   41
@@ -3211,67 +3161,69 @@
 # current reg_file input is   4 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 6
 # prog_ctr is   42
 # movr function
+# current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 1
+# We wrote   2 into register 1
 # prog_ctr is   43
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   2, 00000010
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 1
 # prog_ctr is   44
 # movr function
+# current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   2 into register 2
 # prog_ctr is   45
 # movi function
 # we are trying to movi   0
-# current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :   2, 00000010
 # $3 :   0, 00000000
 # $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   2 into register 4
 # prog_ctr is   46
@@ -3280,66 +3232,66 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :   2, 00000010
 # $3 :   0, 00000000
 # $4 :   2, 00000010
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   47
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   2, 00000010
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   48
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   2, 00000010
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is   49
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 1
 # prog_ctr is   50
 # movi function
-# we are trying to movi   0
 # current reg_file input is   7 and wr_en is 1
+# we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   7 into register 4
 # prog_ctr is   51
@@ -3347,14 +3299,14 @@
 # current reg_file input is  12 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   7, 00000111
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 3
 # prog_ctr is   52
@@ -3362,14 +3314,14 @@
 # current reg_file input is   5 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   7, 00000111
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   5 into register 4
 # prog_ctr is   53
@@ -3378,82 +3330,84 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   5, 00000101
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 3
 # prog_ctr is   54
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   5, 00000101
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is   55
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 1
 # prog_ctr is   56
 # load function
-# we are trying to load at Mem[ 26]
-# current reg_file input is   x and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
+# we are trying to load at Mem[ 10]
+# current reg_file input is  32 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 5
+# We wrote  32 into register 5
 # prog_ctr is   57
-# we are trying to load at Mem[ 26]
+# we are trying to load at Mem[ 10]
 # we are trying to load at Mem[  0]
 # movr function
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is  32 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
-# $5 :   0, 00000000
+# $5 :  32, 00100000
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote  32 into register 2
 # prog_ctr is   58
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :  32, 00100000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
-# $5 :   0, 00000000
+# $5 :  32, 00100000
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   59
@@ -3461,14 +3415,14 @@
 # current reg_file input is   3 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
-# $5 :   0, 00000000
+# $5 :  32, 00100000
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   3 into register 5
 # prog_ctr is   60
@@ -3477,66 +3431,66 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   61
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is   62
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 1
 # prog_ctr is   63
 # movr function
-# current reg_file input is  26 and wr_en is 1
+# current reg_file input is  10 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is   64
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 3
 # prog_ctr is   65
@@ -3544,14 +3498,14 @@
 # current reg_file input is   2 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   2 into register 5
 # prog_ctr is   66
@@ -3560,26 +3514,26 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   2, 00000010
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 3
 # prog_ctr is   67
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   2, 00000010
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 3
 # prog_ctr is   68
@@ -3587,14 +3541,14 @@
 # current reg_file input is   4 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   2, 00000010
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   4 into register 5
 # prog_ctr is   69
@@ -3603,92 +3557,93 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   70
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   71
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is   72
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 3
 # prog_ctr is   73
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 6
 # prog_ctr is   74
 # movr function
+# current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 1
+# We wrote   2 into register 1
 # prog_ctr is   75
 # movi function
 # we are trying to movi   0
 # current reg_file input is   7 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   2, 00000010
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   7 into register 4
 # prog_ctr is   76
@@ -3696,14 +3651,14 @@
 # current reg_file input is   4 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   2, 00000010
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   7, 00000111
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 1
 # prog_ctr is   77
@@ -3711,14 +3666,14 @@
 # current reg_file input is   5 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   7, 00000111
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   5 into register 5
 # prog_ctr is   78
@@ -3727,94 +3682,96 @@
 # we are trying to movi   0
 # movr function
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   7, 00000111
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   2 into register 2
 # prog_ctr is   79
 # current reg_file input is   7 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :   2, 00000010
 # $3 :   0, 00000000
 # $4 :   7, 00000111
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   80
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   7, 00000111
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   81
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   7, 00000111
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is   82
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 1
 # prog_ctr is   83
 # movr function
+# current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   2 into register 2
 # prog_ctr is   84
 # movi function
 # we are trying to movi   0
 # current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :   2, 00000010
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   4 into register 5
 # prog_ctr is   85
@@ -3822,30 +3779,32 @@
 # current reg_file input is   9 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is  32 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :   2, 00000010
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote  32 into register 2
 # prog_ctr is   86
 # movi function
+# current reg_file input is   0 and wr_en is 1
 # current reg_file input is   7 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :  32, 00100000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   7 into register 5
 # prog_ctr is   87
@@ -3854,14 +3813,14 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :  32, 00100000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   7, 00000111
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   88
@@ -3869,14 +3828,14 @@
 # current reg_file input is   1 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   7, 00000111
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   1 into register 5
 # prog_ctr is   89
@@ -3885,67 +3844,68 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   1, 00000001
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is   90
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   1, 00000001
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is   91
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   1, 00000001
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 1
 # prog_ctr is   92
 # movr function
+# current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   1, 00000001
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   2 into register 2
 # prog_ctr is   93
 # movi function
 # we are trying to movi   0
 # current reg_file input is   6 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :   2, 00000010
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   1, 00000001
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   6 into register 5
 # prog_ctr is   94
@@ -3953,30 +3913,32 @@
 # current reg_file input is   9 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is 128 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :   2, 00000010
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   6, 00000110
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote 128 into register 2
 # prog_ctr is   95
 # movi function
+# current reg_file input is   0 and wr_en is 1
 # current reg_file input is   7 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 : 128, 10000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   6, 00000110
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   7 into register 5
 # prog_ctr is   96
@@ -3984,30 +3946,32 @@
 # current reg_file input is   9 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 : 128, 10000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   7, 00000111
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   1 into register 2
 # prog_ctr is   97
 # movi function
+# current reg_file input is   0 and wr_en is 1
 # current reg_file input is   2 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :   1, 00000001
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   7, 00000111
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   2 into register 5
 # prog_ctr is   98
@@ -4015,53 +3979,60 @@
 # current reg_file input is   9 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :   1, 00000001
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   2, 00000010
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   4 into register 2
 # prog_ctr is   99
 # movr function
+# current reg_file input is  16 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :   4, 00000100
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   2, 00000010
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 4
+# We wrote   4 into register 4
 # prog_ctr is  100
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
+# $0 :  10, 00001010
 # $1 :   0, 00000000
-# $2 :   0, 00000000
+# $2 :   4, 00000100
 # $3 :   0, 00000000
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   2, 00000010
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 1
+# We wrote   4 into register 1
 # prog_ctr is  101
 # movr function
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is   4 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
-# $2 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
+# $2 :   4, 00000100
 # $3 :   0, 00000000
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   2, 00000010
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  102
@@ -4069,14 +4040,14 @@
 # we are trying to movi   0
 # current reg_file input is   7 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   2, 00000010
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   7 into register 5
 # prog_ctr is  103
@@ -4085,14 +4056,14 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   7, 00000111
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  104
@@ -4100,14 +4071,14 @@
 # current reg_file input is   3 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   7, 00000111
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   3 into register 5
 # prog_ctr is  105
@@ -4116,52 +4087,56 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  106
 # movr function
+# current reg_file input is  64 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is  107
+# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 1
+# We wrote   4 into register 1
 # prog_ctr is  108
 # movr function
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  109
@@ -4169,14 +4144,14 @@
 # we are trying to movi   0
 # current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   2 into register 4
 # prog_ctr is  110
@@ -4185,14 +4160,14 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   2, 00000010
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  111
@@ -4200,14 +4175,14 @@
 # current reg_file input is   7 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   2, 00000010
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   7 into register 4
 # prog_ctr is  112
@@ -4216,14 +4191,14 @@
 # current reg_file input is   8 and wr_en is 1
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   7, 00000111
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  113
@@ -4231,14 +4206,14 @@
 # current reg_file input is   4 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   7, 00000111
 # $5 :   3, 00000011
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   4 into register 5
 # prog_ctr is  114
@@ -4247,64 +4222,66 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   7, 00000111
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  115
 # movr function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   7, 00000111
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is  116
+# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 1
+# We wrote   4 into register 1
 # prog_ctr is  117
 # movr function
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  118
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  119
@@ -4312,14 +4289,14 @@
 # current reg_file input is   7 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   4, 00000100
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   7 into register 5
 # prog_ctr is  120
@@ -4328,14 +4305,14 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   7, 00000111
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  121
@@ -4343,14 +4320,14 @@
 # current reg_file input is   5 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   7, 00000111
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   5 into register 5
 # prog_ctr is  122
@@ -4359,200 +4336,213 @@
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  123
 # movr function
+# current reg_file input is   4 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 4
 # prog_ctr is  124
+# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 1
+# We wrote   4 into register 1
 # prog_ctr is  125
 # movr function
-# current reg_file input is  26 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
+# current reg_file input is  10 and wr_en is 1
+# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
 # $4 :   0, 00000000
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 4
+# We wrote   4 into register 4
 # prog_ctr is  126
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   0, 00000000
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 3
+# We wrote   1 into register 3
 # prog_ctr is  127
 # movi function
-# current reg_file input is   2 and wr_en is 1
 # we are trying to movi   0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
+# $3 :   1, 00000001
+# $4 :   4, 00000100
 # $5 :   5, 00000101
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   2 into register 5
+# We wrote   1 into register 5
 # prog_ctr is  128
 # we are trying to movi   0
 # current reg_file input is  13 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   2, 00000010
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   1, 00000001
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 3
+# We wrote   2 into register 3
 # prog_ctr is  129
+# current reg_file input is   4 and wr_en is 1
+# current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   2, 00000010
+# $3 :   2, 00000010
+# $4 :   4, 00000100
+# $5 :   1, 00000001
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 3
+# We wrote   2 into register 3
 # prog_ctr is  130
 # movr function
-#  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   2, 00000010
-# $6 :   0, 00000000
-# $7 :   0, 00000000
-#  ---------------------------- 
-# We wrote   0 into register 6
-# prog_ctr is  131
+# current reg_file input is   4 and wr_en is 1
 # current reg_file input is   2 and wr_en is 1
-# current reg_file input is   0 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
 # $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   2, 00000010
+# $3 :   2, 00000010
+# $4 :   4, 00000100
+# $5 :   1, 00000001
 # $6 :   0, 00000000
-# $7 :   0, 00000000
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   2 into register 6
+# prog_ctr is  131
+# current reg_file input is   1 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  10, 00001010
+# $1 :   4, 00000100
+# $2 :   0, 00000000
+# $3 :   2, 00000010
+# $4 :   4, 00000100
+# $5 :   1, 00000001
+# $6 :   2, 00000010
+# $7 :   2, 00000010
+#  ---------------------------- 
+# We wrote   1 into register 2
 # prog_ctr is  132
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   2, 00000010
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   2, 00000010
+# $4 :   4, 00000100
+# $5 :   1, 00000001
+# $6 :   2, 00000010
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 3
+# We wrote   1 into register 3
 # prog_ctr is  133
+# current reg_file input is   3 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   2, 00000010
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   1, 00000001
+# $6 :   2, 00000010
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   3 into register 2
 # prog_ctr is  134
+# current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   2, 00000010
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
+# $2 :   3, 00000011
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   1, 00000001
+# $6 :   2, 00000010
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   1 into register 2
 # prog_ctr is  135
 # movr function
+# current reg_file input is   3 and wr_en is 1
+# current reg_file input is   0 and wr_en is 1
+# current reg_file input is   1 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   2, 00000010
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   1, 00000001
+# $6 :   2, 00000010
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 6
+# We wrote   1 into register 6
 # prog_ctr is  136
 # movi function
 # we are trying to movi   0
 # current reg_file input is   6 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   2, 00000010
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   1, 00000001
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   6 into register 5
 # prog_ctr is  137
@@ -4560,208 +4550,209 @@
 # current reg_file input is   1 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
-# current reg_file input is  32 and wr_en is 1
+# current reg_file input is  16 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  26, 00011010
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
+# $0 :  10, 00001010
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote  32 into register 0
+# We wrote  16 into register 0
 # prog_ctr is  138
-# current reg_file input is  38 and wr_en is 1
+# current reg_file input is  22 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  32, 00100000
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
+# $0 :  16, 00010000
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote  38 into register 0
+# We wrote  22 into register 0
 # prog_ctr is  139
-# current reg_file input is  44 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  38, 00100110
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
-#  ---------------------------- 
-# We wrote  44 into register 0
-# prog_ctr is  140
-# current reg_file input is  50 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  44, 00101100
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
-#  ---------------------------- 
-# We wrote  50 into register 0
-# prog_ctr is  141
-# current reg_file input is  56 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  50, 00110010
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
-#  ---------------------------- 
-# We wrote  56 into register 0
-# prog_ctr is  142
-# store function
-# current reg_file input is  62 and wr_en is 1
-# we are trying to store at Mem[ 56]
-# current reg_file input is  56 and wr_en is 0
-#  --- REGISTER FILE VALUES --- 
-# $0 :  56, 00111000
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
-#  ---------------------------- 
-# prog_ctr is  143
-# we are trying to store at Mem[ 56]
-# current reg_file input is  57 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  56, 00111000
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
-#  ---------------------------- 
-# We wrote  57 into register 0
-# prog_ctr is  144
-# store function
-# current reg_file input is  58 and wr_en is 1
-# we are trying to store at Mem[ 57]
-# current reg_file input is  57 and wr_en is 0
-#  --- REGISTER FILE VALUES --- 
-# $0 :  57, 00111001
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
-#  ---------------------------- 
-# prog_ctr is  145
-# we are trying to store at Mem[ 57]
-# current reg_file input is  51 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  57, 00111001
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
-#  ---------------------------- 
-# We wrote  51 into register 0
-# prog_ctr is  146
-# current reg_file input is  45 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  51, 00110011
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
-#  ---------------------------- 
-# We wrote  45 into register 0
-# prog_ctr is  147
-# current reg_file input is  39 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  45, 00101101
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
-#  ---------------------------- 
-# We wrote  39 into register 0
-# prog_ctr is  148
-# current reg_file input is  33 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  39, 00100111
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
-#  ---------------------------- 
-# We wrote  33 into register 0
-# prog_ctr is  149
-# current reg_file input is  27 and wr_en is 1
-#  --- REGISTER FILE VALUES --- 
-# $0 :  33, 00100001
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
-# $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
-#  ---------------------------- 
-# We wrote  27 into register 0
-# prog_ctr is  150
-# current reg_file input is  21 and wr_en is 1
 # current reg_file input is  28 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  27, 00011011
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
+# $0 :  22, 00010110
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote  28 into register 0
-# prog_ctr is  151
-# movi function
-# current reg_file input is  29 and wr_en is 1
-# we are trying to movi   0
-# current reg_file input is   6 and wr_en is 1
+# prog_ctr is  140
+# current reg_file input is  34 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
 # $0 :  28, 00011100
-# $1 :   0, 00000000
-# $2 :   0, 00000000
-# $3 :   0, 00000000
-# $4 :   0, 00000000
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
+#  ---------------------------- 
+# We wrote  34 into register 0
+# prog_ctr is  141
+# current reg_file input is  40 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  34, 00100010
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   1, 00000001
+# $7 :   2, 00000010
+#  ---------------------------- 
+# We wrote  40 into register 0
+# prog_ctr is  142
+# store function
+# current reg_file input is  46 and wr_en is 1
+# we are trying to store at Mem[ 40]
+# current reg_file input is  41 and wr_en is 0
+# current reg_file input is  40 and wr_en is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  40, 00101000
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   1, 00000001
+# $7 :   2, 00000010
+#  ---------------------------- 
+# prog_ctr is  143
+# we are trying to store at Mem[ 40]
+# current reg_file input is  41 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  40, 00101000
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   1, 00000001
+# $7 :   2, 00000010
+#  ---------------------------- 
+# We wrote  41 into register 0
+# prog_ctr is  144
+# store function
+# current reg_file input is  42 and wr_en is 1
+# we are trying to store at Mem[ 41]
+# current reg_file input is  41 and wr_en is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  41, 00101001
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   1, 00000001
+# $7 :   2, 00000010
+#  ---------------------------- 
+# prog_ctr is  145
+# we are trying to store at Mem[ 41]
+# current reg_file input is  35 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  41, 00101001
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   1, 00000001
+# $7 :   2, 00000010
+#  ---------------------------- 
+# We wrote  35 into register 0
+# prog_ctr is  146
+# current reg_file input is  29 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  35, 00100011
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   1, 00000001
+# $7 :   2, 00000010
+#  ---------------------------- 
+# We wrote  29 into register 0
+# prog_ctr is  147
+# current reg_file input is  23 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  29, 00011101
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   1, 00000001
+# $7 :   2, 00000010
+#  ---------------------------- 
+# We wrote  23 into register 0
+# prog_ctr is  148
+# current reg_file input is  17 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  23, 00010111
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   1, 00000001
+# $7 :   2, 00000010
+#  ---------------------------- 
+# We wrote  17 into register 0
+# prog_ctr is  149
+# current reg_file input is  11 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  17, 00010001
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   1, 00000001
+# $7 :   2, 00000010
+#  ---------------------------- 
+# We wrote  11 into register 0
+# prog_ctr is  150
+# current reg_file input is   5 and wr_en is 1
+# current reg_file input is  12 and wr_en is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :  11, 00001011
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   1, 00000001
+# $7 :   2, 00000010
+#  ---------------------------- 
+# We wrote  12 into register 0
+# prog_ctr is  151
+# movi function
+# current reg_file input is  13 and wr_en is 1
+# current reg_file input is   6 and wr_en is 1
+# we are trying to movi   0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  12, 00001100
+# $1 :   4, 00000100
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   6 into register 3
 # prog_ctr is  152
@@ -4770,163 +4761,172 @@
 # we are trying to movi   0
 # movi function
 #  --- REGISTER FILE VALUES --- 
-# $0 :  28, 00011100
-# $1 :   0, 00000000
-# $2 :   0, 00000000
+# $0 :  12, 00001100
+# $1 :   4, 00000100
+# $2 :   1, 00000001
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   0 into register 2
 # prog_ctr is  153
+# we are trying to movi   0
 # current reg_file input is  11 and wr_en is 1
 # we are trying to movi   0
 # current reg_file input is   0 and wr_en is 1
+# current reg_file input is   2 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  28, 00011100
-# $1 :   0, 00000000
+# $0 :  12, 00001100
+# $1 :   4, 00000100
 # $2 :   0, 00000000
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   2 into register 2
 # prog_ctr is  154
+# current reg_file input is   4 and wr_en is 1
+# current reg_file input is   3 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  28, 00011100
-# $1 :   0, 00000000
-# $2 :   0, 00000000
+# $0 :  12, 00001100
+# $1 :   4, 00000100
+# $2 :   2, 00000010
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   3 into register 2
 # prog_ctr is  155
+# current reg_file input is   4 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  28, 00011100
-# $1 :   0, 00000000
-# $2 :   0, 00000000
+# $0 :  12, 00001100
+# $1 :   4, 00000100
+# $2 :   3, 00000011
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   4 into register 2
 # prog_ctr is  156
+# current reg_file input is   5 and wr_en is 1
+# current reg_file input is   6 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  28, 00011100
-# $1 :   0, 00000000
-# $2 :   0, 00000000
+# $0 :  12, 00001100
+# $1 :   4, 00000100
+# $2 :   4, 00000100
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 2
+# We wrote   6 into register 2
 # prog_ctr is  157
 # movr function
+# current reg_file input is   8 and wr_en is 1
+# current reg_file input is   6 and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  28, 00011100
-# $1 :   0, 00000000
-# $2 :   0, 00000000
+# $0 :  12, 00001100
+# $1 :   4, 00000100
+# $2 :   6, 00000110
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   4, 00000100
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
-# We wrote   0 into register 4
+# We wrote   6 into register 4
 # prog_ctr is  158
-# current reg_file input is  28 and wr_en is 0
+# current reg_file input is  12 and wr_en is 0
 # current reg_file input is   0 and wr_en is 0
 #  --- REGISTER FILE VALUES --- 
-# $0 :  28, 00011100
-# $1 :   0, 00000000
-# $2 :   0, 00000000
+# $0 :  12, 00001100
+# $1 :   4, 00000100
+# $2 :   6, 00000110
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   6, 00000110
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
 # prog_ctr is  159
 #  --- REGISTER FILE VALUES --- 
-# $0 :  28, 00011100
-# $1 :   0, 00000000
-# $2 :   0, 00000000
+# $0 :  12, 00001100
+# $1 :   4, 00000100
+# $2 :   6, 00000110
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   6, 00000110
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
 # prog_ctr is  160
 # current reg_file input is   X and wr_en is 1
 #  --- REGISTER FILE VALUES --- 
-# $0 :  28, 00011100
-# $1 :   0, 00000000
-# $2 :   0, 00000000
+# $0 :  12, 00001100
+# $1 :   4, 00000100
+# $2 :   6, 00000110
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   6, 00000110
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   X into register X
 # prog_ctr is  161
 #  --- REGISTER FILE VALUES --- 
-# $0 :  28, 00011100
-# $1 :   0, 00000000
-# $2 :   0, 00000000
+# $0 :  12, 00001100
+# $1 :   4, 00000100
+# $2 :   6, 00000110
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   6, 00000110
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   X into register X
 # prog_ctr is  162
 #  --- REGISTER FILE VALUES --- 
-# $0 :  28, 00011100
-# $1 :   0, 00000000
-# $2 :   0, 00000000
+# $0 :  12, 00001100
+# $1 :   4, 00000100
+# $2 :   6, 00000110
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   6, 00000110
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   X into register X
 # prog_ctr is  163
 #  --- REGISTER FILE VALUES --- 
-# $0 :  28, 00011100
-# $1 :   0, 00000000
-# $2 :   0, 00000000
+# $0 :  12, 00001100
+# $1 :   4, 00000100
+# $2 :   6, 00000110
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   6, 00000110
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   X into register X
 # prog_ctr is  164
 #  --- REGISTER FILE VALUES --- 
-# $0 :  28, 00011100
-# $1 :   0, 00000000
-# $2 :   0, 00000000
+# $0 :  12, 00001100
+# $1 :   4, 00000100
+# $2 :   6, 00000110
 # $3 :   6, 00000110
-# $4 :   0, 00000000
+# $4 :   6, 00000110
 # $5 :   6, 00000110
-# $6 :   0, 00000000
-# $7 :   0, 00000000
+# $6 :   1, 00000001
+# $7 :   2, 00000010
 #  ---------------------------- 
 # We wrote   X into register X
 # start program 1
@@ -4936,7 +4936,7 @@
 # erroneous output
 #  
 # 0000000000110011
-# 0000000000110000
+# 0000000000110110
 # erroneous output
 #  
 # 0000000001010101
@@ -4944,15 +4944,15 @@
 # erroneous output
 #  
 # 0000000010010110
-# 0000000010010000
-# erroneous output
+# 0000000010010110
+#  we have a match!
 #  
 # 0000001100000011
 # xxxxxxxxxxxxxxxx
 # erroneous output
 #  
 # 0000010100000101
-# 0000001000000111
+# 0000001000000001
 # erroneous output
 #  
 # 0000100100000110
@@ -4960,7 +4960,7 @@
 # erroneous output
 #  
 # 0001000100010001
-# 0000100000011001
+# xxxxxxxxxxxxxxxx
 # erroneous output
 #  
 # 0010000100010010
@@ -4968,7 +4968,7 @@
 # erroneous output
 #  
 # 0100000100010100
-# 0010000000110001
+# xxxxxxxxxxxxxxxx
 # erroneous output
 #  
 # 1000000100010111
@@ -4976,7 +4976,7 @@
 # erroneous output
 #  
 # 0000000000000000
-# 1000000010010001
+# xxxxxxxxxxxxxxxx
 # erroneous output
 #  
 # 0000000000000000
@@ -4984,8 +4984,8 @@
 # erroneous output
 #  
 # 0000000000000000
-# 0000000000000000
-#  we have a match!
+# xxxxxxxxxxxxxxxx
+# erroneous output
 #  
 # 0000000000000000
 # xxxxxxxxxxxxxxxx
@@ -4994,5 +4994,5 @@
 # program 1 score =     1 out of    15
 # prog_ctr is  165
 # ** Note: $stop    : C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/prog1_tb.sv(69)
-#    Time: 11215 ns  Iteration: 0  Instance: /prog1_tb
+#    Time: 4855 ns  Iteration: 0  Instance: /prog1_tb
 # Break in Module prog1_tb at C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/prog1_tb.sv line 69
