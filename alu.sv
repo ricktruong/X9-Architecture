@@ -32,44 +32,52 @@ always_comb begin
 			// $display("We are subtracting %d from %d to get %d",inB,inA,rslt);
 		end
 		4'b0010: begin // addi
-			if (inB == 2)
+			if (inB == 2) begin
 				rslt = inA - 2;
-			else if (inB == 3)
+				$display("We are decrementing i = %d by %b = 2 to get %d", inA, inB, rslt);
+			end
+			else if (inB == 3) begin
 				rslt = inA - 1;
-			else
+				$display("We are decrementing i = %d by %b = 1 to get %d", inA, inB, rslt);
+			end
+			else begin
 				rslt = inA + inB;
+				$display("We are incrementing i = %d by %b = %d to get %d", inA, inB, inB, rslt);
+			end
 		end
 		4'b0011: begin // lb
 			rslt = inA;
-			$display("we are trying to load at Mem[%d]",rslt);
+			$display("we are trying to load at Mem[%d]", rslt);
 		end
 		4'b0100: begin // sb
 			rslt = inA; 
-			$display("we are trying to store at Mem[%d]",rslt);
+			$display("we are trying to store at Mem[%d]", rslt);
 		end
-		4'b0101: // bt  <-- movr
+		4'b0101: // movr
 			rslt = inB;
-		4'b0110: begin // bne <-- movi
+		4'b0110: begin // movi
 			rslt = rslt;
-			$display("we are trying to movi %d",rslt);
+			// $display("we are trying to movi with immediate value: %d", rslt);
 		end
 		4'b0111:begin // nor
 			rslt = ~( inA | inB);
 			// $display("we are norring %b with %b to get %b",inA, inB,rslt);
 		end
-		4'b1000: // xor
+		4'b1000: begin // xor
 			rslt = inA ^ inB;
+			$display("%b is xor with %b to yield %b", inA, inB, rslt);
+		end
 		4'b1001: // and
 			rslt = inA & inB;
 		4'b1010: // or
 			rslt = inA | inB;
 		4'b1011: begin // sll
 			rslt = inA << inB;
-			// $display("%b is shifted left by %d bits to give %b",inA,inB,rslt);
+			$display("%b is shifted left by %d bits to give %b", inA, inB, rslt);
 		end
 		4'b1100: begin // slr
 			rslt = inA >> inB;
-			// $display("%b is shifted right by %d bits to give %b",inB,inB,rslt);
+			$display("%b is shifted right by %d bits to give %b", inA, inB, rslt);
 		end
 		4'b1101: begin // eq
 			rslt = (inA == inB);
@@ -83,7 +91,7 @@ always_comb begin
 		end
 		4'b1111:begin // rxor
 			rslt = ^inB;
-			// $display("we have reduce xor'd %b to get %b",inB,rslt);
+			$display("we have reduce xor'd %b to get %b", inB, rslt);
 		end
 	endcase
 	

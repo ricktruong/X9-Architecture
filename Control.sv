@@ -20,7 +20,7 @@ always_comb begin
 	BranchInst	=  'b0;			// 1: BranchInst (jump)
 	MemRead 		= 	'b0;			// 0: read from memory
 	MemWrite		=	'b0;			// 1: store to memory
-	ALUSrc		=	'b1;			// 1: immediate  0: second reg file output
+	ALUSrc		=	'b1;			// 1: second reg file output  0: immediate 
 	RegWrite		=	'b1;			// 0: for store or no op  1: most other operations 
 	MemtoReg		=	'b0;			// 1: load -- route memory instead of ALU to reg_file data in
 	ALUOp			=  'b1111;
@@ -29,13 +29,16 @@ always_comb begin
 
 		'b00000	:	begin	// add
 							ALUOp	= 'b0000;
+							$display("add function");
 						end
 		'b00001	: 	begin	// sub
 							ALUOp = 'b0001;
+							$display("sub function");
 						end
 		'b00010	:	begin	// addi
 							ALUSrc = 'b0;
 							ALUOp = 'b0010;
+							$display("addi function");
 						end
 		'b00011	:	begin	// lb
 							MemRead = 'b1;
@@ -49,42 +52,52 @@ always_comb begin
 							ALUOp = 'b0100;
 							$display("store function");
 						end
-		'b00101	:	begin	// beq
+		'b00101	:	begin	// bt
+							BranchInst = 'b1;
+							RegWrite = 'b0;
+							$display("branch function");
+						end
+		'b00110	:	begin	//	bne - DEPRECATED
 							BranchInst = 'b1;
 							RegWrite = 'b0;
 						end
-		'b00110	:	begin	//	bne
-							BranchInst = 'b1;
-							RegWrite = 'b0;
-						end
-		'b00111	:	begin	//nor
+		'b00111	:	begin	// nor
 							ALUOp = 'b0111;
+							$display("nor function");
 						end
-		'b01000	: begin	// xor
+		'b01000	:	begin	// xor
 							ALUOp = 'b1000;
+							$display("xor function");
 						end
-		'b01001	:	begin // and
+		'b01001	:	begin	// and
 							ALUOp = 'b1001;
+							$display("and function");
 						end
-		'b01010	:	begin // or
+		'b01010	:	begin	// or
 							ALUOp = 'b1010;
+							$display("or function");
 						end
-		'b01011	:	begin // sll
+		'b01011	:	begin	// sll
 							ALUOp = 'b1011;
+							$display("sll function");
 						end
-		'b01100	:	begin //	slr
+		'b01100	:	begin	// slr
 							ALUOp = 'b1100;
+							$display("slr function");
 						end
 		'b01101	:	begin	// eq
 							ALUOp = 'b1101;
 							RegWrite = 'b0;
+							$display("eq function");
 						end
 		'b01110	:	begin	// lt
 							ALUOp = 'b1110;
 							RegWrite = 'b0;
+							$display("lt function");
 						end
 		'b01111	:	begin	// rxor
 							ALUOp = 'b1111;
+							$display("rxor function");
 						end 
 		'b10???	:	begin	// movr
 							InstType = 'b10;

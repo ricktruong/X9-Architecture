@@ -1,0 +1,2600 @@
+run -all
+# we have reduce xor'd xxxxxxxx to get 0000000x
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is X
+# current register file data_in is   X (b'0000000x), wr_en is 1, and wr_addr is X
+#  --- REGISTER FILE VALUES --- 
+# $0 :   x, xxxxxxxx
+# $1 :   x, xxxxxxxx
+# $2 :   x, xxxxxxxx
+# $3 :   x, xxxxxxxx
+# $4 :   x, xxxxxxxx
+# $5 :   x, xxxxxxxx
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   X (b'0000000x) into register X
+#  --- REGISTER FILE VALUES --- 
+# $0 :   x, xxxxxxxx
+# $1 :   x, xxxxxxxx
+# $2 :   x, xxxxxxxx
+# $3 :   x, xxxxxxxx
+# $4 :   x, xxxxxxxx
+# $5 :   x, xxxxxxxx
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   X (b'0000000x) into register X
+# prog_ctr is    0
+# movi function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :   x, xxxxxxxx
+# $1 :   x, xxxxxxxx
+# $2 :   x, xxxxxxxx
+# $3 :   x, xxxxxxxx
+# $4 :   x, xxxxxxxx
+# $5 :   x, xxxxxxxx
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 0
+# prog_ctr is    1
+# load function
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 4
+# we are trying to load at Mem[  0]
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   x, xxxxxxxx
+# $2 :   x, xxxxxxxx
+# $3 :   x, xxxxxxxx
+# $4 :   x, xxxxxxxx
+# $5 :   x, xxxxxxxx
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 4
+# prog_ctr is    2
+# we are trying to load at Mem[  0]
+# we are trying to load at Mem[  x]
+# movr function
+# current register file data_in is   x (b'xxxxxxxx), wr_en is 1, and wr_addr is 1
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   x, xxxxxxxx
+# $2 :   x, xxxxxxxx
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   x, xxxxxxxx
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 1
+# prog_ctr is    3
+# addi function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 0
+# We are incrementing i =   0 by 00000001 =   1 to get   1
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   1, 00000001
+# $2 :   x, xxxxxxxx
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   x, xxxxxxxx
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 0
+# prog_ctr is    4
+# addi: instruction is: 000100001
+# addi: immedB going into ALU inB is: 00000001
+# We are incrementing i =   1 by 00000001 =   1 to get   2
+# load function
+# current register file data_in is   2 (b'00000010), wr_en is 1, and wr_addr is 0
+# we are trying to load at Mem[  1]
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   1, 00000001
+# $2 :   x, xxxxxxxx
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   x, xxxxxxxx
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 5
+# prog_ctr is    5
+# we are trying to load at Mem[  1]
+# we are trying to load at Mem[  x]
+# movr function
+# current register file data_in is   x (b'xxxxxxxx), wr_en is 1, and wr_addr is 2
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   1, 00000001
+# $2 :   x, xxxxxxxx
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   0, 00000000
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is    6
+# movi function
+# current register file data_in is   4 (b'00000100), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   1, 00000001
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   0, 00000000
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   4 (b'00000100) into register 4
+# prog_ctr is    7
+# slr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 1
+# 00000001 is shifted right by   4 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   1, 00000001
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   4, 00000100
+# $5 :   0, 00000000
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is    8
+# 00000000 is shifted right by   4 bits to give 00000000
+# 00000001 is shifted right by   0 bits to give 00000001
+# movi function
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   4, 00000100
+# $5 :   0, 00000000
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 4
+# prog_ctr is    9
+# current register file data_in is   4 (b'00000100), wr_en is 1, and wr_addr is 3
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 1
+# 00000000 is shifted left by   1 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   0, 00000000
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   10
+# 00000000 is shifted left by   0 bits to give 00000000
+# movi function
+# current register file data_in is   5 (b'00000101), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   0, 00000000
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   5 (b'00000101) into register 5
+# prog_ctr is   11
+# current register file data_in is   9 (b'00001001), wr_en is 1, and wr_addr is 3
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00000000 is shifted left by   5 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   12
+# 00000000 is shifted left by   1 bits to give 00000000
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   x, xxxxxxxx
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 6
+# prog_ctr is   13
+# xor function
+# current register file data_in is   x (b'xxxxxxxx), wr_en is 1, and wr_addr is 1
+# 00000000 is xor with 00000000 to yield 00000000
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   14
+# 00000001 is xor with 00000000 to yield 00000001
+# movr function
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 6
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 6
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 6
+# prog_ctr is   15
+# rxor function
+# current register file data_in is   5 (b'00000101), wr_en is 1, and wr_addr is 2
+# we have reduce xor'd 00000000 to get 00000000
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   16
+# we have reduce xor'd 00000001 to get 00000001
+# movr function
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 6
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 6
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 6
+# prog_ctr is   17
+# xor function
+# current register file data_in is   x (b'xxxxxxxx), wr_en is 1, and wr_addr is 1
+# 00000000 is xor with 00000000 to yield 00000000
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   18
+# 00000001 is xor with 00000000 to yield 00000001
+# movr function
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 7
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 7
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   x, xxxxxxxx
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 7
+# prog_ctr is   19
+# slr function
+# 00000000 is shifted right by   5 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   20
+# sll function
+# 00000000 is shifted left by   5 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   21
+# 00000001 is shifted left by   0 bits to give 00000001
+# addi function
+# We are decrementing i =   1 by 00000011 = 1 to get   0
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 0
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 0
+# prog_ctr is   22
+# addi: instruction is: 000100011
+# addi: immedB going into ALU inB is: 00000011
+# We are decrementing i =   0 by 00000011 = 1 to get 255
+# We are incrementing i =   0 by 00000000 =   0 to get   0
+# load function
+# current register file data_in is 255 (b'11111111), wr_en is 1, and wr_addr is 0
+# we are trying to load at Mem[  0]
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 4
+# prog_ctr is   23
+# movr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 2
+# prog_ctr is   24
+# load function
+# we are trying to load at Mem[  0]
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   1, 00000001
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 4
+# prog_ctr is   25
+# we are trying to load at Mem[  1]
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   1, 00000001
+# $3 :   x, xxxxxxxx
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 3
+# prog_ctr is   26
+# movi function
+# current register file data_in is   7 (b'00000111), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   1, 00000001
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   7 (b'00000111) into register 4
+# prog_ctr is   27
+# current register file data_in is   8 (b'00001000), wr_en is 1, and wr_addr is 4
+# slr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00000001 is shifted right by   7 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   1, 00000001
+# $3 :   1, 00000001
+# $4 :   7, 00000111
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   28
+# 00000000 is shifted right by   7 bits to give 00000000
+# movi function
+# current register file data_in is   4 (b'00000100), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   1, 00000001
+# $4 :   7, 00000111
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   4 (b'00000100) into register 4
+# prog_ctr is   29
+# current register file data_in is   8 (b'00001000), wr_en is 1, and wr_addr is 3
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00000000 is shifted left by   4 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   30
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 6
+# prog_ctr is   31
+# xor function
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 1
+# 00000000 is xor with 00000000 to yield 00000000
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   32
+# 00000001 is xor with 00000100 to yield 00000101
+# sll function
+# 00000001 is shifted left by   4 bits to give 00010000
+# current register file data_in is   5 (b'00000101), wr_en is 1, and wr_addr is 3
+# current register file data_in is  16 (b'00010000), wr_en is 1, and wr_addr is 3
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   1, 00000001
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  16 (b'00010000) into register 3
+# prog_ctr is   33
+# 00010000 is shifted left by   4 bits to give 00000000
+# 00010000 is shifted left by   5 bits to give 00000000
+# slr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 3
+# 00010000 is shifted right by   5 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  16, 00010000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 3
+# prog_ctr is   34
+# 00000000 is shifted right by   5 bits to give 00000000
+# 00000000 is shifted right by   0 bits to give 00000000
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 6
+# prog_ctr is   35
+# xor function
+# 00000000 is xor with 00000000 to yield 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   36
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 6
+# prog_ctr is   37
+# rxor function
+# current register file data_in is   5 (b'00000101), wr_en is 1, and wr_addr is 2
+# we have reduce xor'd 00000000 to get 00000000
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   38
+# we have reduce xor'd 00000100 to get 00000001
+# sll function
+# 00000000 is shifted left by   4 bits to give 00000000
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 2
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   39
+# 00000000 is shifted left by   5 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 3
+# prog_ctr is   40
+# 00000000 is shifted left by   0 bits to give 00000000
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 6
+# prog_ctr is   41
+# xor function
+# current register file data_in is   5 (b'00000101), wr_en is 1, and wr_addr is 2
+# 00000000 is xor with 00000000 to yield 00000000
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   42
+# 00000000 is xor with 00000100 to yield 00000100
+# movr function
+# current register file data_in is   4 (b'00000100), wr_en is 1, and wr_addr is 6
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 6
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 6
+# prog_ctr is   43
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   44
+# movi function
+# current register file data_in is   6 (b'00000110), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   5, 00000101
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   6 (b'00000110) into register 5
+# prog_ctr is   45
+# current register file data_in is   5 (b'00000101), wr_en is 1, and wr_addr is 4
+# slr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 1
+# 00000000 is shifted right by   6 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   46
+# 00000000 is shifted right by   0 bits to give 00000000
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   47
+# movi function
+# current register file data_in is   2 (b'00000010), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   2 (b'00000010) into register 4
+# prog_ctr is   48
+# current register file data_in is   8 (b'00001000), wr_en is 1, and wr_addr is 4
+# slr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00000000 is shifted right by   2 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   2, 00000010
+# $5 :   6, 00000110
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   49
+# 00000000 is shifted right by   6 bits to give 00000000
+# sll function
+# 00000000 is shifted left by   6 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   2, 00000010
+# $5 :   6, 00000110
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   50
+# 00000000 is shifted left by   2 bits to give 00000000
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   2, 00000010
+# $5 :   6, 00000110
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 4
+# prog_ctr is   51
+# xor function
+# 00000000 is xor with 00000000 to yield 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   0, 00000000
+# $5 :   6, 00000110
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   52
+# 00000000 is xor with 00000110 to yield 00000110
+# slr function
+# 00000000 is shifted right by   6 bits to give 00000000
+# current register file data_in is   6 (b'00000110), wr_en is 1, and wr_addr is 3
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 3
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   0, 00000000
+# $5 :   6, 00000110
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 3
+# prog_ctr is   53
+# 00000000 is shifted right by   0 bits to give 00000000
+# movi function
+# current register file data_in is   4 (b'00000100), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   0, 00000000
+# $5 :   6, 00000110
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   4 (b'00000100) into register 4
+# prog_ctr is   54
+# current register file data_in is  12 (b'00001100), wr_en is 1, and wr_addr is 3
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 3
+# 00000000 is shifted left by   4 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 3
+# prog_ctr is   55
+# 00000000 is shifted left by   0 bits to give 00000000
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   6, 00000110
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 4
+# prog_ctr is   56
+# xor function
+# 00000000 is xor with 00000000 to yield 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   0, 00000000
+# $5 :   6, 00000110
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   57
+# 00000000 is xor with 00000110 to yield 00000110
+# load function
+# we are trying to load at Mem[  0]
+# current register file data_in is   8 (b'00001000), wr_en is 1, and wr_addr is 5
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   0, 00000000
+# $5 :   6, 00000110
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 5
+# prog_ctr is   58
+# we are trying to load at Mem[  0]
+# we are trying to load at Mem[  0]
+# movr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :   0, 00000000
+# $4 :   0, 00000000
+# $5 :   1, 00000001
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 2
+# prog_ctr is   59
+# movi function
+# current register file data_in is   7 (b'00000111), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   1, 00000001
+# $3 :   0, 00000000
+# $4 :   0, 00000000
+# $5 :   1, 00000001
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   7 (b'00000111) into register 5
+# prog_ctr is   60
+# current register file data_in is   9 (b'00001001), wr_en is 1, and wr_addr is 3
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00000001 is shifted left by   7 bits to give 10000000
+# current register file data_in is 128 (b'10000000), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   1, 00000001
+# $3 :   0, 00000000
+# $4 :   0, 00000000
+# $5 :   7, 00000111
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote 128 (b'10000000) into register 2
+# prog_ctr is   61
+# 10000000 is shifted left by   7 bits to give 00000000
+# 00000000 is shifted left by   0 bits to give 00000000
+# movi function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 1
+# current register file data_in is   4 (b'00000100), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 : 128, 10000000
+# $3 :   0, 00000000
+# $4 :   0, 00000000
+# $5 :   7, 00000111
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   4 (b'00000100) into register 4
+# prog_ctr is   62
+# current register file data_in is   8 (b'00001000), wr_en is 1, and wr_addr is 4
+# slr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 10000000 is shifted right by   4 bits to give 00001000
+# current register file data_in is   8 (b'00001000), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 : 128, 10000000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   7, 00000111
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   8 (b'00001000) into register 2
+# prog_ctr is   63
+# 00001000 is shifted right by   4 bits to give 00000000
+# 00000000 is shifted right by   4 bits to give 00000000
+# movr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 1
+# current register file data_in is   8 (b'00001000), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   8, 00001000
+# $3 :   0, 00000000
+# $4 :   4, 00000100
+# $5 :   7, 00000111
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   8 (b'00001000) into register 4
+# prog_ctr is   64
+# xor function
+# 00000000 is xor with 00001000 to yield 00001000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   8, 00001000
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   7, 00000111
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   8 (b'00001000) into register 1
+# prog_ctr is   65
+# 00001000 is xor with 00001000 to yield 00000000
+# 00000000 is xor with 00000000 to yield 00000000
+# movr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 0
+# current register file data_in is   8 (b'00001000), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   8, 00001000
+# $2 :   8, 00001000
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   7, 00000111
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   8 (b'00001000) into register 4
+# prog_ctr is   66
+# rxor function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 3
+# we have reduce xor'd 00001000 to get 00000001
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 3
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   8, 00001000
+# $2 :   8, 00001000
+# $3 :   0, 00000000
+# $4 :   8, 00001000
+# $5 :   7, 00000111
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 3
+# prog_ctr is   67
+# we have reduce xor'd 00001000 to get 00000001
+# we have reduce xor'd 00000000 to get 00000000
+# movi function
+# current register file data_in is   2 (b'00000010), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   8, 00001000
+# $2 :   8, 00001000
+# $3 :   1, 00000001
+# $4 :   8, 00001000
+# $5 :   7, 00000111
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   2 (b'00000010) into register 5
+# prog_ctr is   68
+# current register file data_in is  13 (b'00001101), wr_en is 1, and wr_addr is 3
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 3
+# 00000001 is shifted left by   2 bits to give 00000100
+# current register file data_in is   4 (b'00000100), wr_en is 1, and wr_addr is 3
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   8, 00001000
+# $2 :   8, 00001000
+# $3 :   1, 00000001
+# $4 :   8, 00001000
+# $5 :   2, 00000010
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   4 (b'00000100) into register 3
+# prog_ctr is   69
+# 00000100 is shifted left by   2 bits to give 00010000
+# 00001000 is shifted left by   8 bits to give 00000000
+# movr function
+# current register file data_in is  16 (b'00010000), wr_en is 1, and wr_addr is 1
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 4
+# current register file data_in is   8 (b'00001000), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   8, 00001000
+# $2 :   8, 00001000
+# $3 :   4, 00000100
+# $4 :   8, 00001000
+# $5 :   2, 00000010
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   8 (b'00001000) into register 4
+# prog_ctr is   70
+# xor function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 3
+# 00000100 is xor with 00001000 to yield 00001100
+# current register file data_in is  12 (b'00001100), wr_en is 1, and wr_addr is 3
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   8, 00001000
+# $2 :   8, 00001000
+# $3 :   4, 00000100
+# $4 :   8, 00001000
+# $5 :   2, 00000010
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  12 (b'00001100) into register 3
+# prog_ctr is   71
+# 00001100 is xor with 00001000 to yield 00000100
+# 00001100 is xor with 00000000 to yield 00001100
+# current register file data_in is   4 (b'00000100), wr_en is 1, and wr_addr is 3
+# current register file data_in is  12 (b'00001100), wr_en is 1, and wr_addr is 3
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   8, 00001000
+# $2 :   8, 00001000
+# $3 :  12, 00001100
+# $4 :   8, 00001000
+# $5 :   2, 00000010
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  12 (b'00001100) into register 3
+# prog_ctr is   72
+# 00001000 is xor with 00000000 to yield 00001000
+# movr function
+# current register file data_in is   8 (b'00001000), wr_en is 1, and wr_addr is 6
+# current register file data_in is  12 (b'00001100), wr_en is 1, and wr_addr is 6
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   8, 00001000
+# $2 :   8, 00001000
+# $3 :  12, 00001100
+# $4 :   8, 00001000
+# $5 :   2, 00000010
+# $6 :   0, 00000000
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  12 (b'00001100) into register 6
+# prog_ctr is   73
+# movr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 1
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   8, 00001000
+# $2 :   8, 00001000
+# $3 :  12, 00001100
+# $4 :   8, 00001000
+# $5 :   2, 00000010
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   74
+# movi function
+# current register file data_in is   7 (b'00000111), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   8, 00001000
+# $3 :  12, 00001100
+# $4 :   8, 00001000
+# $5 :   2, 00000010
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   7 (b'00000111) into register 4
+# prog_ctr is   75
+# current register file data_in is   4 (b'00000100), wr_en is 1, and wr_addr is 4
+# slr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 1
+# 00000000 is shifted right by   7 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   8, 00001000
+# $3 :  12, 00001100
+# $4 :   7, 00000111
+# $5 :   2, 00000010
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   76
+# 00000000 is shifted right by   2 bits to give 00000000
+# movi function
+# current register file data_in is   5 (b'00000101), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   8, 00001000
+# $3 :  12, 00001100
+# $4 :   7, 00000111
+# $5 :   2, 00000010
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   5 (b'00000101) into register 5
+# prog_ctr is   77
+# current register file data_in is  14 (b'00001110), wr_en is 1, and wr_addr is 2
+# movr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   8, 00001000
+# $3 :  12, 00001100
+# $4 :   7, 00000111
+# $5 :   5, 00000101
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   78
+# slr function
+# current register file data_in is   7 (b'00000111), wr_en is 1, and wr_addr is 2
+# 00000000 is shifted right by   5 bits to give 00000000
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   7, 00000111
+# $5 :   5, 00000101
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   79
+# 00000000 is shifted right by   7 bits to give 00000000
+# sll function
+# 00000000 is shifted left by   7 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   7, 00000111
+# $5 :   5, 00000101
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   80
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   7, 00000111
+# $5 :   5, 00000101
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 4
+# prog_ctr is   81
+# xor function
+# 00000000 is xor with 00000000 to yield 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   5, 00000101
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   82
+# 00001100 is xor with 00001100 to yield 00000000
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   5, 00000101
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   83
+# movi function
+# current register file data_in is   4 (b'00000100), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   5, 00000101
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   4 (b'00000100) into register 5
+# prog_ctr is   84
+# current register file data_in is   9 (b'00001001), wr_en is 1, and wr_addr is 3
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00000000 is shifted left by   4 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   4, 00000100
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   85
+# 00000000 is shifted left by   0 bits to give 00000000
+# movi function
+# current register file data_in is   7 (b'00000111), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   4, 00000100
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   7 (b'00000111) into register 5
+# prog_ctr is   86
+# current register file data_in is   9 (b'00001001), wr_en is 1, and wr_addr is 4
+# slr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00000000 is shifted right by   7 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   7, 00000111
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   87
+# movi function
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   7, 00000111
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 5
+# prog_ctr is   88
+# current register file data_in is   9 (b'00001001), wr_en is 1, and wr_addr is 3
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00000000 is shifted left by   1 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   1, 00000001
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   89
+# 00000000 is shifted left by   0 bits to give 00000000
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   1, 00000001
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 4
+# prog_ctr is   90
+# xor function
+# 00000000 is xor with 00000000 to yield 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   1, 00000001
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is   91
+# 00001100 is xor with 00001100 to yield 00000000
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   1, 00000001
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   92
+# movi function
+# current register file data_in is   6 (b'00000110), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   1, 00000001
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   6 (b'00000110) into register 5
+# prog_ctr is   93
+# current register file data_in is   9 (b'00001001), wr_en is 1, and wr_addr is 3
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00000000 is shifted left by   6 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   6, 00000110
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   94
+# 00000000 is shifted left by   0 bits to give 00000000
+# movi function
+# current register file data_in is   7 (b'00000111), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   6, 00000110
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   7 (b'00000111) into register 5
+# prog_ctr is   95
+# current register file data_in is   9 (b'00001001), wr_en is 1, and wr_addr is 4
+# slr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00000000 is shifted right by   7 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   7, 00000111
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   96
+# 00000000 is shifted right by  12 bits to give 00000000
+# movi function
+# current register file data_in is   2 (b'00000010), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   7, 00000111
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   2 (b'00000010) into register 5
+# prog_ctr is   97
+# current register file data_in is   9 (b'00001001), wr_en is 1, and wr_addr is 3
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00000000 is shifted left by   2 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   2, 00000010
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is   98
+# 00000000 is shifted left by   0 bits to give 00000000
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   2, 00000010
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 4
+# prog_ctr is   99
+# xor function
+# 00000000 is xor with 00000000 to yield 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   2, 00000010
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is  100
+# 00001100 is xor with 00000000 to yield 00001100
+# movr function
+# current register file data_in is  12 (b'00001100), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   2, 00000010
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  12 (b'00001100) into register 2
+# prog_ctr is  101
+# movi function
+# current register file data_in is   7 (b'00000111), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :  12, 00001100
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   2, 00000010
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   7 (b'00000111) into register 5
+# prog_ctr is  102
+# current register file data_in is   9 (b'00001001), wr_en is 1, and wr_addr is 4
+# slr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00001100 is shifted right by   7 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :  12, 00001100
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   7, 00000111
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is  103
+# 00000000 is shifted right by   7 bits to give 00000000
+# 00000000 is shifted right by   0 bits to give 00000000
+# movi function
+# current register file data_in is   3 (b'00000011), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   7, 00000111
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   3 (b'00000011) into register 5
+# prog_ctr is  104
+# current register file data_in is   9 (b'00001001), wr_en is 1, and wr_addr is 3
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00000000 is shifted left by   3 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   3, 00000011
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is  105
+# 00000000 is shifted left by   0 bits to give 00000000
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   3, 00000011
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 4
+# prog_ctr is  106
+# xor function
+# 00000000 is xor with 00000000 to yield 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   3, 00000011
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is  107
+# 00001100 is xor with 00000000 to yield 00001100
+# movr function
+# current register file data_in is  12 (b'00001100), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   3, 00000011
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  12 (b'00001100) into register 2
+# prog_ctr is  108
+# movi function
+# current register file data_in is   2 (b'00000010), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :  12, 00001100
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   3, 00000011
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   2 (b'00000010) into register 4
+# prog_ctr is  109
+# current register file data_in is   8 (b'00001000), wr_en is 1, and wr_addr is 3
+# sll function
+# 00001100 is shifted left by   2 bits to give 00110000
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# current register file data_in is  48 (b'00110000), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :  12, 00001100
+# $3 :  12, 00001100
+# $4 :   2, 00000010
+# $5 :   3, 00000011
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  48 (b'00110000) into register 2
+# prog_ctr is  110
+# 00110000 is shifted left by   2 bits to give 11000000
+# 00000000 is shifted left by   0 bits to give 00000000
+# movi function
+# current register file data_in is 192 (b'11000000), wr_en is 1, and wr_addr is 1
+# current register file data_in is   7 (b'00000111), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :  48, 00110000
+# $3 :  12, 00001100
+# $4 :   2, 00000010
+# $5 :   3, 00000011
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   7 (b'00000111) into register 4
+# prog_ctr is  111
+# current register file data_in is   8 (b'00001000), wr_en is 1, and wr_addr is 4
+# slr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00110000 is shifted right by   7 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :  48, 00110000
+# $3 :  12, 00001100
+# $4 :   7, 00000111
+# $5 :   3, 00000011
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is  112
+# 00000000 is shifted right by   7 bits to give 00000000
+# movi function
+# current register file data_in is   4 (b'00000100), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   7, 00000111
+# $5 :   3, 00000011
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   4 (b'00000100) into register 5
+# prog_ctr is  113
+# current register file data_in is   9 (b'00001001), wr_en is 1, and wr_addr is 3
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00000000 is shifted left by   4 bits to give 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   7, 00000111
+# $5 :   4, 00000100
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is  114
+# 00000000 is shifted left by   7 bits to give 00000000
+# movr function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   7, 00000111
+# $5 :   4, 00000100
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 4
+# prog_ctr is  115
+# xor function
+# 00000000 is xor with 00000000 to yield 00000000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   4, 00000100
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 1
+# prog_ctr is  116
+# 00001100 is xor with 00000000 to yield 00001100
+# movr function
+# current register file data_in is  12 (b'00001100), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   0, 00000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   4, 00000100
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  12 (b'00001100) into register 2
+# prog_ctr is  117
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00001100 is shifted left by   4 bits to give 11000000
+# current register file data_in is 192 (b'11000000), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :  12, 00001100
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   4, 00000100
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote 192 (b'11000000) into register 2
+# prog_ctr is  118
+# 11000000 is shifted left by   4 bits to give 00000000
+# 00000000 is shifted left by   0 bits to give 00000000
+# movi function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 1
+# current register file data_in is   7 (b'00000111), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 : 192, 11000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   4, 00000100
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   7 (b'00000111) into register 5
+# prog_ctr is  119
+# current register file data_in is   9 (b'00001001), wr_en is 1, and wr_addr is 4
+# slr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 11000000 is shifted right by   7 bits to give 00000001
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 : 192, 11000000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   7, 00000111
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 2
+# prog_ctr is  120
+# 00000001 is shifted right by   7 bits to give 00000000
+# 00000000 is shifted right by   7 bits to give 00000000
+# movi function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 1
+# current register file data_in is   5 (b'00000101), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   1, 00000001
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   7, 00000111
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   5 (b'00000101) into register 5
+# prog_ctr is  121
+# current register file data_in is   9 (b'00001001), wr_en is 1, and wr_addr is 3
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# 00000001 is shifted left by   5 bits to give 00100000
+# current register file data_in is  32 (b'00100000), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :   1, 00000001
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   5, 00000101
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  32 (b'00100000) into register 2
+# prog_ctr is  122
+# 00100000 is shifted left by   5 bits to give 00000000
+# 00000000 is shifted left by   0 bits to give 00000000
+# movr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 1
+# current register file data_in is  32 (b'00100000), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :  32, 00100000
+# $3 :  12, 00001100
+# $4 :   0, 00000000
+# $5 :   5, 00000101
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  32 (b'00100000) into register 4
+# prog_ctr is  123
+# xor function
+# 00000000 is xor with 00100000 to yield 00100000
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :   0, 00000000
+# $2 :  32, 00100000
+# $3 :  12, 00001100
+# $4 :  32, 00100000
+# $5 :   5, 00000101
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  32 (b'00100000) into register 1
+# prog_ctr is  124
+# 00100000 is xor with 00100000 to yield 00000000
+# 00000000 is xor with 00001100 to yield 00001100
+# movr function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 0
+# current register file data_in is  12 (b'00001100), wr_en is 1, and wr_addr is 4
+# current register file data_in is  32 (b'00100000), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :  32, 00100000
+# $2 :  32, 00100000
+# $3 :  12, 00001100
+# $4 :  32, 00100000
+# $5 :   5, 00000101
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  32 (b'00100000) into register 4
+# prog_ctr is  125
+# rxor function
+# current register file data_in is  12 (b'00001100), wr_en is 1, and wr_addr is 3
+# we have reduce xor'd 00100000 to get 00000001
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 3
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :  32, 00100000
+# $2 :  32, 00100000
+# $3 :  12, 00001100
+# $4 :  32, 00100000
+# $5 :   5, 00000101
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 3
+# prog_ctr is  126
+# we have reduce xor'd 00100000 to get 00000001
+# we have reduce xor'd 00000101 to get 00000000
+# movi function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :  32, 00100000
+# $2 :  32, 00100000
+# $3 :   1, 00000001
+# $4 :  32, 00100000
+# $5 :   5, 00000101
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 5
+# prog_ctr is  127
+# current register file data_in is  13 (b'00001101), wr_en is 1, and wr_addr is 3
+# sll function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 3
+# 00000001 is shifted left by   1 bits to give 00000010
+# current register file data_in is   2 (b'00000010), wr_en is 1, and wr_addr is 3
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :  32, 00100000
+# $2 :  32, 00100000
+# $3 :   1, 00000001
+# $4 :  32, 00100000
+# $5 :   1, 00000001
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   2 (b'00000010) into register 3
+# prog_ctr is  128
+# 00000010 is shifted left by   1 bits to give 00000100
+# 00000010 is shifted left by  12 bits to give 00000000
+# xor function
+# current register file data_in is   4 (b'00000100), wr_en is 1, and wr_addr is 3
+# 00000010 is xor with 00001100 to yield 00001110
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 3
+# current register file data_in is  14 (b'00001110), wr_en is 1, and wr_addr is 3
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :  32, 00100000
+# $2 :  32, 00100000
+# $3 :   2, 00000010
+# $4 :  32, 00100000
+# $5 :   1, 00000001
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  14 (b'00001110) into register 3
+# prog_ctr is  129
+# 00001110 is xor with 00001100 to yield 00000010
+# 00100000 is xor with 00001100 to yield 00101100
+# movr function
+# current register file data_in is   2 (b'00000010), wr_en is 1, and wr_addr is 1
+# current register file data_in is  44 (b'00101100), wr_en is 1, and wr_addr is 6
+# current register file data_in is  14 (b'00001110), wr_en is 1, and wr_addr is 6
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :  32, 00100000
+# $2 :  32, 00100000
+# $3 :  14, 00001110
+# $4 :  32, 00100000
+# $5 :   1, 00000001
+# $6 :  12, 00001100
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  14 (b'00001110) into register 6
+# prog_ctr is  130
+# rxor function
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 2
+# we have reduce xor'd 00001110 to get 00000001
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :  32, 00100000
+# $2 :  32, 00100000
+# $3 :  14, 00001110
+# $4 :  32, 00100000
+# $5 :   1, 00000001
+# $6 :  14, 00001110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 2
+# prog_ctr is  131
+# we have reduce xor'd 00001110 to get 00000001
+# we have reduce xor'd 00000000 to get 00000000
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 3
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :  32, 00100000
+# $2 :   1, 00000001
+# $3 :  14, 00001110
+# $4 :  32, 00100000
+# $5 :   1, 00000001
+# $6 :  14, 00001110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 3
+# prog_ctr is  132
+# we have reduce xor'd 00000000 to get 00000000
+# we have reduce xor'd 00000000 to get 00000000
+# xor function
+# 00000001 is xor with 00000000 to yield 00000001
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :  32, 00100000
+# $2 :   1, 00000001
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   1, 00000001
+# $6 :  14, 00001110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 2
+# prog_ctr is  133
+# 00000001 is xor with 00001110 to yield 00001111
+# current register file data_in is  15 (b'00001111), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :  32, 00100000
+# $2 :   1, 00000001
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   1, 00000001
+# $6 :  14, 00001110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  15 (b'00001111) into register 2
+# prog_ctr is  134
+# 00001111 is xor with 00001110 to yield 00000001
+# 00100000 is xor with 00100000 to yield 00000000
+# movr function
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 1
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 6
+# current register file data_in is  15 (b'00001111), wr_en is 1, and wr_addr is 6
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   1, 00000001
+# $6 :  14, 00001110
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  15 (b'00001111) into register 6
+# prog_ctr is  135
+# movi function
+# current register file data_in is   6 (b'00000110), wr_en is 1, and wr_addr is 5
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   1, 00000001
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   6 (b'00000110) into register 5
+# prog_ctr is  136
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 0
+# add function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 0
+# current register file data_in is   6 (b'00000110), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :   0, 00000000
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   6 (b'00000110) into register 0
+# prog_ctr is  137
+# current register file data_in is  12 (b'00001100), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :   6, 00000110
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  12 (b'00001100) into register 0
+# prog_ctr is  138
+# current register file data_in is  18 (b'00010010), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  12, 00001100
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  18 (b'00010010) into register 0
+# prog_ctr is  139
+# current register file data_in is  24 (b'00011000), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  18, 00010010
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  24 (b'00011000) into register 0
+# prog_ctr is  140
+# current register file data_in is  30 (b'00011110), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  24, 00011000
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  30 (b'00011110) into register 0
+# prog_ctr is  141
+# store function
+# current register file data_in is  36 (b'00100100), wr_en is 1, and wr_addr is 0
+# we are trying to store at Mem[ 30]
+# current register file data_in is  45 (b'00101101), wr_en is 0, and wr_addr is 0
+# current register file data_in is  30 (b'00011110), wr_en is 0, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  30, 00011110
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# prog_ctr is  142
+# we are trying to store at Mem[ 30]
+# addi function
+# We are incrementing i =  30 by 00000001 =   1 to get  31
+# current register file data_in is  31 (b'00011111), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  30, 00011110
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  31 (b'00011111) into register 0
+# prog_ctr is  143
+# addi: instruction is: 000100001
+# addi: immedB going into ALU inB is: 00000001
+# We are incrementing i =  31 by 00000001 =   1 to get  32
+# We are decrementing i =  31 by 00000011 = 1 to get  30
+# store function
+# current register file data_in is  32 (b'00100000), wr_en is 1, and wr_addr is 0
+# we are trying to store at Mem[ 31]
+# current register file data_in is  30 (b'00011110), wr_en is 0, and wr_addr is 0
+# current register file data_in is  31 (b'00011111), wr_en is 0, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  31, 00011111
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# prog_ctr is  144
+# we are trying to store at Mem[ 31]
+# sub function
+# current register file data_in is  25 (b'00011001), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  31, 00011111
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  25 (b'00011001) into register 0
+# prog_ctr is  145
+# current register file data_in is  19 (b'00010011), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  25, 00011001
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  19 (b'00010011) into register 0
+# prog_ctr is  146
+# current register file data_in is  13 (b'00001101), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  19, 00010011
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  13 (b'00001101) into register 0
+# prog_ctr is  147
+# current register file data_in is   7 (b'00000111), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :  13, 00001101
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   7 (b'00000111) into register 0
+# prog_ctr is  148
+# current register file data_in is   1 (b'00000001), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :   7, 00000111
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   1 (b'00000001) into register 0
+# prog_ctr is  149
+# addi function
+# current register file data_in is 251 (b'11111011), wr_en is 1, and wr_addr is 0
+# We are incrementing i =   1 by 00000001 =   1 to get   2
+# current register file data_in is   2 (b'00000010), wr_en is 1, and wr_addr is 0
+#  --- REGISTER FILE VALUES --- 
+# $0 :   1, 00000001
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   2 (b'00000010) into register 0
+# prog_ctr is  150
+# addi: instruction is: 000100001
+# addi: immedB going into ALU inB is: 00000001
+# We are incrementing i =   2 by 00000001 =   1 to get   3
+# We are decrementing i =  32 by 00000010 = 2 to get  30
+# movi function
+# current register file data_in is   3 (b'00000011), wr_en is 1, and wr_addr is 1
+# current register file data_in is   6 (b'00000110), wr_en is 1, and wr_addr is 3
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   0, 00000000
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   6 (b'00000110) into register 3
+# prog_ctr is  151
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+# movi function
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   6, 00000110
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is  152
+# current register file data_in is  11 (b'00001011), wr_en is 1, and wr_addr is 0
+# add function
+# current register file data_in is   0 (b'00000000), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :   0, 00000000
+# $3 :   6, 00000110
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   0 (b'00000000) into register 2
+# prog_ctr is  153
+# current register file data_in is  15 (b'00001111), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :   0, 00000000
+# $3 :   6, 00000110
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  15 (b'00001111) into register 2
+# prog_ctr is  154
+# current register file data_in is  30 (b'00011110), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :  15, 00001111
+# $3 :   6, 00000110
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  30 (b'00011110) into register 2
+# prog_ctr is  155
+# current register file data_in is  45 (b'00101101), wr_en is 1, and wr_addr is 2
+# current register file data_in is  30 (b'00011110), wr_en is 1, and wr_addr is 2
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :  30, 00011110
+# $3 :   6, 00000110
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  30 (b'00011110) into register 2
+# prog_ctr is  156
+# movr function
+# current register file data_in is  64 (b'01000000), wr_en is 1, and wr_addr is 4
+# current register file data_in is  30 (b'00011110), wr_en is 1, and wr_addr is 4
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :  30, 00011110
+# $3 :   6, 00000110
+# $4 :  32, 00100000
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote  30 (b'00011110) into register 4
+# prog_ctr is  157
+# we have reduce xor'd xxxxxxxx to get 0000000x
+# current register file data_in is   x (b'xxxxxxxx), wr_en is 1, and wr_addr is X
+# current register file data_in is   X (b'0000000x), wr_en is 1, and wr_addr is X
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :  30, 00011110
+# $3 :   6, 00000110
+# $4 :  30, 00011110
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   X (b'0000000x) into register X
+# prog_ctr is  158
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :  30, 00011110
+# $3 :   6, 00000110
+# $4 :  30, 00011110
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   X (b'0000000x) into register X
+# prog_ctr is  159
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :  30, 00011110
+# $3 :   6, 00000110
+# $4 :  30, 00011110
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   X (b'0000000x) into register X
+# prog_ctr is  160
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :  30, 00011110
+# $3 :   6, 00000110
+# $4 :  30, 00011110
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   X (b'0000000x) into register X
+# prog_ctr is  161
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :  30, 00011110
+# $3 :   6, 00000110
+# $4 :  30, 00011110
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   X (b'0000000x) into register X
+# prog_ctr is  162
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :  30, 00011110
+# $3 :   6, 00000110
+# $4 :  30, 00011110
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   X (b'0000000x) into register X
+# prog_ctr is  163
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :  30, 00011110
+# $3 :   6, 00000110
+# $4 :  30, 00011110
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   X (b'0000000x) into register X
+# prog_ctr is  164
+#  --- REGISTER FILE VALUES --- 
+# $0 :   2, 00000010
+# $1 :  32, 00100000
+# $2 :  30, 00011110
+# $3 :   6, 00000110
+# $4 :  30, 00011110
+# $5 :   6, 00000110
+# $6 :  15, 00001111
+# $7 :   0, 00000000
+#  ---------------------------- 
+# We wrote   X (b'0000000x) into register X
+# start program 1
+#  
+# 0000000000001111
+# 0000000000001111
+#  we have a match!
+#  
+# 0000000000110011
+# xxxxxxxxxxxxxxxx
+# erroneous output
+#  
+# 0000000001010101
+# xxxxxxxxxxxxxxxx
+# erroneous output
+#  
+# 0000000010010110
+# xxxxxxxxxxxxxxxx
+# erroneous output
+#  
+# 0000001100000011
+# xxxxxxxxxxxxxxxx
+# erroneous output
+#  
+# 0000010100000101
+# xxxxxxxxxxxxxxxx
+# erroneous output
+#  
+# 0000100100000110
+# xxxxxxxxxxxxxxxx
+# erroneous output
+#  
+# 0001000100010001
+# xxxxxxxxxxxxxxxx
+# erroneous output
+#  
+# 0010000100010010
+# xxxxxxxxxxxxxxxx
+# erroneous output
+#  
+# 0100000100010100
+# xxxxxxxxxxxxxxxx
+# erroneous output
+#  
+# 1000000100010111
+# xxxxxxxxxxxxxxxx
+# erroneous output
+#  
+# 0000000000000000
+# xxxxxxxxxxxxxxxx
+# erroneous output
+#  
+# 0000000000000000
+# xxxxxxxxxxxxxxxx
+# erroneous output
+#  
+# 0000000000000000
+# xxxxxxxxxxxxxxxx
+# erroneous output
+#  
+# 0000000000000000
+# xxxxxxxxxxxxxxxx
+# erroneous output
+#  
+# program 1 score =     1 out of    15
+# prog_ctr is  165
+# ** Note: $stop    : C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/prog1_tb.sv(69)
+#    Time: 1675 ns  Iteration: 0  Instance: /prog1_tb
+# Break in Module prog1_tb at C:/Users/Rick Truong/OneDrive/Desktop/Quartus Projects/CSE 141L Project - ARA/prog1_tb.sv line 69

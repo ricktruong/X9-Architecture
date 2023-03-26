@@ -36,8 +36,9 @@ wire				MemWrite,						// Memory Write Control Signal
 //	ALU input and output wires
 wire[7:0]   	datA, datB,						// Read data 1, Read data 2
 					alumux,
-					rslt;								// ALU result
-wire[5:0] 		helperB = 6'b000000;			// Bit-extension helper for addi immediate (WE WANT SIGN-EXTEND)
+					rslt,								// ALU result
+					immedB;						// Immediate for addi to get written into ALU
+wire[5:0] 		helperB = 6'b000000;			// Bit-extension helper for addi immediate
 
 // Top Level registers for ALU bit flags
 logic 			sc_in,							// Lagging Shift/Carry In/Out register
@@ -69,6 +70,11 @@ PC #(.D(D)) 					  // D sets Program Counter width
 
 always @(prog_ctr) begin
 	$display("prog_ctr is %d", prog_ctr);
+
+	if (ALUSrc == 0) begin
+		$display("addi: instruction is: %b", mach_code);
+		$display("addi: immedB going into ALU inB is: %b", immedB);
+	end
 end
 
 // Program Counter Lookup Table

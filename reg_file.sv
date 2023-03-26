@@ -12,7 +12,7 @@ module reg_file #(parameter pw=3)(
 );
 
 always @(dat_in) begin
-	$display("current reg_file input is %d and wr_en is %b",dat_in,wr_en);
+	$display("current register file data_in is %d (b'%b), wr_en is %b, and wr_addr is %d", dat_in, dat_in, wr_en, wr_addr);
 end
 
 logic[7:0] core[2**pw];						// Register core/space
@@ -42,28 +42,9 @@ always_ff @(posedge clk) begin
 
 	if (wr_en) begin
 		core[wr_addr] <= dat_in;			// Write register with dat_in
-		$display("We wrote %d into register %d", dat_in, wr_addr);
+		$display("We wrote %d (b'%b) into register %d", dat_in, dat_in, wr_addr);
 	end
 
 end
 	
 endmodule
-
-/*
-	  xxxx_xxxx
-	  xxxx_xxxx
-	  xxxx_xxxx
-	  xxxx_xxxx
-	  xxxx_xxxx
-	  xxxx_xxxx
-	  xxxx_xxxx
-	  xxxx_xxxx
-	  xxxx_xxxx
-	  xxxx_xxxx
-	  xxxx_xxxx
-	  xxxx_xxxx
-	  xxxx_xxxx
-	  xxxx_xxxx
-	  xxxx_xxxx
-	  xxxx_xxxx
-*/
