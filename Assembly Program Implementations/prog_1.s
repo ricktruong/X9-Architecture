@@ -185,7 +185,8 @@ P1:
 P0:
     rxor    $2, $6                      ; $2 =^ b4  b3  b2  p4 _  b1  p2   p1  0;
     rxor    $3, $7                      ; $3 =^b11 b10  b9  b8 _  b7  b6  b5  p8;
-    xor     $2, $3                      ; $2 =   0   0   0   0 _   0   0   0 p0a ^   0   0   0   0 _   0   0   0 p0b;
+    movr    $4, $3                      ; $4 =   0   0   0   0 _   0   0   0 p0b;
+    xor     $2, $4                      ; $2 =   0   0   0   0 _   0   0   0 p0a ^   0   0   0   0 _   0   0   0 p0b;
     xor     $2, $6                      ; $2 =   0   0   0   0 _   0   0   0  p0 ^  b4  b3  b2  p4 _  b1  p2   p1  0;
     movr    $6, $2                      ; $6 =  b4  b3  b2  p4 _  b1  p2   p1 p0;
 
@@ -208,13 +209,14 @@ STORE_MESSAGE:
     addi    $0, #1                      ; i++ (1 + 1);
 
 LESS_THAN_30:
-    movi    $3, #6                      ; $3 = 6;
+    movi    $4, #6                      ; $4 = 6;
     movi    $2, #0                      ; $2 = 0;
-    add     $2, $3                      ; $2 = 0 + 6;
-    add     $2, $2                      ; $2 = 6 + 6;
-    add     $2, $2                      ; $2 = 12 + 12;
-    add     $2, $3                      ; $2 = 24 + 6
+    add     $2, $4                      ; $2 = 0 + 6;
+    add     $2, $4                      ; $2 = 6 + 6;
+    add     $2, $4                      ; $2 = 12 + 6;
+    add     $2, $4                      ; $2 = 18 + 6;
+    add     $2, $4                      ; $2 = 24 + 6;
     movr    $4, $2                      ; $4 = 30;
 
-    ; lt      $0, $4                      ; $one = i < 30;
-    ; bt      @LOAD_MESSAGE               ; if ($one) branch to LOAD_MESSAGE
+    lt      $0, $4                      ; $one = i < 30;
+    bt      @LOAD_MESSAGE               ; if ($one) branch to LOAD_MESSAGE

@@ -63,21 +63,22 @@ SLL3,5 ; 01011_11_01    // Correct op1:3    //Correct op2:5 at line number128
 XOR3,6 ; 01000_11_10    // Correct op1:3    //Correct op2:6 at line number129
 RXOR2,6 ; 01111_10_10    // Correct op1:2    //Correct op2:6 at line number131
 RXOR3,7 ; 01111_11_11    // Correct op1:3    //Correct op2:7 at line number132
-XOR2,3 ; 01000_10_11    // Correct op1:2    // -------------Incorrect op2:3 at line number133
-XOR2,6 ; 01000_10_10    // Correct op1:2    //Correct op2:6 at line number134
-ADD0,5 ; 00000_00_01    // Correct op1:0    //Correct op2:5 at line number137
+XOR2,4 ; 01000_10_00    // Correct op1:2    //Correct op2:4 at line number134
+XOR2,6 ; 01000_10_10    // Correct op1:2    //Correct op2:6 at line number135
 ADD0,5 ; 00000_00_01    // Correct op1:0    //Correct op2:5 at line number138
 ADD0,5 ; 00000_00_01    // Correct op1:0    //Correct op2:5 at line number139
 ADD0,5 ; 00000_00_01    // Correct op1:0    //Correct op2:5 at line number140
 ADD0,5 ; 00000_00_01    // Correct op1:0    //Correct op2:5 at line number141
-SB0,6 ; 00100_00_10    // Correct op1:0    //Correct op2:6 at line number142
-SB0,7 ; 00100_00_11    // Correct op1:0    //Correct op2:7 at line number144
-SUB0,5 ; 00001_00_01    // Correct op1:0    //Correct op2:5 at line number145
+ADD0,5 ; 00000_00_01    // Correct op1:0    //Correct op2:5 at line number142
+SB0,6 ; 00100_00_10    // Correct op1:0    //Correct op2:6 at line number143
+SB0,7 ; 00100_00_11    // Correct op1:0    //Correct op2:7 at line number145
 SUB0,5 ; 00001_00_01    // Correct op1:0    //Correct op2:5 at line number146
 SUB0,5 ; 00001_00_01    // Correct op1:0    //Correct op2:5 at line number147
 SUB0,5 ; 00001_00_01    // Correct op1:0    //Correct op2:5 at line number148
 SUB0,5 ; 00001_00_01    // Correct op1:0    //Correct op2:5 at line number149
-ADD2,3 ; 00000_10_11    // Correct op1:2    // -------------Incorrect op2:3 at line number153
-ADD2,2 ; 00000_10_10    // Correct op1:2    // -------------Incorrect op2:2 at line number154
-ADD2,2 ; 00000_10_10    // Correct op1:2    // -------------Incorrect op2:2 at line number155
-ADD2,3 ; 00000_10_11    // Correct op1:2    // -------------Incorrect op2:3 at line number156
+SUB0,5 ; 00001_00_01    // Correct op1:0    //Correct op2:5 at line number150
+ADD2,4 ; 00000_10_00    // Correct op1:2    //Correct op2:4 at line number154
+ADD2,4 ; 00000_10_00    // Correct op1:2    //Correct op2:4 at line number155
+ADD2,4 ; 00000_10_00    // Correct op1:2    //Correct op2:4 at line number156
+ADD2,4 ; 00000_10_00    // Correct op1:2    //Correct op2:4 at line number157
+ADD2,4 ; 00000_10_00    // Correct op1:2    //Correct op2:4 at line number158
