@@ -8,11 +8,6 @@ module dat_mem (
 	output logic[7:0]	dat_out				// Data Memory output
 );
 
-// always @(dat_in) begin
-// 	$display("The value we are potentially trying to store at Mem[%d] is %d where wr_en = %d", addr, dat_in, wr_en);
-// end
-
-
 logic[7:0] core[256];						// Data Memory core/space
 
 // Output Data output

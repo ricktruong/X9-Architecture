@@ -68,15 +68,6 @@ PC #(.D(D)) 					  // D sets Program Counter width
 		.prog_ctr
 	);
 
-always @(prog_ctr) begin
-	$display("prog_ctr is %d", prog_ctr);
-
-	if (ALUSrc == 0) begin
-		$display("addi: instruction is: %b", mach_code);
-		$display("addi: immedB going into ALU inB is: %b", immedB);
-	end
-end
-
 // Program Counter Lookup Table
 PC_LUT #(.D(D))				// D - Program Counter width
 	pl1 (
@@ -91,15 +82,6 @@ instr_ROM
 		.mach_code
 	);
 
-// always @(mach_code) begin
-// 	$display("The mach_code for this instruction is %b", mach_code);
-// 	$display("potential rs number for r-type:%d", rs_addrA);
-// 	$display("potential rt number for r-type:%d", rt_addrB);
-// 	$display("potential rs number for i-type:%d", id_addrA);
-// 	$display("potential rt number for i-type:%d", id_addrB);
-// 	$display("potential immediate value if the instruction is movi:%d",immed);
-// end
-
 // Control Decoder
 Control
 	ctl1(
@@ -113,11 +95,6 @@ Control
 		.MemtoReg	,
 		.ALUOp		
 	);
-
-// always @(InstType) begin
-// 	$display("Insttype is %b with LSB being Insttype[0]",InstType);
-
-// end
 
 // Branching logic
 assign absj = BranchInst & oneQ;				// Branch Operator output
@@ -135,12 +112,6 @@ variable_mux #(.N(2)) rsmux (.ibits (id_addrA),.rbits (rs_addrA) ,.sel (InstType
 variable_mux #(.N(2)) rdmux  (.ibits (id_addrB),.rbits (rt_addrB) ,.sel (InstType[1]),.mux_out (rd_addrB));
 variable_mux #(.N(7)) regdatamux (.ibits (immed), .rbits (muxfin) ,.sel (InstType[0]),.mux_out (regfile_dat));
 assign wr_reg = (MemtoReg == 'b1) ? rd_addrB : rd_addrA;		// LB/SB Mux
-
-// always @(regfile_dat) begin
-// 	$display("The number of register rs is %d",rd_addrA);
-// 	$display("The number of register rt is %d", rd_addrB);
-// 	$display("The value going into the register to be potentially written is %d",regfile_dat);
-// end
 
 // Register File
 reg_file #(.pw(3))						// Register Pointer width - 3 for 8 registers
@@ -170,10 +141,6 @@ alu
 		.pari					,
 		.one
 	);
-
-// always_comb begin
-// 	$display("value of one changed to %b",one);
-// end
 
 // Data Memory
 dat_mem
