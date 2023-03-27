@@ -1,7 +1,16 @@
 1. Explain which programs/features work
-- Program 1 works without error
-- Our assembler works
+- Program 1 passes all 15 tests on prog1_tb.sv
+- Our assembler (assembler.py) works as all code is translated as expected
 - All hardware modules work
+    - top_level.sv works as intended
+    - PC_LUT.sv ensures branching works as intended for tested programs
+    - PC.sv works with absolute branching
+    - instr_ROM.sv was left unchanged
+    - Control.sv properly regulates functionality for all instructions in the datapath
+    - reg_file.sv was left unchanged
+    - alu.sv supports all logical and arithmetic instructions
+    - dat_mem.sv was left unchanged
+    - All muxes were implemented logically and correctly
 
 2. Explain which programs/features don't work and what challenges you faced when
 implementing your design
