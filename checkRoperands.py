@@ -1,3 +1,5 @@
+# Parses machine code for bad register input and reports lines with errors
+
 import sys
 import os
 import string
