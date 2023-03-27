@@ -1,5 +1,7 @@
 1. Explain which programs/features work
-- Program 1 works without error.
+- Program 1 works without error
+- Our assembler works
+- All hardware modules work
 
 2. Explain which programs/features don't work and what challenges you faced when
 implementing your design
