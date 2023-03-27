@@ -18,3 +18,5 @@ implementing your design
 - This however meant that we could only use 4 designated registers for rs and 4 different registers for rt for our r-types which was a limitation that hindered our ability to complere program 2 and 3.
 
 3. Include the link and passcode to zoom video
+https://ucsd.zoom.us/rec/share/5kwH6iBprj7lGxeQCASlePltZlY8DCw1BSDzJu-EyA9-x2-6LAFIw7MMyiwI1SfU.HtWwBNffprnYHiBX
+Passcode: E!donfanforlife1
