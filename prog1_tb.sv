@@ -33,8 +33,8 @@ initial begin
     // 3. Randomized sample of exhuastive 11-bit combinations
     // 4. Edge tests
     
-    d1_in[i] = 1'b1 << i;
-    // d1_in[i] = $random>>4;        // create 15 messages	   '1    '0
+    // d1_in[i] = 1'b1 << i;
+    d1_in[i] = $random>>4;        // create 15 messages	   '1    '0
 // copy 15 original messages into first 30 bytes of memory 
 // rename "dm1" and/or "core" if you used different names for these
     DUT.dm1.core[2*i+1]  = {5'b0,d1_in[i][11:9]};
